@@ -34,8 +34,8 @@ in
   };
 
   imports = [
-    # ../${cfg.appLauncher}.nix
-    # ../${cfg.terminal}.nix
+    ../rofi.nix
+    ../kitty.nix
     ../waybar.nix
   ];
 
