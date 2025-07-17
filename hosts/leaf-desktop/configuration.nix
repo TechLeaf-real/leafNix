@@ -52,7 +52,7 @@
       git diff -U0 "*.nix"
       echo "NixOS Rebuilding..."
       sudo nixos-rebuild switch &>nixos-switch.log || (cat nixos-switch.log | grep --color error && exit 1)
-      current=$(nixos-rebuild list-generations | grep Current)
+      current=$(nixos-rebuild list-generations | grep True)
       git commit -am "$current"
       git push origin master
       popd
