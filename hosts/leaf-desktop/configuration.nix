@@ -50,6 +50,7 @@
       #! nix-shell -i bash -p bash
       set -e
       pushd ~/nixos
+      clear
       if git diff --quiet '*.nix'; then
           echo "No changes detected, exiting."
           popd
