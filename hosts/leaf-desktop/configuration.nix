@@ -45,6 +45,7 @@
     godot
     blender-hip
     krita
+    neofetch
   ])
 
   ++
