@@ -115,6 +115,11 @@
     openFirewall = true;
   };
 
+  services.minecraft-server = {
+    eula = true;
+    enable = true;
+  };
+
   programs.ssh.startAgent = true;
 
   # fileSystems."home/techleaf/leaf-server" = {
