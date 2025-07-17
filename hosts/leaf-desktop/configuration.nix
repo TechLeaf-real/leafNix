@@ -122,6 +122,7 @@
   };
 
   programs.ssh.startAgent = true;
+  services.self-deploy.sshKeyFile = ~/.ssh/leaf-desktop;
 
   # fileSystems."home/techleaf/leaf-server" = {
   #   device = "//192.168.1.115/Store";
