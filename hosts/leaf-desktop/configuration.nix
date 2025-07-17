@@ -82,7 +82,15 @@
       echo "Updating Flake..."
       nix flake update
       echo "NixOS Rebuilding..."
-      sudo nixos-rebuild switch &>nixos-switch.log || (cat nixos-switch.log | grep --color error && exit 1)
+      set +o pipefail
+      sudo nixos-rebuild switch 2>&1 | tee .nixos-switch.log
+      set -o pipefail
+      echo  -e "\n\033[34mNixOS rebuild completed\033[0m"
+      echo -ne "\rExit in 3" && sleep 1
+      echo -ne "\rExit in 2" && sleep 1
+      echo -ne "\rExit in 1" && sleep 1
+      echo -ne "\033[?1049l"
+      clear
       current=$(nixos-rebuild list-generations --json | jq '.[] | select (.current == true) | "\(.generation) \(.date) \(.nixosVersion) \(.kernelVersion)"')
       git commit -am "$current"
       git push origin master
