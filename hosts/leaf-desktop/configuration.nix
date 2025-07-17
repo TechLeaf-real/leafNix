@@ -51,7 +51,7 @@
       set -e
       pushd ~/nixos
       clear
-      if $1 != "-s"
+      if $1 -ne "-s"
         if git diff --quiet '*.nix'; then
             echo "\nNo changes detected, exiting."
             popd
