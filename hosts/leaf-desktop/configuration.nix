@@ -46,6 +46,7 @@
     blender-hip
     krita
     (writeShellScriptBin "rebuild" ''
+      !# nix-shell -i bash -p bash
       pushd ~/nixos
       git diff -U0 "*.nix"
       echo "NixOS Rebuilding..."
