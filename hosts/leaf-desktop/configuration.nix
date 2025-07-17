@@ -68,6 +68,8 @@
       echo -ne "\rExit in 1" && sleep 1
       echo -ne "\033[?1049l"
       clear
+      rm .nixos-switch.log
+      clear
       current=$(nixos-rebuild list-generations --json | jq '.[] | select (.current == true) | "\(.generation) \(.date) \(.nixosVersion) \(.kernelVersion)"')
       git commit -am "$current"
       git push origin master
@@ -90,6 +92,8 @@
       echo -ne "\rExit in 2" && sleep 1
       echo -ne "\rExit in 1" && sleep 1
       echo -ne "\033[?1049l"
+      clear
+      rm .nixos-switch.log
       clear
       current=$(nixos-rebuild list-generations --json | jq '.[] | select (.current == true) | "\(.generation) \(.date) \(.nixosVersion) \(.kernelVersion)"')
       git commit -am "$current"
