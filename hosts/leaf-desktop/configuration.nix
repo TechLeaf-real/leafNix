@@ -64,6 +64,20 @@
       git push origin master
       popd
     '')
+    (writeShellScriptBin "update" ''
+      #! nix-shell -i bash -p bash
+      set -e
+      pushd ~/nixos
+      clear
+      echo "Updating Flake..."
+      nix flake update
+      echo "NixOS Rebuilding..."
+      sudo nixos-rebuild switch &>nixos-switch.log || (cat nixos-switch.log | grep --color error && exit 1)
+      current=$(nixos-rebuild list-generations --json | jq '.[] | select (.current == true) | "\(.generation) \(.date) \(.nixosVersion) \(.kernelVersion)"')
+      git commit -am "$current"
+      git push origin master
+      popd
+    '')
   ])
 
   ++
