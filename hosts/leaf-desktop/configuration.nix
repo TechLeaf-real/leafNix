@@ -45,45 +45,24 @@
     godot
     blender-hip
     krita
+    jq
     (writeShellScriptBin "rebuild" ''
       #! nix-shell -i bash -p bash
       set -e
+
       pushd ~/nixos
-      shopt -s globstar
 
-      echo -e "Analysing changes..."
-      if git diff --quiet -- *.nix; then
-        echo -e "No changes detected, \033[31mexiting\033[0m\n"
-        shopt -u globstar
-        popd
-        exit 0
+      if git diff --quiet '*.nix'; then
+          echo "No changes detected, exiting."
+          popd
+          exit 0
       fi
-
-      git diff --word-diff=porcelain -U0 -- *.nix
-      echo -e "\nNixOS Rebuilding..."
-
-      if sudo nixos-rebuild switch &>.nixos-switch.log then
-        echo -e "Done\n"
-      else
-        echo ""
-        cat .nixos-switch.log | grep --color error
-        sudo git restore --staged .nix
-
-        if read -p "Open log? (y/N) " confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]]; then
-          cat .nixos-switch-log | nano
-        fi
-
-        shopt -u globstar
-        popd
-        exit 1
-      fi
-
-      generation = $(nix-env -p /nix/var/nix/profiles/system --list-generations | grep current | awk "{print $1}")
-      git commit -m "NixOS build#$generation"
-
-      echo -e "\n\033[32mCommitted as NixOS build#$generation\033[0m"
-      echo -e "\033[34mNixOS Rebuild Completed!\033[0m\n"
-      shopt -u globstar
+      git diff -U0 '*.nix'
+      echo "NixOS Rebuilding..."
+      sudo nixos-rebuild switch &>nixos-switch.log || (cat nixos-switch.log | grep --color error && exit 1)
+      current=$(nixos-rebuild list-generations --json | jq '.[] | select (.current == true) | "\(.generation) \(.date) \(.nixosVersion) \(.kernelVersion)"')
+      git commit -am "$current"
+      git push origin master
       popd
     '')
   ])

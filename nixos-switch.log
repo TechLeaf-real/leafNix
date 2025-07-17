@@ -1,34 +1,9 @@
 warning: Git tree '/home/techleaf/nixos' is dirty
 building the system configuration...
 warning: Git tree '/home/techleaf/nixos' is dirty
-these 18 derivations will be built:
-  /nix/store/nw67z280dii6kwy2n2vdanxmz7qdibcp-rebuild.drv
-  /nix/store/rw3xpn0mw3z2sjkq120fk2x9v4hwsnx6-rebuild_fish-completions.drv
-  /nix/store/1k549bg2cm8kh9vs8lszw3700fc7iyrr-system_fish-completions.drv
-  /nix/store/jb4wvv2jryd47fb520dpidk96z1p5zvn-system-path.drv
-  /nix/store/d37n9vph8rdbpd82ghb6fylfy57aqb27-dbus-1.drv
-  /nix/store/5nwvzj3r86gwqnmfa9wmhh98z604arb2-X-Restart-Triggers-dbus-broker.drv
-  /nix/store/jgmnla91b21jj7mcl8mczqbbn48jjd72-unit-dbus-broker.service.drv
-  /nix/store/90sgvnj1s061gva83gfjivn4qgq445nf-user-units.drv
-  /nix/store/44w4ff5li3dzhm4hs0zlih9fqfxn3yw5-unit-accounts-daemon.service.drv
-  /nix/store/5vw0nq1g4rk88mksrkfc9kd00sxm3blm-unit-dbus-broker.service.drv
-  /nix/store/zykxqhvm8xpc09y8kwc7w898md30wr6i-X-Restart-Triggers-polkit.drv
-  /nix/store/hjlr502r6qvbx3dq81m6lj9abmc13g18-unit-polkit.service.drv
-  /nix/store/i7i4liq273zzzgpml42zwrwibxgxaprq-system-units.drv
-  /nix/store/k54qvrx0qlapz6rnmpjgiygh245gspld-man-paths.drv
-  /nix/store/s1phxnxqhqy2iaj04bczvwbspc2iwbiq-man-cache.drv
-  /nix/store/rwyik8qq5dlpwim7g450hx24q05n6l5c-etc-man_db.conf.drv
-  /nix/store/0lis75g3iq2m99b64lp0fah6807gh9ap-etc.drv
-  /nix/store/4js01sszm4swb31254ynv5z185xc1695-nixos-system-leaf-desktop-25.11.20250714.62e0f05.drv
-building '/nix/store/nw67z280dii6kwy2n2vdanxmz7qdibcp-rebuild.drv'...
-error: builder for '/nix/store/nw67z280dii6kwy2n2vdanxmz7qdibcp-rebuild.drv' failed with exit code 2;
-       last 2 log lines:
-       > /nix/store/r8f77l4agyyywlw0xagdg10l7ml8zb1w-rebuild/bin/rebuild: line 20: syntax error near unexpected token `else'
-       > /nix/store/r8f77l4agyyywlw0xagdg10l7ml8zb1w-rebuild/bin/rebuild: line 20: `else'
-       For full logs, run:
-         nix log /nix/store/nw67z280dii6kwy2n2vdanxmz7qdibcp-rebuild.drv
-error: 1 dependencies of derivation '/nix/store/k54qvrx0qlapz6rnmpjgiygh245gspld-man-paths.drv' failed to build
-error: 1 dependencies of derivation '/nix/store/rw3xpn0mw3z2sjkq120fk2x9v4hwsnx6-rebuild_fish-completions.drv' failed to build
-error: 1 dependencies of derivation '/nix/store/jb4wvv2jryd47fb520dpidk96z1p5zvn-system-path.drv' failed to build
-error: 1 dependencies of derivation '/nix/store/4js01sszm4swb31254ynv5z185xc1695-nixos-system-leaf-desktop-25.11.20250714.62e0f05.drv' failed to build
-Command 'nix --extra-experimental-features 'nix-command flakes' build --print-out-paths '/home/techleaf/nixos#nixosConfigurations."leaf-desktop".config.system.build.toplevel' --no-link' returned non-zero exit status 1.
+activating the configuration...
+setting up /etc...
+reloading user units for techleaf...
+restarting sysinit-reactivation.target
+the following new units were started: NetworkManager-dispatcher.service
+Done. The new configuration is /nix/store/k2xl80nnvb0grl8p3r71my38wxlazfin-nixos-system-leaf-desktop-25.11.20250714.62e0f05
