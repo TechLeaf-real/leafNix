@@ -56,6 +56,10 @@ in
       swayosd
     ];
 
+    home.sessionVariables = {
+      HYPRSHOT_DIR = "~/Pictures/Screenshots";
+    };
+
     gtk = {
       enable = true;
       theme = {
