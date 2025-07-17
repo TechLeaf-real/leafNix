@@ -52,7 +52,7 @@
       pushd ~/nixos
       clear
       if git diff --quiet '*.nix'; then
-          echo "No changes detected, exiting."
+          echo "\nNo changes detected, exiting."
           popd
           exit 0
       fi
