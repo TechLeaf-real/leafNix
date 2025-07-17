@@ -59,6 +59,15 @@
     openFirewall = true;
   };
 
+  security.pam.sshAgentAuth = {
+    enable = true;
+    authorizedKeysFiles = [
+      "~/.ssh/githubkey"
+    ];
+  };
+
+  programs.ssh.startAgent = true;
+
   # fileSystems."home/techleaf/leaf-server" = {
   #   device = "//192.168.1.115/Store";
   #   fsType = "cifs";
