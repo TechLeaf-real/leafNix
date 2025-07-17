@@ -59,13 +59,6 @@
     openFirewall = true;
   };
 
-  security.pam.sshAgentAuth = {
-    enable = true;
-    authorizedKeysFiles = [
-      "~/.ssh/githubkey"
-    ];
-  };
-
   programs.ssh.startAgent = true;
 
   # fileSystems."home/techleaf/leaf-server" = {
@@ -132,7 +125,9 @@
     isNormalUser = true;
     description = "Techleaf";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
+    openssh.authorizedKeys.keyFiles = [
+      "~/.ssh/leaf-desktop.pub"
+    ];
   };
 
   home-manager = {
