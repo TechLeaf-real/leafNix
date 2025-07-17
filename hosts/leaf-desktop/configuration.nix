@@ -48,6 +48,7 @@
     (writeShellScriptBin "rebuild" ''
       #! nix-shell -i bash -p bash
       pushd ~/nixos
+      clear
       git diff -U0 "*.nix"
       echo "NixOS Rebuilding..."
       sudo nixos-rebuild switch &>nixos-switch.log || (cat nixos-switch.log | grep --color error && exit 1)
