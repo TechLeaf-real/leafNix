@@ -83,9 +83,8 @@
       clear
       echo "Updating Flake..."
       nix flake update
-      rebuild
       popd
-      clear
+      rebuild
     '')
   ])
 
