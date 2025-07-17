@@ -51,10 +51,12 @@
       set -e
       pushd ~/nixos
       clear
-      if git diff --quiet '*.nix'; then
-          echo "\nNo changes detected, exiting."
-          popd
-          exit 0
+      if $1 != "-s"
+        if git diff --quiet '*.nix'; then
+            echo "\nNo changes detected, exiting."
+            popd
+            exit 0
+        fi
       fi
       clear
       git diff -U0 '*.nix'
@@ -84,7 +86,7 @@
       echo "Updating Flake..."
       nix flake update
       popd
-      rebuild
+      rebuild -s
     '')
   ])
 
