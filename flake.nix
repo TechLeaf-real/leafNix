@@ -65,21 +65,5 @@
         ];        
       };
     };
-
-    packages.x86_64-linux.rebuild = 
-      let
-        pkgs = import nixpkgs { system = "x86_64-linux"; };
-
-        packageName = "rebuild";
-        packageScript = pkgs.writeShellScriptBin packageName ''
-          
-        '';
-        packageBuildInputs = with pkgs; [];
-      in pkgs.symlinkJoin {
-        name = packageName;
-        paths = [ packageScript ] ++ packageBuildInputs;
-        buildInputs = [ pkgs.makeWrapper ];
-        postBuild = "wrapProgram $out/bin/${packageName} --prefix PATH : $out/bin";
-      };
   };
 }
