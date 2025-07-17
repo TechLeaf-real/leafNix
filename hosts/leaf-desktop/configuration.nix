@@ -118,6 +118,7 @@
   services.minecraft-server = {
     eula = true;
     enable = true;
+    openFirewall = true;
   };
 
   programs.ssh.startAgent = true;
