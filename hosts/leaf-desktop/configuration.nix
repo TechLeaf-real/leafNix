@@ -49,14 +49,13 @@
     (writeShellScriptBin "rebuild" ''
       #! nix-shell -i bash -p bash
       set -e
-
       pushd ~/nixos
-
       if git diff --quiet '*.nix'; then
           echo "No changes detected, exiting."
           popd
           exit 0
       fi
+      clear
       git diff -U0 '*.nix'
       echo "NixOS Rebuilding..."
       sudo nixos-rebuild switch &>nixos-switch.log || (cat nixos-switch.log | grep --color error && exit 1)
