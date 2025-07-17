@@ -60,7 +60,7 @@
       git diff -U0 '*.nix'
       echo "NixOS Rebuilding..."
       set +o pipefail
-      sudo nixos-rebuild switch --show-trace 2>&1 | tee .nixos-switch.log
+      sudo nixos-rebuild switch 2>&1 | tee .nixos-switch.log
       set -o pipefail
       echo  -e "\n\033[34mNixOS rebuild completed\033[0m"
       echo -ne "\rExit in 3" && sleep 1
