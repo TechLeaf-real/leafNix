@@ -61,15 +61,13 @@
       git diff -U0 '*.nix'
       echo "NixOS Rebuilding..."
       set +o pipefail
-      sudo nixos-rebuild switch 2>&1 | tee .nixos-switch.log
+      sudo nixos-rebuild switch || exit 0
       set -o pipefail
       echo  -e "\n\033[34mNixOS rebuild completed\033[0m"
       echo -ne "\rExit in 3" && sleep 1
       echo -ne "\rExit in 2" && sleep 1
       echo -ne "\rExit in 1" && sleep 1
       echo -ne "\033[?1049l"
-      clear
-      rm .nixos-switch.log
       clear
       current=$(nixos-rebuild list-generations --json | jq '.[] | select (.current == true) | "\(.generation) \(.date) \(.nixosVersion) \(.kernelVersion)"')
       git commit -am "$current"
@@ -94,8 +92,6 @@
       echo -ne "\rExit in 2" && sleep 1
       echo -ne "\rExit in 1" && sleep 1
       echo -ne "\033[?1049l"
-      clear
-      rm .nixos-switch.log
       clear
       current=$(nixos-rebuild list-generations --json | jq '.[] | select (.current == true) | "\(.generation) \(.date) \(.nixosVersion) \(.kernelVersion)"')
       git commit -am "$current"

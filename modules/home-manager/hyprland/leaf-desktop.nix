@@ -167,7 +167,6 @@ in
     wayland.windowManager.hyprland = {
       enable = true;
       plugins = with inputs; [
-        hyprland-plugins.packages.${pkgs.system}.hyprexpo
         hypr-dynamic-cursors.packages.${pkgs.system}.hypr-dynamic-cursors
       ];
       settings = {
@@ -264,7 +263,6 @@ in
           "$mod1, P, fullscreen"
           "$mod1 SHIFT, S, exec, hyprshot -m region"
           "$mod1, S, exec, hyprshot -m window"
-          "$mod1, Z, hyprexpo:expo, toggle"
           "$mod1, GRAVE, exec, rofi -show drun"
           "$mod1, HOME, exec, rofi-rbw"
           "$mod1, RIGHT, swapwindow, r"
