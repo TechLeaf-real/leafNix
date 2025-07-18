@@ -48,7 +48,6 @@
     tree
     alejandra
     comma
-    thunderbird
     (writeShellScriptBin "rebuild" ''
       #! nix-shell -i bash -p bash
       set -e
@@ -112,6 +111,11 @@
   services.tailscale = {
     enable = true;
     openFirewall = true;
+  };
+
+  programs.thunderbird = {
+    enable = true;
+    
   };
 
   # services.minecraft-server = {
