@@ -7,7 +7,7 @@
       code = lib.mkEnableOption "code";
       dcim = lib.mkEnableOption "dcim";
       emulation = lib.mkEnableOption "emulation";
-      nixos = lib.mkEnableOption "nixos";
+      ssh = lib.mkEnableOption "ssh";
       obsidian = lib.mkEnableOption "obsidian";
       pictures = lib.mkEnableOption "pictures";
       roms = lib.mkEnableOption "roms";
@@ -49,10 +49,10 @@
             devices = [ "leaf-server" ];
             id = "aqxvs-teezq";
           };
-          "Nixos" = lib.mkIf config.syncthing.nixos {
-            path = "~/nixos";
+          "ssh" = lib.mkIf config.syncthing.ssh {
+            path = "~/.ssh";
             devices = [ "leaf-server" ];
-            id = "2arqn-qx3nr";
+            id = "ssh";
           };
           "Obsidian" = lib.mkIf config.syncthing.obsidian {
             path = "~/Obsidian";

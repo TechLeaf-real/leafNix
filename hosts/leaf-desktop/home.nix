@@ -17,7 +17,7 @@
   syncthing = {
     blender = true;
     code = true;
-    nixos = false;
+    ssh = true;
     obsidian = true;
     pictures = true;
     soundboard = true;

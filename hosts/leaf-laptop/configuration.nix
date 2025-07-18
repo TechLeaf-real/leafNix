@@ -24,12 +24,12 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   environment.systemPackages = with pkgs; [
-            floorp
-            obsidian
-            git
-            nixos-generators
-            fastfetch
-        ];
+    floorp
+    obsidian
+    git
+    nixos-generators
+    fastfetch
+  ];
 
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
