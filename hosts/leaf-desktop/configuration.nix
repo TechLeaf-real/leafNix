@@ -44,7 +44,6 @@
     corectrl
     godot
     blender-hip
-    krita
     jq
     tree
     alejandra
