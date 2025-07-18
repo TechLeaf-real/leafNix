@@ -8,17 +8,13 @@
           layer = "top";
           position = "top";
           height = 44;
-          modules-left = [ "custom/power" "clock" ];
-          modules-center = [ "custom/icon" ];
+          modules-left = [ "custom/power" ];
+          modules-center = [ "clock" ];
           modules-right = [ "tray" "custom/bitwarden" "bluetooth" "network" "wireplumber"];
 
           "custom/bitwarden" = {
             format = "";
             on-click = "rofi-rbw";
-          };
-
-          "custom/icon" = {
-            format = "/";
           };
 
           "clock" = {
@@ -29,6 +25,7 @@
           "custom/power" = {
             format = "󰐥";
             on-click = "rofi -show power-menu -modi power-menu:rofi-power-menu";
+            # tooltip = false;
           };
 
           "bluetooth" = {
@@ -114,13 +111,6 @@
           padding: 0 10px;
           background-color: #11111b;
           color: white;
-        }
-
-        #custom-icon {
-          padding: 0 10px;
-          font-size: 25px;
-          background-color: transparent;
-          color: #f9e2af;
         }
 
         #custom-power {
