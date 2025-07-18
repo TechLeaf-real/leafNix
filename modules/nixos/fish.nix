@@ -18,6 +18,12 @@
         presenterm
         fd
         sl
+        cmatrix
+        cowsay
+        fortune
+        wtf
+        pipes
+        cbonsai
         ripgrep
         uutils-coreutils-noprefix
         nix-your-shell
