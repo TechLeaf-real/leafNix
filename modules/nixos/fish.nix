@@ -24,6 +24,7 @@
         wtf
         pipes
         cbonsai
+        asciiquarium
         ripgrep
         uutils-coreutils-noprefix
         nix-your-shell
