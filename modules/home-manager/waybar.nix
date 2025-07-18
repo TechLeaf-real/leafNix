@@ -6,6 +6,7 @@
       settings = {
         mainBar = {
           layer = "top";
+            output = [ "DP-3" ];
           position = "top";
           height = 44;
           modules-left = [ "custom/power" ];
