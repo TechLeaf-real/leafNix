@@ -9,7 +9,21 @@
       withUWSM = true;
       xwayland.enable = true;
     };
-    services.displayManager.gdm.enable = true;
+    
+    
+    # services.displayManager.gdm.enable = true;
+
+    services.greetd = {
+      enable = true;
+      settings = {
+        default_session = {
+          command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd hyprland";
+          user = "techleaf";
+        };
+      };
+    };
+    
+    
     fonts.packages = builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
 
     services.dbus.packages = [ pkgs.gcr ];
