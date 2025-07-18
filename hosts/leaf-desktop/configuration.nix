@@ -85,7 +85,7 @@
       nix flake update
       echo "NixOS Rebuilding..."
       set +o pipefail
-      sudo nixos-rebuild switch 2>&1 | tee .nixos-switch.log
+      sudo nixos-rebuild switch || exit 0
       set -o pipefail
       echo  -e "\n\033[34mNixOS rebuild completed\033[0m"
       echo -ne "\rExit in 3" && sleep 1
