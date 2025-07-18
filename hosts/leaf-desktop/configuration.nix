@@ -59,9 +59,8 @@
       fi
       clear
       git diff -U0 '*.nix'
-      echo "NixOS Rebuilding..."
       set +o pipefail
-      sudo nixos-rebuild switch || exit 0
+      nh os switch ~/nixos || exit 0
       set -o pipefail
       echo  -e "\n\033[34mNixOS rebuild completed\033[0m"
       echo -ne "\rExit in 1" && sleep 1
@@ -80,9 +79,8 @@
       clear
       echo "Updating Flake..."
       nix flake update
-      echo "NixOS Rebuilding..."
       set +o pipefail
-      sudo nixos-rebuild switch || exit 0
+      nh os switch ~/nixos || exit 0
       set -o pipefail
       echo  -e "\n\033[34mNixOS rebuild completed\033[0m"
       echo -ne "\rExit in 1" && sleep 1
@@ -131,6 +129,13 @@
     ];
   };
 
+  programs.nh = {
+    enable = true;
+    clean.enable = true;
+    clean.extraArgs = "--keep 3";
+    flake = "~/nixos";
+  };
+
   fileSystems."/home/techleaf/Drive" = {
     device = "dev/disk/by-uuid/2acb7912-13f1-4a4d-bb04-123a26ba088c";
     fsType = "btrfs";
@@ -139,9 +144,6 @@
   system.autoUpgrade.enable = true;
   system.autoUpgrade.dates = "daily";
 
-  nix.gc.automatic = true;
-  nix.gc.dates = "daily";
-  nix.gc.options = "--delete-older-than 10d";
   nix.settings.auto-optimise-store = true;
 
   boot.loader.systemd-boot.enable = true;
