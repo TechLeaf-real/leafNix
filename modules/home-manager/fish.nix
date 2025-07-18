@@ -31,7 +31,8 @@
         programs.bat = {
             enable = true;
             config = {
-                theme = "catppuccin-mocha";
+                theme = "mocha.tmTheme";
+                style = "numbers,changes,header";
             };
             themes = {
                 catppuccin-mocha = {
