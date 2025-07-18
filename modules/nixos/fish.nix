@@ -24,7 +24,6 @@
         wtf
         pipes
         cbonsai
-        neovim
         ripgrep
         uutils-coreutils-noprefix
         nix-your-shell
