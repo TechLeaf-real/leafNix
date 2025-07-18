@@ -38,6 +38,7 @@
     decibels
     gucharmap
     miniupnpc
+    papers
     scarab
     warp
     timg
