@@ -15,6 +15,7 @@
           "custom/bitwarden" = {
             format = "";
             on-click = "rofi-rbw";
+            tooltip = false;
           };
 
           "clock" = {
