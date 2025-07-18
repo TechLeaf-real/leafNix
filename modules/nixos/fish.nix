@@ -17,6 +17,7 @@
         wiki-tui
         presenterm
         fd
+        sl
         ripgrep
         uutils-coreutils-noprefix
         nix-your-shell
