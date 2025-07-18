@@ -27,6 +27,14 @@
 
   xdg.userDirs.download = "${config.home.homeDirectory}/Downloads";
 
+  programs.keychain = {
+    enable = true;
+    enableFishIntegration = true;
+    keys = [
+      "~/.ssh/leaf-desktop"
+    ];
+  };
+
 
   # hyprland.terminal = "alacritty";
 
