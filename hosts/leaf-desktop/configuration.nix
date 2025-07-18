@@ -52,7 +52,7 @@
     (writeShellScriptBin "rebuild" ''
       #! nix-shell -i bash -p bash
       set -e
-      pushd ~/nixos
+      pushd ~/leafNix
       clear
       if git diff --quiet '*.nix'; then
           echo "\nNo changes detected, exiting."
@@ -62,7 +62,7 @@
       clear
       git diff -U0 '*.nix'
       set +o pipefail
-      nh os switch ~/nixos || exit 0
+      nh os switch ~/leafNix || exit 0
       set -o pipefail
       echo  -e "\n\033[34mNixOS rebuild completed\033[0m"
       echo -ne "\rExit in 1" && sleep 1
@@ -77,12 +77,12 @@
     (writeShellScriptBin "update" ''
       #! nix-shell -i bash -p bash
       set -e
-      pushd ~/nixos
+      pushd ~/leafNix
       clear
       echo "Updating Flake..."
       nix flake update
       set +o pipefail
-      nh os switch ~/nixos || exit 0
+      nh os switch ~/leafNix || exit 0
       set -o pipefail
       echo  -e "\n\033[34mNixOS rebuild completed\033[0m"
       echo -ne "\rExit in 1" && sleep 1
@@ -141,7 +141,7 @@
     enable = true;
     clean.enable = true;
     clean.extraArgs = "--keep 3";
-    flake = "~/nixos";
+    flake = "~/leafNix";
   };
 
   fileSystems."/home/techleaf/Drive" = {
