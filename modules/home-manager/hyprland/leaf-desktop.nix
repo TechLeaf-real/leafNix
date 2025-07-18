@@ -37,6 +37,7 @@ in
     ../rofi.nix
     ../kitty.nix
     ../waybar.nix
+    # ../eww.nix
   ];
 
   config = {
