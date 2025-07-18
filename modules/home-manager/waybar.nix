@@ -25,7 +25,7 @@
           "custom/power" = {
             format = "󰐥";
             on-click = "rofi -show power-menu -modi power-menu:rofi-power-menu";
-            # tooltip = false;
+            tooltip = false;
           };
 
           "bluetooth" = {
