@@ -57,7 +57,6 @@ in
     ];
 
     home.sessionVariables = {
-      HYPRSHOT_DIR = "~/Pictures/Screenshots";
     };
 
     gtk = {

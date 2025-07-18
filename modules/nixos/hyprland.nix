@@ -14,6 +14,10 @@
 
     services.dbus.packages = [ pkgs.gcr ];
 
+    environment.sessionVariables = {
+      HYPRSHOT_DIR = "~/Pictures/Screenshots";
+    };
+
     environment.systemPackages = (with pkgs; [
       rofi-bluetooth
       rofi-systemd
