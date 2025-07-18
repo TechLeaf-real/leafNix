@@ -46,6 +46,7 @@
     blender-hip
     krita
     jq
+    tree
     (writeShellScriptBin "rebuild" ''
       #! nix-shell -i bash -p bash
       set -e
