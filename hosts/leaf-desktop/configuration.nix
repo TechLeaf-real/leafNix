@@ -48,6 +48,7 @@
     jq
     tree
     alejandra
+    comma
     (writeShellScriptBin "rebuild" ''
       #! nix-shell -i bash -p bash
       set -e
