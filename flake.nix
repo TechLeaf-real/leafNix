@@ -16,6 +16,8 @@
       inputs.hyprland.follows = "hyprland";
     };
 
+    nix-alien.url = "github:thiagokokada/nix-alien";
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
