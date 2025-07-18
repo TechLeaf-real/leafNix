@@ -10,9 +10,6 @@
       xwayland.enable = true;
     };
     
-    
-    # services.displayManager.gdm.enable = true;
-
     services.greetd = {
       enable = true;
       settings = {
