@@ -18,6 +18,11 @@
 
     nix-alien.url = "github:thiagokokada/nix-alien";
 
+    stylix = {
+      url = "github:danth/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -47,6 +52,7 @@
         modules = [
           ./hosts/leaf-laptop/configuration.nix
           inputs.home-manager.nixosModules.default
+          inputs.stylix.nixosModules.stylix
         ];
       };
 
@@ -64,6 +70,7 @@
         modules = [
           ./hosts/leaf-desktop/configuration.nix
           inputs.home-manager.nixosModules.default
+          inputs.stylix.nixosModules.stylix
         ];        
       };
     };
