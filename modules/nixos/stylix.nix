@@ -4,7 +4,6 @@
   stylix = {
     enable = true;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
-    image = ~/Pictures/Wallpapers/catppuccin-wallpapers-main/os/nix-black-4k.png;
     polarity = "dark";
     fonts = {
       serif = {

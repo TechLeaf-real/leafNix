@@ -8,7 +8,7 @@
       rofi-games
       rofi-file-browser
     ]; };
-    theme = "custom";
+    # theme = "custom";
     extraConfig = {
       modi = "drun,games,calc,file-browser-extended,bluetooth:rofi-bluetooth,power:rofi-power-menu,network:rofi-network-manager";
       show-icons = true;

@@ -17,6 +17,7 @@
       ../../modules/nixos/fish.nix
       ../../modules/nixos/grub.nix
       # ../../modules/nixos/leaf-server-smb.nix
+      ../../modules/nixos/stylix.nix
     ];
 
   graphics.gpuBrand = "amd";
