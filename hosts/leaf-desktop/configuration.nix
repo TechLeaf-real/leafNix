@@ -49,8 +49,7 @@
     tree
     alejandra
     comma
-    gnupg
-    pinentry-tty
+    age
     pridefetch
     (writeShellScriptBin "rebuild" ''
       #! nix-shell -i bash -p bash
