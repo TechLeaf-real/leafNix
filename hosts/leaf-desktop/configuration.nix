@@ -49,6 +49,7 @@
     tree
     alejandra
     comma
+    gnupg1
     pridefetch
     (writeShellScriptBin "rebuild" ''
       #! nix-shell -i bash -p bash
