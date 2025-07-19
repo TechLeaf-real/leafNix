@@ -60,32 +60,6 @@ in
     home.sessionVariables = {
     };
 
-    # gtk = {
-    #   enable = true;
-    #   theme = {
-    #     name = "catppuccin-mocha-yellow-standard";
-    #     package = pkgs.catppuccin-gtk.override {
-    #       accents = [ "yellow" ];
-    #       size = "standard";
-    #       variant = "mocha";
-    #     };
-    #   };
-    #   iconTheme = {
-    #     name = "Papirus-Dark";
-    #     package = pkgs.catppuccin-papirus-folders.override {
-    #       flavor = "mocha";
-    #       accent = "yellow";
-    #     };
-    #   };
-    #   cursorTheme = {
-    #     name = "Catppuccin-Mocha-Dark-Cursors";
-    #     package = pkgs.catppuccin-cursors.mochaYellow;
-    #   };
-    #   gtk3 = {
-    #     extraConfig.gtk-application-prefer-dark-theme = true;
-    #   };
-    # };
-
     home.pointerCursor = {
       gtk.enable = true;
       name = "Catppuccin-Mocha-Dark-Cursors";
@@ -93,33 +67,10 @@ in
       size = 16;
     };
 
-    # dconf.settings = {
-    #   "org/gnome/desktop/interface" = {
-    #     gtk-theme = "catppuccin-mocha-yellow-standard";
-    #     color-scheme = "prefer-dark";
-    #   };
-
-    #   "org/gnome/shell/extensions/user-theme" = {
-    #     name = "catppuccin-mocha-yellow-standard";
-    #   };
-    # };
-
-    # qt = {
-    #   enable = true;
-    #   platformTheme.name = "qtct";
-    #   style.name = "kvantum";
-    # };
-
     home.sessionVariables = {
       QT_AUTO_SCREEN_SCALE_FACTOR = 0;
       QT_SCALE_FACTOR = 1;
     };
-
-    # xdg.configFile = {
-    #   "Kvantum/kvantum.kvconfig".source = (pkgs.formats.ini { }).generate "kvantum.kvconfig" {
-    #     General.theme = "catppuccin-mocha-yellow";
-    #   };
-    # };
 
     services.playerctld.enable = true;
 
@@ -136,10 +87,6 @@ in
     services.mako = {
       enable = true;
       settings = {
-        # background-color = "#1e1e2e";
-        # text-color = "#cdd6f4";
-        # border-color = "#f9e2af";
-        # progress-color = "#313244";
         border-radius = 10;
         default-timeout = 10;
       };
@@ -239,7 +186,6 @@ in
 
         general = {
           "border_size" = 3;
-          # "col.active_border" = "rgba(f9e2afff)";
         };
 
         input = {
