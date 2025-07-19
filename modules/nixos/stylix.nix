@@ -7,13 +7,13 @@
     polarity = "dark";
     fonts = {
       serif = {
-        package = pkgs.dejavu_fonts;
-        name = "Dejavu Serif";
+        package = pkgs.cozette;
+        name = "Cozette";
       };
 
       sansSerif = {
-        package = pkgs.dejavu_fonts;
-        name = "Dejavu Sans";
+        package = pkgs.cozette;
+        name = "Cozette";
       };
 
       monospace = {
@@ -22,8 +22,8 @@
       };
 
       emoji = {
-        package = pkgs.noto-fonts-emoji;
-        name = "Noto Color Emoji";
+        package = pkgs.cozette;
+        name = "Cozette";
       };
     };
   };
