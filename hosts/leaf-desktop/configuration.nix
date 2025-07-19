@@ -26,7 +26,6 @@
 
   environment.systemPackages = (with pkgs; [
     obsidian
-    ghostty
     firefox
     btop-rocm
     vscode

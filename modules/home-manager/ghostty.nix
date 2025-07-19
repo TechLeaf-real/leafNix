@@ -5,7 +5,7 @@
     enable = true;
     enableFishIntegration = true;
     settings = {
-      font-family = "Cozette"
+      font-family = "Cozette";
     };
   };
 }
