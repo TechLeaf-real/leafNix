@@ -29,6 +29,7 @@
     firefox
     btop-rocm
     vscode
+    contour
     legcord
     fastfetch
     btop
