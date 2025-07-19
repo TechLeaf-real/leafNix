@@ -35,7 +35,7 @@ in
 
   imports = [
     ../rofi.nix
-    ../kitty.nix
+    # ../kitty.nix
     ../waybar.nix
     # ../eww.nix
   ];
