@@ -50,6 +50,7 @@
     alejandra
     comma
     gnupg1
+    pinentry-rofi
     pridefetch
     (writeShellScriptBin "rebuild" ''
       #! nix-shell -i bash -p bash
