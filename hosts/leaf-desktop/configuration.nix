@@ -15,7 +15,6 @@
       # ../../modules/nixos/power_management.nix
       ../../modules/nixos/graphics.nix
       ../../modules/nixos/fish.nix
-      ../../modules/nixos/grub.nix
       # ../../modules/nixos/leaf-server-smb.nix
       ../../modules/nixos/stylix.nix
     ];
