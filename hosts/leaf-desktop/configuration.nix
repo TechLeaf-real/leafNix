@@ -49,6 +49,7 @@
     tree
     alejandra
     comma
+    pridefetch
     (writeShellScriptBin "rebuild" ''
       #! nix-shell -i bash -p bash
       set -e
