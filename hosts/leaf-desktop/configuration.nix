@@ -17,12 +17,11 @@
       ../../modules/nixos/fish.nix
       # ../../modules/nixos/leaf-server-smb.nix
       ../../modules/nixos/stylix.nix
+      ../../modules/nixos/kernel.nix
     ];
 
   graphics.gpuBrand = "amd";
   graphics.enableOffload = false;
-
-  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   environment.systemPackages = (with pkgs; [
     obsidian
