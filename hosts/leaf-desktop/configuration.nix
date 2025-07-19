@@ -26,10 +26,10 @@
 
   environment.systemPackages = (with pkgs; [
     obsidian
+    ghostty
     firefox
     btop-rocm
     vscode
-    ghostty
     legcord
     fastfetch
     btop

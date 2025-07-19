@@ -36,7 +36,7 @@
   };
 
 
-  # hyprland.terminal = "alacritty";
+  hyprland.terminal = "ghostty";
 
   home.packages = with pkgs; [
 
