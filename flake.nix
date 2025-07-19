@@ -18,11 +18,6 @@
 
     nix-alien.url = "github:thiagokokada/nix-alien";
 
-    sops-nix = {
-      url = "github:Mic92/sops-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -52,7 +47,6 @@
         modules = [
           ./hosts/leaf-laptop/configuration.nix
           inputs.home-manager.nixosModules.default
-          inputs.sops-nix.nixosModules.sops
         ];
       };
 
@@ -70,7 +64,6 @@
         modules = [
           ./hosts/leaf-desktop/configuration.nix
           inputs.home-manager.nixosModules.default
-          inputs.sops-nix.nixosModules.sops
         ];        
       };
     };

@@ -49,8 +49,6 @@
     tree
     alejandra
     comma
-    age
-    sops
     pridefetch
     (writeShellScriptBin "rebuild" ''
       #! nix-shell -i bash -p bash
