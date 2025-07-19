@@ -49,7 +49,7 @@
     tree
     alejandra
     comma
-    gnupg1
+    gnupg
     pinentry-tty
     pridefetch
     (writeShellScriptBin "rebuild" ''
