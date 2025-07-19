@@ -60,31 +60,31 @@ in
     home.sessionVariables = {
     };
 
-    gtk = {
-      enable = true;
-      theme = {
-        name = "catppuccin-mocha-yellow-standard";
-        package = pkgs.catppuccin-gtk.override {
-          accents = [ "yellow" ];
-          size = "standard";
-          variant = "mocha";
-        };
-      };
-      iconTheme = {
-        name = "Papirus-Dark";
-        package = pkgs.catppuccin-papirus-folders.override {
-          flavor = "mocha";
-          accent = "yellow";
-        };
-      };
-      cursorTheme = {
-        name = "Catppuccin-Mocha-Dark-Cursors";
-        package = pkgs.catppuccin-cursors.mochaYellow;
-      };
-      gtk3 = {
-        extraConfig.gtk-application-prefer-dark-theme = true;
-      };
-    };
+    # gtk = {
+    #   enable = true;
+    #   theme = {
+    #     name = "catppuccin-mocha-yellow-standard";
+    #     package = pkgs.catppuccin-gtk.override {
+    #       accents = [ "yellow" ];
+    #       size = "standard";
+    #       variant = "mocha";
+    #     };
+    #   };
+    #   iconTheme = {
+    #     name = "Papirus-Dark";
+    #     package = pkgs.catppuccin-papirus-folders.override {
+    #       flavor = "mocha";
+    #       accent = "yellow";
+    #     };
+    #   };
+    #   cursorTheme = {
+    #     name = "Catppuccin-Mocha-Dark-Cursors";
+    #     package = pkgs.catppuccin-cursors.mochaYellow;
+    #   };
+    #   gtk3 = {
+    #     extraConfig.gtk-application-prefer-dark-theme = true;
+    #   };
+    # };
 
     home.pointerCursor = {
       gtk.enable = true;
