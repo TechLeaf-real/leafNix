@@ -17,8 +17,8 @@
       };
 
       monospace = {
-        package = pkgs.dejavu_fonts;
-        name = "Dejavu Sans Mono";
+        package = pkgs.cozette;
+        name = "Cozette";
       };
 
       emoji = {
