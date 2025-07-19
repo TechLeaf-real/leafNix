@@ -18,6 +18,7 @@
       # ../../modules/nixos/leaf-server-smb.nix
       ../../modules/nixos/stylix.nix
       ../../modules/nixos/kernel.nix
+      ../../modules/nixos/grub.nix
     ];
 
   graphics.gpuBrand = "amd";
@@ -159,8 +160,7 @@
   system.autoUpgrade.dates = "daily";
 
   nix.settings.auto-optimise-store = true;
-
-  boot.loader.systemd-boot.enable = true;
+  
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "leaf-desktop";
