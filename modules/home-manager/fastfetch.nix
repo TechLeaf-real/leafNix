@@ -16,25 +16,34 @@
       },
       "modules": [
         "title",
-        // "separator",
-        {
-          "type": os,
-          "key": "OS",
-          "keyColor": "blue",
-          "format": "{name} {version}"
-        },
-        {
-          "type": "kernel",
-          "key": "Kernel"
-        },
-        {
-        "type": "memory",
-        "key": "Memory",
-        "percent": {
-            "type": 3,
-            "green": 30, 
-            "yellow": 70 
-        },
+        "separator",
+        "os",
+        "host",
+        "kernel",
+        "uptime",
+        "packages",
+        "shell",
+        "display",
+        "de",
+        "wm",
+        "wmtheme",
+        "theme",
+        "icons",
+        "font",
+        "cursor",
+        "terminal",
+        "terminalfont",
+        "cpu",
+        "gpu",
+        "memory",
+        "swap",
+        "disk",
+        "localip",
+        "battery",
+        "poweradapter",
+        "locale",
+        "break",
+        "colors"
       ]
     '';
   };
