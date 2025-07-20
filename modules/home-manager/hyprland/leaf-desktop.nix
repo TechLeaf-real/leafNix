@@ -57,9 +57,6 @@ in
       swayosd
     ];
 
-    home.sessionVariables = {
-    };
-
     home.pointerCursor = {
       gtk.enable = true;
       name = "Catppuccin-Mocha-Dark-Cursors";
