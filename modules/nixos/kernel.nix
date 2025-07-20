@@ -3,9 +3,9 @@
 {
   boot = {
     kernelPackages = pkgs.linuxPackages_latest;
-    kernelParams = [
-      "quiet"
-      "vt.global_cursor_default=0"
-    ];
+    # kernelParams = [
+    #   "quiet"
+    #   "vt.global_cursor_default=0"
+    # ];
   };
 }
