@@ -28,6 +28,7 @@
         ripgrep
         uutils-coreutils-noprefix
         nix-your-shell
+        pokeget-rs
     ];
 
     programs.bash.interactiveShellInit = ''
