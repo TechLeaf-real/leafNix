@@ -166,6 +166,15 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   networking.networkmanager.enable = true;
+
+  networking.nameservers = [
+    "1.1.1.1"
+    "1.0.0.1"
+    "8.8.8.8"
+    "8.0.0.8"
+  ];
+
+  networking.networkmanager.dns = "none";
   
   time.timeZone = "Europe/London";
 
