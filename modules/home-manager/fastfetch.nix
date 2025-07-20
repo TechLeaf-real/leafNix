@@ -16,7 +16,7 @@
       },
       "modules": [
         "title",
-        "separator",
+        // "separator",
         {
           "type": os,
           "key": "OS",
