@@ -26,7 +26,7 @@
     services.dbus.packages = [ pkgs.gcr ];
 
     environment.sessionVariables = {
-      HYPRSHOT_DIR = "home/techleaf/Pictures/Screenshots";
+      HYPRSHOT_DIR = "Pictures/Screenshots";
     };
 
     environment.systemPackages = (with pkgs; [
