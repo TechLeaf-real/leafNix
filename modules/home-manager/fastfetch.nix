@@ -6,7 +6,7 @@
   ];
 
   home.file = {
-    "home/techleaf/.config/fastfetch/config.jsonc" = {
+    ".config/fastfetch/config.jsonc" = {
         text = ''
           "logo": {
             "type": "auto",
