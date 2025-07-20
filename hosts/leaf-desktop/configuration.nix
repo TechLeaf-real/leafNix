@@ -31,7 +31,6 @@
     btop-rocm
     vscode
     legcord
-    fastfetch
     btop
     nautilus
     loupe
