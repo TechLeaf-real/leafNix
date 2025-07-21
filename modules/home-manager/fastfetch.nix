@@ -9,7 +9,6 @@
         {
           "logo": {
             "type": "auto",
-            "source": "arch",
           },
           "display": {
             "brightColor": true,
