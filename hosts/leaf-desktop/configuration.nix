@@ -62,6 +62,7 @@
         clear
         alejandra *
         sudo deadnix -e
+        clear
         if git diff --quiet '*.nix'; then
             echo "\nNo changes detected, exiting."
             popd
