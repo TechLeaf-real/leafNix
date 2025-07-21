@@ -37,14 +37,12 @@
   };
 
   outputs = {
-    self,
     nixpkgs,
     stable-nixpkgs,
     pyprland,
     ...
   } @ inputs: let
     system = "x86_64-linux";
-    pkgs-stable = stable-nixpkgs.legacyPackages.${system};
   in {
     nixosConfigurations = {
       leaf-laptop = nixpkgs.lib.nixosSystem {

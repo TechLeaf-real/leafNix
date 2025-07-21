@@ -5,10 +5,6 @@
   ...
 }: let
   cfg = config.hyprland;
-  kvantumThemePackage = pkgs.catppuccin-kvantum.override {
-    accent = "yellow";
-    variant = "mocha";
-  };
 in {
   options = {
     hyprland = {
