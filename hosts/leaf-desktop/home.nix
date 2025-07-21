@@ -42,7 +42,7 @@
 
   programs.vscode = {
     enable = true;
-    package = pkgs.vscodium;
+    # package = pkgs.vscodium;
     profiles.default = {
       userSettings = {
         "files.autoSave" = "off";
@@ -51,7 +51,7 @@
 
       };
       keybindings = [
-        
+
       ];
       globalSnippets = {
 
