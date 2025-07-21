@@ -1,6 +1,9 @@
-{ lib, config, pkgs, ...}:
-
 {
+  lib,
+  config,
+  pkgs,
+  ...
+}: {
   boot = {
     kernelPackages = pkgs.linuxPackages_latest;
     # kernelParams = [

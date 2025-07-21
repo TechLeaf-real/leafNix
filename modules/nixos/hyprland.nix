@@ -1,6 +1,11 @@
-{ lib, inputs, config, pkgs, pyprland, ...}:
-
 {
+  lib,
+  inputs,
+  config,
+  pkgs,
+  pyprland,
+  ...
+}: {
   config = {
     programs.hyprland = {
       enable = true;
@@ -9,7 +14,7 @@
       withUWSM = true;
       xwayland.enable = true;
     };
-    
+
     services.greetd = {
       enable = true;
       settings = {
@@ -19,33 +24,30 @@
         };
       };
     };
-    
-    
+
     fonts.packages = builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
 
-    services.dbus.packages = [ pkgs.gcr ];
+    services.dbus.packages = [pkgs.gcr];
 
     environment.sessionVariables = {
       HYPRSHOT_DIR = "Pictures/Screenshots";
     };
 
-    environment.systemPackages = (with pkgs; [
-      rofi-bluetooth
-      rofi-systemd
-      rofi-power-menu
-      rofi-network-manager
-      rofi-obsidian
-      rofi-rbw
-      rofi-pulse-select
-      wtype
-      libqalculate
-      hyprnome
-    ])
-    
-    ++
-    
-    (with pyprland.packages.${pkgs.system}; [
-      pyprland
-    ]);
+    environment.systemPackages =
+      (with pkgs; [
+        rofi-bluetooth
+        rofi-systemd
+        rofi-power-menu
+        rofi-network-manager
+        rofi-obsidian
+        rofi-rbw
+        rofi-pulse-select
+        wtype
+        libqalculate
+        hyprnome
+      ])
+      ++ (with pyprland.packages.${pkgs.system}; [
+        pyprland
+      ]);
   };
 }

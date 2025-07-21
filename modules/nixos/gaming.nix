@@ -1,15 +1,19 @@
-{ lib, inputs, config, pkgs, pkgs-stable, ...}:
-
 {
+  lib,
+  inputs,
+  config,
+  pkgs,
+  pkgs-stable,
+  ...
+}: {
   options = {
-
   };
 
   config = {
     programs.gamemode.enable = true;
 
     # nixpkgs.overlays = [
-      # inputs.millennium.overlays.default
+    # inputs.millennium.overlays.default
     # ];
 
     programs.steam = {
@@ -19,15 +23,13 @@
       dedicatedServer.openFirewall = true;
     };
 
-    environment.systemPackages = (with pkgs; [
-      heroic
-      lutris
-    ])
-    
-    ++
-    
-    (with pkgs-stable; [
-      prismlauncher
-    ]);
+    environment.systemPackages =
+      (with pkgs; [
+        heroic
+        lutris
+      ])
+      ++ (with pkgs-stable; [
+        prismlauncher
+      ]);
   };
 }

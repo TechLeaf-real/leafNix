@@ -31,19 +31,23 @@
     # millennium.url = "git+https://github.com/SteamClientHomebrew/Millennium";
   };
 
-  outputs = { self, nixpkgs, stable-nixpkgs, pyprland, ... }@inputs:
-  let 
+  outputs = {
+    self,
+    nixpkgs,
+    stable-nixpkgs,
+    pyprland,
+    ...
+  } @ inputs: let
     system = "x86_64-linux";
     pkgs-stable = stable-nixpkgs.legacyPackages.${system};
-  in 
-  {
+  in {
     nixosConfigurations = {
       leaf-laptop = nixpkgs.lib.nixosSystem {
         specialArgs = {
           inherit inputs;
           inherit system;
           inherit pyprland;
-          
+
           pkgs-stable = import stable-nixpkgs {
             inherit system;
             config.allowUnfree = true;
@@ -61,7 +65,7 @@
           inherit inputs;
           inherit system;
           inherit pyprland;
-          
+
           pkgs-stable = import stable-nixpkgs {
             inherit system;
             config.allowUnfree = true;
@@ -71,7 +75,7 @@
           ./hosts/leaf-desktop/configuration.nix
           inputs.home-manager.nixosModules.default
           inputs.stylix.nixosModules.stylix
-        ];        
+        ];
       };
     };
   };

@@ -1,7 +1,10 @@
-{ lib, config, pkgs, ... }:
-
 {
-    services.syncthing = {
-        openDefaultPorts = true;
-    };
+  lib,
+  config,
+  pkgs,
+  ...
+}: {
+  services.syncthing = {
+    openDefaultPorts = true;
+  };
 }

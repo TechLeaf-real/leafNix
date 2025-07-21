@@ -1,13 +1,17 @@
-{ inputs, lib, config, pkgs, pkgs-stable, ...}:
-
-let
+{
+  inputs,
+  lib,
+  config,
+  pkgs,
+  pkgs-stable,
+  ...
+}: let
   cfg = config.hyprland;
   kvantumThemePackage = pkgs.catppuccin-kvantum.override {
     accent = "yellow";
     variant = "mocha";
   };
-in
-{
+in {
   options = {
     hyprland = {
       primaryModifier = lib.mkOption {
@@ -41,7 +45,6 @@ in
   ];
 
   config = {
-
     home.packages = with pkgs; [
       (catppuccin-kvantum.override {
         accent = "yellow";
@@ -100,7 +103,7 @@ in
         splash = false;
         splash_offset = 2.0;
 
-        preload = [ "~/Pictures/Wallpapers/catppuccin-wallpapers-main/os/nix-black-4k.png" ];
+        preload = ["~/Pictures/Wallpapers/catppuccin-wallpapers-main/os/nix-black-4k.png"];
 
         wallpaper = [
           ", ~/Pictures/Wallpapers/catppuccin-wallpapers-main/os/nix-black-4k.png"
@@ -116,7 +119,7 @@ in
       ];
       settings = {
         monitor = [
-	        "DP-1, 1920x1080@100, 0x0, 1"
+          "DP-1, 1920x1080@100, 0x0, 1"
           "DP-2, 1920x1080@100, 1920x0, 1"
           "DP-3, 1920x1080@144, 1920x1080, 1"
           "HDMI-A-1, 1920x1080@75, 0x1080, 1"
@@ -225,7 +228,7 @@ in
           ", XF86AudioStop, exec, playerctl stop"
           ", XF86AudioMute, exec, swayosd-client --output-volume mute-toggle"
         ];
-        
+
         bindm = [
           "$mod1, mouse:272, movewindow"
         ];

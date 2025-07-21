@@ -1,8 +1,10 @@
-{ lib, config, pkgs, ...}:
-
 {
+  lib,
+  config,
+  pkgs,
+  ...
+}: {
   options = {
-
   };
 
   config = {

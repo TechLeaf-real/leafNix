@@ -1,6 +1,9 @@
-{ inputs, config, pkgs, ... }:
-
 {
+  inputs,
+  config,
+  pkgs,
+  ...
+}: {
   imports = [
     ../../modules/home-manager/syncthing.nix
     # ../../modules/home-manager/catppuccin.nix
@@ -38,19 +41,15 @@
 
   nixpkgs.config.allowUnfree = true;
 
-
   hyprland.terminal = "ghostty";
 
   home.packages = with pkgs; [
-
   ];
 
   home.file = {
-
   };
 
   home.sessionVariables = {
-
   };
 
   programs.home-manager.enable = true;

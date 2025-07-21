@@ -1,24 +1,27 @@
-{ config, pkgs, inputs, ... }:
-
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      inputs.home-manager.nixosModules.default
-      ../../modules/nixos/hyprland.nix
-      ../../modules/nixos/syncthing.nix
-      ../../modules/nixos/gaming.nix
-      ../../modules/nixos/vr.nix
-      # ../../modules/nixos/catppuccin.nix
-      ../../modules/nixos/audio.nix
-      # ../../modules/nixos/power_management.nix
-      ../../modules/nixos/graphics.nix
-      ../../modules/nixos/fish.nix
-    ];
+  config,
+  pkgs,
+  inputs,
+  ...
+}: {
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    inputs.home-manager.nixosModules.default
+    ../../modules/nixos/hyprland.nix
+    ../../modules/nixos/syncthing.nix
+    ../../modules/nixos/gaming.nix
+    ../../modules/nixos/vr.nix
+    # ../../modules/nixos/catppuccin.nix
+    ../../modules/nixos/audio.nix
+    # ../../modules/nixos/power_management.nix
+    ../../modules/nixos/graphics.nix
+    ../../modules/nixos/fish.nix
+  ];
 
   # power.hibernate = {
-    # auto = true;
-    # delay = 1;
+  # auto = true;
+  # delay = 1;
   # };
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
@@ -47,10 +50,10 @@
 
   networking.hostName = "leaf-laptop";
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = ["nix-command" "flakes"];
 
   networking.networkmanager.enable = true;
-  
+
   time.timeZone = "Europe/London";
 
   i18n.defaultLocale = "en_GB.UTF-8";
@@ -77,12 +80,12 @@
   users.users.techleaf = {
     isNormalUser = true;
     description = "Techleaf";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = ["networkmanager" "wheel"];
     packages = with pkgs; [];
   };
 
   home-manager = {
-    extraSpecialArgs = { inherit inputs; };
+    extraSpecialArgs = {inherit inputs;};
     users = {
       "techleaf" = import ./home.nix;
     };

@@ -1,114 +1,114 @@
-{ config, pkgs, pkgs-stable, inputs, pyprland, ... }:
-
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      inputs.home-manager.nixosModules.default
-      ../../modules/nixos/hyprland.nix
-      ../../modules/nixos/syncthing.nix
-      ../../modules/nixos/gaming.nix
-      ../../modules/nixos/emulation.nix
-      ../../modules/nixos/vr.nix
-      # ../../modules/nixos/catppuccin.nix
-      ../../modules/nixos/audio.nix
-      # ../../modules/nixos/power_management.nix
-      ../../modules/nixos/graphics.nix
-      ../../modules/nixos/fish.nix
-      # ../../modules/nixos/leaf-server-smb.nix
-      ../../modules/nixos/stylix.nix
-      ../../modules/nixos/kernel.nix
-      ../../modules/nixos/grub.nix
-      ../../modules/nixos/vscodium.nix
-    ];
+  config,
+  pkgs,
+  pkgs-stable,
+  inputs,
+  pyprland,
+  ...
+}: {
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    inputs.home-manager.nixosModules.default
+    ../../modules/nixos/hyprland.nix
+    ../../modules/nixos/syncthing.nix
+    ../../modules/nixos/gaming.nix
+    ../../modules/nixos/emulation.nix
+    ../../modules/nixos/vr.nix
+    # ../../modules/nixos/catppuccin.nix
+    ../../modules/nixos/audio.nix
+    # ../../modules/nixos/power_management.nix
+    ../../modules/nixos/graphics.nix
+    ../../modules/nixos/fish.nix
+    # ../../modules/nixos/leaf-server-smb.nix
+    ../../modules/nixos/stylix.nix
+    ../../modules/nixos/kernel.nix
+    ../../modules/nixos/grub.nix
+    ../../modules/nixos/vscodium.nix
+  ];
 
   graphics.gpuBrand = "amd";
   graphics.enableOffload = false;
 
-  environment.systemPackages = (with pkgs; [
-    obsidian
-    firefox
-    ghostty
-    btop-rocm
-    legcord
-    btop
-    nautilus
-    loupe
-    gnome-text-editor
-    decibels
-    gucharmap
-    miniupnpc
-    papers
-    scarab
-    warp
-    timg
-    corectrl
-    godot
-    blender-hip
-    jq
-    tree
-    comma
-    pridefetch
-    nix-tree
-    (writeShellScriptBin "rebuild" ''
-      #! nix-shell -i bash -p bash
-      set -e
-      pushd ~/leafNix
-      clear
-      if git diff --quiet '*.nix'; then
-          echo "\nNo changes detected, exiting."
-          popd
-          exit 0
-      fi
-      clear
-      git diff -U0 '*.nix'
-      set +o pipefail
-      nh os switch ~/leafNix || exit 0
-      set -o pipefail
-      echo  -e "\n\033[34mNixOS rebuild completed\033[0m"
-      echo -ne "\rExit in 1" && sleep 1
-      echo -ne "\033[?1049l"
-      clear
-      current=$(nixos-rebuild list-generations --json | jq '.[] | select (.current == true) | "\(.generation) \(.date) \(.nixosVersion) \(.kernelVersion)"')
-      git commit -am "$current"
-      git push origin master
-      popd
-      clear
-    '')
-    (writeShellScriptBin "update" ''
-      #! nix-shell -i bash -p bash
-      set -e
-      pushd ~/leafNix
-      clear
-      echo "Updating Flake..."
-      nix flake update
-      set +o pipefail
-      nh os switch ~/leafNix || exit 0
-      set -o pipefail
-      echo  -e "\n\033[34mNixOS rebuild completed\033[0m"
-      echo -ne "\rExit in 1" && sleep 1
-      echo -ne "\033[?1049l"
-      clear
-      current=$(nixos-rebuild list-generations --json | jq '.[] | select (.current == true) | "\(.generation) \(.date) \(.nixosVersion) \(.kernelVersion)"')
-      git commit -am "$current"
-      git push origin master
-      popd
-      clear
-    '')
-  ])
-
-  ++
-
-  (with pkgs-stable; [
-    unityhub
-    # modrinth-app
-  ])
-  
-  ++
-  
-  (with inputs.nix-alien.packages.${pkgs.system}; [
-    nix-alien
-  ]);
+  environment.systemPackages =
+    (with pkgs; [
+      obsidian
+      firefox
+      ghostty
+      btop-rocm
+      legcord
+      btop
+      nautilus
+      loupe
+      gnome-text-editor
+      decibels
+      gucharmap
+      miniupnpc
+      papers
+      scarab
+      warp
+      timg
+      corectrl
+      godot
+      blender-hip
+      jq
+      tree
+      comma
+      pridefetch
+      nix-tree
+      (writeShellScriptBin "rebuild" ''
+        #! nix-shell -i bash -p bash
+        set -e
+        pushd ~/leafNix
+        clear
+        if git diff --quiet '*.nix'; then
+            echo "\nNo changes detected, exiting."
+            popd
+            exit 0
+        fi
+        clear
+        git diff -U0 '*.nix'
+        set +o pipefail
+        nh os switch ~/leafNix || exit 0
+        set -o pipefail
+        echo  -e "\n\033[34mNixOS rebuild completed\033[0m"
+        echo -ne "\rExit in 1" && sleep 1
+        echo -ne "\033[?1049l"
+        clear
+        current=$(nixos-rebuild list-generations --json | jq '.[] | select (.current == true) | "\(.generation) \(.date) \(.nixosVersion) \(.kernelVersion)"')
+        git commit -am "$current"
+        git push origin master
+        popd
+        clear
+      '')
+      (writeShellScriptBin "update" ''
+        #! nix-shell -i bash -p bash
+        set -e
+        pushd ~/leafNix
+        clear
+        echo "Updating Flake..."
+        nix flake update
+        set +o pipefail
+        nh os switch ~/leafNix || exit 0
+        set -o pipefail
+        echo  -e "\n\033[34mNixOS rebuild completed\033[0m"
+        echo -ne "\rExit in 1" && sleep 1
+        echo -ne "\033[?1049l"
+        clear
+        current=$(nixos-rebuild list-generations --json | jq '.[] | select (.current == true) | "\(.generation) \(.date) \(.nixosVersion) \(.kernelVersion)"')
+        git commit -am "$current"
+        git push origin master
+        popd
+        clear
+      '')
+    ])
+    ++ (with pkgs-stable; [
+      unityhub
+      # modrinth-app
+    ])
+    ++ (with inputs.nix-alien.packages.${pkgs.system}; [
+      nix-alien
+    ]);
 
   services.tailscale = {
     enable = true;
@@ -117,7 +117,6 @@
 
   programs.thunderbird = {
     enable = true;
-    
   };
 
   # services.minecraft-server = {
@@ -159,7 +158,7 @@
 
   networking.hostName = "leaf-desktop";
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = ["nix-command" "flakes"];
 
   networking.networkmanager.enable = true;
 
@@ -171,7 +170,7 @@
   ];
 
   networking.networkmanager.dns = "none";
-  
+
   time.timeZone = "Europe/London";
 
   i18n.defaultLocale = "en_GB.UTF-8";
@@ -198,7 +197,7 @@
   users.users.techleaf = {
     isNormalUser = true;
     description = "Techleaf";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = ["networkmanager" "wheel"];
     openssh.authorizedKeys.keyFiles = [
       "~/.ssh/leaf-desktop.pub"
     ];
@@ -218,5 +217,4 @@
   nixpkgs.config.allowUnfree = true;
 
   system.stateVersion = "25.05";
-
 }

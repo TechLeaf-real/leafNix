@@ -1,6 +1,9 @@
-{ config, pkgs, pkgs-stable, ... }:
-
 {
+  config,
+  pkgs,
+  pkgs-stable,
+  ...
+}: {
   imports = [
     ../../modules/home-manager/syncthing.nix
     ../../modules/home-manager/hyprland/leaf-laptop.nix
@@ -27,15 +30,12 @@
   # };
 
   home.packages = with pkgs; [
-
   ];
 
   home.file = {
-    
   };
 
   home.sessionVariables = {
-
   };
 
   programs.home-manager.enable = true;

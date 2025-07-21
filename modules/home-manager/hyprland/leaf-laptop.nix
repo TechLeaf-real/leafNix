@@ -1,13 +1,15 @@
-{ lib, config, pkgs, ...}:
-
-let
+{
+  lib,
+  config,
+  pkgs,
+  ...
+}: let
   cfg = config.hyprland;
   kvantumThemePackage = pkgs.catppuccin-kvantum.override {
     accent = "yellow";
     variant = "mocha";
   };
-in
-{
+in {
   options = {
     hyprland = {
       primaryModifier = lib.mkOption {
@@ -49,7 +51,7 @@ in
       theme = {
         name = "catppuccin-mocha-yellow-standard";
         package = pkgs.catppuccin-gtk.override {
-          accents = [ "yellow" ];
+          accents = ["yellow"];
           size = "standard";
           variant = "mocha";
         };
@@ -95,7 +97,7 @@ in
     };
 
     xdg.configFile = {
-      "Kvantum/kvantum.kvconfig".source = (pkgs.formats.ini { }).generate "kvantum.kvconfig" {
+      "Kvantum/kvantum.kvconfig".source = (pkgs.formats.ini {}).generate "kvantum.kvconfig" {
         General.theme = "catppuccin-mocha-yellow";
       };
     };
@@ -109,7 +111,6 @@ in
     services.mako = {
       enable = true;
       settings = {
-        
       };
     };
 
@@ -120,9 +121,9 @@ in
           layer = "top";
           position = "top";
           height = 30;
-          modules-left = [ "hyprland/workspaces" "hyprland/mode" "wlr/taskbar" ];
-          modules-center = [ "custom/icon" ];
-          modules-right = [ "tray" "wireplumber" "battery" ];
+          modules-left = ["hyprland/workspaces" "hyprland/mode" "wlr/taskbar"];
+          modules-center = ["custom/icon"];
+          modules-right = ["tray" "wireplumber" "battery"];
 
           "hyprland/workspaces" = {
             format = " ";
@@ -155,7 +156,7 @@ in
             format-muted = "󰝟 ";
             format-icons = {
               headphone = " ";
-              default = [ "󰖀 " "󰕾 " " "];
+              default = ["󰖀 " "󰕾 " " "];
             };
             on-click = "pamixer -t";
             scroll-step = 1;
@@ -270,7 +271,7 @@ in
         splash = false;
         splash_offset = 2.0;
 
-        preload = [ "~/Pictures/Wallpapers/catppuccin-wallpapers-main/os/nix-black-4k.png" ];
+        preload = ["~/Pictures/Wallpapers/catppuccin-wallpapers-main/os/nix-black-4k.png"];
 
         wallpaper = [
           ", ~/Pictures/Wallpapers/catppuccin-wallpapers-main/os/nix-black-4k.png"
