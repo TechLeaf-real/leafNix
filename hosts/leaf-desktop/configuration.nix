@@ -14,12 +14,9 @@
     ../../modules/nixos/gaming.nix
     ../../modules/nixos/emulation.nix
     ../../modules/nixos/vr.nix
-    # ../../modules/nixos/catppuccin.nix
     ../../modules/nixos/audio.nix
-    # ../../modules/nixos/power_management.nix
     ../../modules/nixos/graphics.nix
     ../../modules/nixos/fish.nix
-    # ../../modules/nixos/leaf-server-smb.nix
     ../../modules/nixos/stylix.nix
     ../../modules/nixos/kernel.nix
     ../../modules/nixos/grub.nix
