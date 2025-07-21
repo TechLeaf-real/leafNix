@@ -120,8 +120,9 @@
   };
 
   services.minecraft-server = {
-    eula = true;
     enable = true;
+    package = pkgs.papermc;
+    eula = true;
     openFirewall = true;
   };
 
