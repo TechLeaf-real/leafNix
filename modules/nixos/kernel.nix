@@ -3,7 +3,7 @@
   ...
 }: {
   boot = {
-    kernelPackages = pkgs.linuxPackages_zen;
+    kernelPackages = pkgs.linuxPackages_latest;
     # kernelParams = [
     #   "quiet"
     #   "vt.global_cursor_default=0"
