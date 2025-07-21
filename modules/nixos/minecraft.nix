@@ -1,13 +1,11 @@
-{...}: {
+{pkgs, ...}: {
   services.minecraft-server = {
     enable = true;
+    package = pkgs.papermc;
     eula = true;
-    declarative = true;
-    serverProperties = {
-      server-port = 25565;
-      gamemode = "survival";
-      motd = "NixOS!";
-      max-players = 1;
+    openFirewall = true;
+    whitelist = {
+      TechLeaf = "49448e8d-f881-4233-b587-be44990288b3";
     };
   };
 }
