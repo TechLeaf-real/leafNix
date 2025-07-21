@@ -108,6 +108,12 @@
     ])
     ++ (with inputs.nix-alien.packages.${pkgs.system}; [
       nix-alien
+    ])
+    
+    ++
+    
+    (with inputs.deadnix.packages.${pkgs.system}; [
+      deadnix
     ]);
 
   services.tailscale = {
