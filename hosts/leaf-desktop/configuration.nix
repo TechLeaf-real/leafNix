@@ -29,7 +29,6 @@
     firefox
     ghostty
     btop-rocm
-    vscodium-fhs
     legcord
     btop
     nautilus
