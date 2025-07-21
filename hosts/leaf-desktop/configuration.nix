@@ -47,7 +47,6 @@
     blender-hip
     jq
     tree
-    alejandra
     comma
     pridefetch
     nix-tree
