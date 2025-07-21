@@ -27,6 +27,7 @@
     cbonsai
     asciiquarium
     ripgrep
+    astroterm
     uutils-coreutils-noprefix
     nix-your-shell
     pokeget-rs
