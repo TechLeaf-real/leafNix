@@ -24,6 +24,7 @@
     ../../modules/nixos/kernel.nix
     ../../modules/nixos/grub.nix
     ../../modules/nixos/vscodium.nix
+    ../../modules/nixos/network.nix
   ];
 
   graphics.gpuBrand = "amd";
@@ -60,7 +61,6 @@
         set -e
         pushd ~/leafNix
         clear
-        alejandra *
         sudo deadnix -e
         clear
         if git diff --quiet '*.nix'; then
@@ -76,6 +76,8 @@
         echo  -e "\n\033[34mNixOS rebuild completed\033[0m"
         echo -ne "\rExit in 1" && sleep 1
         echo -ne "\033[?1049l"
+        clear
+        alejandra *
         clear
         current=$(nixos-rebuild list-generations --json | jq '.[] | select (.current == true) | "\(.generation) \(.date) \(.nixosVersion) \(.kernelVersion)"')
         git commit -am "$current"
@@ -124,6 +126,8 @@
     enable = true;
   };
 
+  # network.hostname = "leaf-desktop";
+
   programs.ssh.startAgent = true;
 
   hardware.bluetooth.enable = true;
@@ -152,17 +156,6 @@
   networking.hostName = "leaf-desktop";
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
-
-  networking.networkmanager.enable = true;
-
-  networking.nameservers = [
-    "1.1.1.1"
-    "1.0.0.1"
-    "8.8.8.8"
-    "8.0.0.8"
-  ];
-
-  networking.networkmanager.dns = "none";
 
   time.timeZone = "Europe/London";
 
