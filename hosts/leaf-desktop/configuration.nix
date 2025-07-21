@@ -23,7 +23,7 @@
     ../../modules/nixos/stylix.nix
     ../../modules/nixos/kernel.nix
     ../../modules/nixos/grub.nix
-    # ../../modules/nixos/vscodium.nix
+    ../../modules/nixos/vscodium.nix
   ];
 
   graphics.gpuBrand = "amd";
@@ -31,7 +31,6 @@
 
   environment.systemPackages =
     (with pkgs; [
-      vscodium
       obsidian
       firefox
       ghostty
