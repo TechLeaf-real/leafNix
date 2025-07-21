@@ -60,14 +60,13 @@
         set -e
         pushd ~/leafNix
         clear
+        alejandra *
+        sudo deadnix -e
         if git diff --quiet '*.nix'; then
             echo "\nNo changes detected, exiting."
             popd
             exit 0
         fi
-        clear
-        alejandra *
-        sudo deadnix -e
         clear
         git diff -U0 '*.nix'
         set +o pipefail
