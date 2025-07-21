@@ -54,7 +54,6 @@
       jq
       tree
       comma
-      pridefetch
       nix-tree
       libreoffice-qt6-fresh
       (writeShellScriptBin "rebuild" ''

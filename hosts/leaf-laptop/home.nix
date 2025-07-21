@@ -4,6 +4,7 @@
     ../../modules/home-manager/hyprland/leaf-laptop.nix
     # ../../modules/home-manager/catppuccin.nix
     ../../modules/home-manager/fish.nix
+    ../../modules/home-manager/fastfetch.nix
   ];
 
   home.username = "techleaf";
