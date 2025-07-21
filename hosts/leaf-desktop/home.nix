@@ -8,7 +8,6 @@
     ../../modules/home-manager/fish.nix
     ../../modules/home-manager/git.nix
     ../../modules/home-manager/fastfetch.nix
-    ../../modules/home-manager/vscode.nix
   ];
 
   home.username = "techleaf";
