@@ -23,7 +23,6 @@
     ../../modules/nixos/vscodium.nix
     ../../modules/nixos/network.nix
     ../../modules/nixos/tailscale.nix
-    ../../modules/nixos/minecraft.nix
   ];
 
   graphics = {
@@ -153,6 +152,10 @@
   nix.settings.auto-optimise-store = true;
 
   networking.hostName = "leaf-desktop";
+
+  programs.obs-studio = {
+    enable = true;
+  };
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
