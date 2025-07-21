@@ -2,7 +2,9 @@
   lib,
   config,
   ...
-}: {
+}: let
+  cfg = config.syncthing;
+in {
   options = {
     syncthing = {
       blender = lib.mkEnableOption "blender";
@@ -31,52 +33,52 @@
           };
         };
         folders = {
-          "Blender" = lib.mkIf config.syncthing.blender {
+          "Blender" = lib.mkIf cfg.blender {
             path = "~/Blender";
             devices = ["leaf-server"];
             id = "lg5rx-zx62v";
           };
-          "Code" = lib.mkIf config.syncthing.code {
+          "Code" = lib.mkIf cfg.code {
             path = "~/Code";
             devices = ["leaf-server"];
             id = "wjun3-prxf2";
           };
-          "DCIM" = lib.mkIf config.syncthing.dcim {
+          "DCIM" = lib.mkIf cfg.dcim {
             path = "~/DCIM";
             devices = ["leaf-server"];
             id = "nookf-u7zge";
           };
-          "Emulation" = lib.mkIf config.syncthing.emulation {
+          "Emulation" = lib.mkIf cfg.emulation {
             path = "~/Emulation";
             devices = ["leaf-server"];
             id = "aqxvs-teezq";
           };
-          "ssh" = lib.mkIf config.syncthing.ssh {
+          "ssh" = lib.mkIf cfg.ssh {
             path = "~/.ssh";
             devices = ["leaf-server"];
             id = "ssh";
           };
-          "Obsidian" = lib.mkIf config.syncthing.obsidian {
+          "Obsidian" = lib.mkIf cfg.obsidian {
             path = "~/Obsidian";
             devices = ["leaf-server"];
             id = "vsujy-eplhq";
           };
-          "Pictures" = lib.mkIf config.syncthing.pictures {
+          "Pictures" = lib.mkIf cfg.pictures {
             path = "~/Pictures";
             devices = ["leaf-server"];
             id = "al5vz-yucjc";
           };
-          "Roms" = lib.mkIf config.syncthing.roms {
+          "Roms" = lib.mkIf cfg.roms {
             path = "~/Roms";
             devices = ["leaf-server"];
             id = "e2ede-ugswh";
           };
-          "Soundboard" = lib.mkIf config.syncthing.soundboard {
+          "Soundboard" = lib.mkIf cfg.soundboard {
             path = "~/Soundboard";
             devices = ["leaf-server"];
             id = "hqy5y-ahisy";
           };
-          "Videos" = lib.mkIf config.syncthing.videos {
+          "Videos" = lib.mkIf cfg.videos {
             path = "~/Videos";
             devices = ["leaf-server"];
             id = "5yge6-zfxyn";
