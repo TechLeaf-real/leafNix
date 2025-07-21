@@ -42,7 +42,7 @@
 
   programs.vscode = {
     enable = true;
-    # package = pkgs.vscodium;
+    package = pkgs.vscode.fhs;
     profiles.default = {
       userSettings = {
         "files.autoSave" = "off";
