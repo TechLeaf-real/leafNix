@@ -155,9 +155,6 @@
     fsType = "btrfs";
   };
 
-  system.autoUpgrade.enable = true;
-  system.autoUpgrade.dates = "daily";
-
   nix.settings.auto-optimise-store = true;
 
   networking.hostName = "leaf-desktop";

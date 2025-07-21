@@ -37,6 +37,8 @@
     ];
   };
 
+  nixpkgs.config.allowUnfree = true;
+
 
   hyprland.terminal = "ghostty";
 
