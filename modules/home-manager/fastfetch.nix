@@ -22,13 +22,10 @@
             "uptime",
             "packages",
             "shell",
-            "display",
             "de",
             "wm",
             "wmtheme",
-            "theme",
             "icons",
-            "font",
             "cursor",
             "terminal",
             "terminalfont",
@@ -40,7 +37,6 @@
             "localip",
             "battery",
             "poweradapter",
-            "locale",
             "break",
             "colors"
           ]
