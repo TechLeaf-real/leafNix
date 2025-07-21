@@ -3,11 +3,11 @@
     enable = true;
     eula = true;
     declarative = true;
-    package = pkgs.papermc;
-    # dataDir = "/home/techleaf/mcTest";
-    openFirewall = true;
-    whitelist = {
-      TechLeaf = "49448e8d-f881-4233-b587-be44990288b3";
+    serverProperties = {
+      server-port = 25565;
+      gamemode = "survival";
+      motd = "NixOS!";
+      max-players = 1;
     };
   };
 }
