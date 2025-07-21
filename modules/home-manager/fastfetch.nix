@@ -9,6 +9,7 @@
         "type": "auto",
       },
       "display": {
+        "seperator": ": ",
         "brightColor": true,
       },
       "modules": [
