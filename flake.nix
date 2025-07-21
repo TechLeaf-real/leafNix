@@ -28,6 +28,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    agenix = {
+      url = "github:ryantm/agenix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -60,6 +65,8 @@
           ./hosts/leaf-laptop/configuration.nix
           inputs.home-manager.nixosModules.default
           inputs.stylix.nixosModules.stylix
+          inputs.agenix.nixosModules.default
+          # inputs.agenix.homeManagerModules.default
         ];
       };
 
@@ -78,6 +85,8 @@
           ./hosts/leaf-desktop/configuration.nix
           inputs.home-manager.nixosModules.default
           inputs.stylix.nixosModules.stylix
+          inputs.agenix.nixosModules.default
+          # inputs.agenix.homeManagerModules.default
         ];
       };
     };
