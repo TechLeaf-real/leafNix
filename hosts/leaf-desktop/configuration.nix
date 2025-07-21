@@ -66,6 +66,8 @@
             exit 0
         fi
         clear
+        sudo deadnix -e
+        clear
         git diff -U0 '*.nix'
         set +o pipefail
         nh os switch ~/leafNix || exit 0
