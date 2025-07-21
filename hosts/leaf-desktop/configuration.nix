@@ -56,6 +56,7 @@
       comma
       pridefetch
       nix-tree
+      libreoffice-qt6-fresh
       (writeShellScriptBin "rebuild" ''
         #! nix-shell -i bash -p bash
         set -e
