@@ -48,16 +48,12 @@
         "files.autoSave" = "off";
       };
       userTasks = {
-
       };
       keybindings = [
-
       ];
       globalSnippets = {
-
       };
       languageSnippets = {
-
       };
     };
   };

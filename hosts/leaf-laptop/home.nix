@@ -1,7 +1,4 @@
-{
-  pkgs,
-  ...
-}: {
+{pkgs, ...}: {
   imports = [
     ../../modules/home-manager/syncthing.nix
     ../../modules/home-manager/hyprland/leaf-laptop.nix

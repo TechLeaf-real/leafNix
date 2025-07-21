@@ -1,6 +1,4 @@
-{
-  ...
-}: {
+{...}: {
   config = {
     fileSystems."~/leaf-server" = {
       device = "//192.168.1.115/store";

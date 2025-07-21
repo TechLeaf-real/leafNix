@@ -66,6 +66,7 @@
             exit 0
         fi
         clear
+        alejandra *
         sudo deadnix -e
         clear
         git diff -U0 '*.nix'
@@ -110,10 +111,7 @@
     ++ (with inputs.nix-alien.packages.${pkgs.system}; [
       nix-alien
     ])
-    
-    ++
-    
-    (with inputs.deadnix.packages.${pkgs.system}; [
+    ++ (with inputs.deadnix.packages.${pkgs.system}; [
       deadnix
     ]);
 
