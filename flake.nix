@@ -12,11 +12,14 @@
       inputs.hyprland.follows = "hyprland";
     };
     hypr-dynamic-cursors = {
-      url = "github:VirtCode/hypr-dynamic-cursors?rev=cb39e89fc3e6d2113dc098c0c69a762b55004fd4";
+      url = "github:VirtCode/hypr-dynamic-cursors";
       inputs.hyprland.follows = "hyprland";
     };
 
-    nix-alien.url = "github:thiagokokada/nix-alien";
+    nix-alien = {
+      url = "github:thiagokokada/nix-alien";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     stylix = {
       url = "github:danth/stylix";
@@ -30,6 +33,11 @@
 
     agenix = {
       url = "github:ryantm/agenix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    zen-browser = {
+      url = "github:MarceColl/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

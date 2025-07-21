@@ -115,6 +115,9 @@
     ])
     ++ (with inputs.deadnix.packages.${pkgs.system}; [
       deadnix
+    ])
+    ++ (with inputs.zen-browser.packages.${pkgs.system}; [
+      default
     ]);
 
   programs.thunderbird = {
