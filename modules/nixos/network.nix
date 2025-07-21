@@ -9,7 +9,7 @@ in {
     network = {
       hostname = lib.mkOption {
         type = lib.types.str;
-        default = "leaf-desktop";
+        default = "nixos";
       };
     };
   };

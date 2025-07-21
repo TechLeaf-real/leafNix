@@ -126,7 +126,7 @@
     enable = true;
   };
 
-  # network.hostname = "leaf-desktop";
+  network.hostname = "leaf-desktop";
 
   programs.ssh.startAgent = true;
 
