@@ -22,7 +22,6 @@
     cmatrix
     cowsay
     fortune
-    wtf
     pipes
     cbonsai
     asciiquarium
