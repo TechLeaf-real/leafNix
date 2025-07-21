@@ -119,12 +119,12 @@
     enable = true;
   };
 
-  services.minecraft-server = {
-    enable = true;
-    package = pkgs.papermc;
-    eula = true;
-    openFirewall = true;
-  };
+  # services.minecraft-server = {
+  #   enable = true;
+  #   package = pkgs.papermc;
+  #   eula = true;
+  #   openFirewall = true;
+  # };
 
   programs.ssh.startAgent = true;
 
