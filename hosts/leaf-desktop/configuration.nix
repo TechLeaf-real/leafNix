@@ -22,10 +22,13 @@
     ../../modules/nixos/grub.nix
     ../../modules/nixos/vscodium.nix
     ../../modules/nixos/network.nix
+    ../../modules/nixos/tailscale.nix
   ];
 
-  graphics.gpuBrand = "amd";
-  graphics.enableOffload = false;
+  graphics = {
+    gpuBrand = "amd";
+    enableOffload = false;
+  };
 
   environment.systemPackages =
     (with pkgs; [
@@ -113,11 +116,6 @@
     ++ (with inputs.deadnix.packages.${pkgs.system}; [
       deadnix
     ]);
-
-  services.tailscale = {
-    enable = true;
-    openFirewall = true;
-  };
 
   programs.thunderbird = {
     enable = true;
