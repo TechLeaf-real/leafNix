@@ -40,6 +40,16 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  programs.vscode = {
+    enable = true;
+    package = pkgs.vscodium;
+    profiles.default = {
+      userSettings = {
+        "files.autoSave" = "off";
+      };
+    };
+  };
+
   hyprland.terminal = "ghostty";
 
   home.packages = with pkgs; [
