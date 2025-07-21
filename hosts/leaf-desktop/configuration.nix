@@ -29,7 +29,7 @@
     firefox
     ghostty
     btop-rocm
-    vscode
+    vscodium-fhs
     legcord
     btop
     nautilus
