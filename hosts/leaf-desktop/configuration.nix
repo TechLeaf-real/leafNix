@@ -119,20 +119,7 @@
     enable = true;
   };
 
-  # services.minecraft-server = {
-  #   enable = true;
-  #   package = pkgs.papermc;
-  #   eula = true;
-  #   openFirewall = true;
-  # };
-
   programs.ssh.startAgent = true;
-
-  # fileSystems."home/techleaf/leaf-server" = {
-  #   device = "//192.168.1.115/Store";
-  #   fsType = "cifs";
-  #   options = [ "x-systemd.automount" "noauto" ];
-  # };
 
   hardware.bluetooth.enable = true;
 
