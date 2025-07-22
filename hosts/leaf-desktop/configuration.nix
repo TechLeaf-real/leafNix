@@ -35,6 +35,7 @@
       obsidian
       kdePackages.kdenlive
       parabolic
+      gimp3
       firefox
       ghostty
       btop-rocm
