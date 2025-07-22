@@ -54,6 +54,7 @@
       tree
       comma
       nix-tree
+      davinci-resolve
       libreoffice-qt6
       mpv
       (writeShellScriptBin "rebuild" ''
