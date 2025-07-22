@@ -22,7 +22,7 @@
     ../../modules/nixos/vscodium.nix
     ../../modules/nixos/network.nix
     ../../modules/nixos/tailscale.nix
-    ../../modules/nixos/davinci-resolve.nix
+    # ../../modules/nixos/davinci-resolve.nix
   ];
 
   graphics = {
@@ -33,6 +33,7 @@
   environment.systemPackages =
     (with pkgs; [
       obsidian
+      kdePackages.kdenlive
       firefox
       ghostty
       btop-rocm
