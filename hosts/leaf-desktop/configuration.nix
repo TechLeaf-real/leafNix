@@ -22,7 +22,6 @@
     ../../modules/nixos/vscodium.nix
     ../../modules/nixos/network.nix
     ../../modules/nixos/tailscale.nix
-    ../../modules/nixos/minecraft.nix
   ];
 
   graphics = {
@@ -56,6 +55,7 @@
       comma
       nix-tree
       libreoffice-qt6
+      mpv
       (writeShellScriptBin "rebuild" ''
         #! nix-shell -i bash -p bash
         set -e
