@@ -55,7 +55,7 @@
       tree
       comma
       nix-tree
-      libreoffice-qt6-fresh
+      libreoffice-qt6
       (writeShellScriptBin "rebuild" ''
         #! nix-shell -i bash -p bash
         set -e
