@@ -34,6 +34,7 @@
     (with pkgs; [
       obsidian
       kdePackages.kdenlive
+      parabolic
       firefox
       ghostty
       btop-rocm
