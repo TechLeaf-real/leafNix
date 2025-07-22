@@ -22,6 +22,7 @@
     ../../modules/nixos/vscodium.nix
     ../../modules/nixos/network.nix
     ../../modules/nixos/tailscale.nix
+    ../../modules/nixos/davinci-resolve.nix
   ];
 
   graphics = {
@@ -54,7 +55,6 @@
       tree
       comma
       nix-tree
-      davinci-resolve
       libreoffice-qt6
       mpv
       (writeShellScriptBin "rebuild" ''

@@ -1,6 +1,7 @@
 {
   lib,
   config,
+  pkgs,
   ...
 }: let
   cfg = config.graphics;
@@ -24,6 +25,14 @@ in {
     hardware.graphics = {
       enable = true;
       enable32Bit = true;
+      extraPackages = with pkgs; [
+        mesa
+        libva
+        libvdpau-va-gl
+        vulkan-loader
+        vulkan-validation-layers
+        mesa.opencl
+      ];
     };
 
     services.xserver.videoDrivers =
