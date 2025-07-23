@@ -44,6 +44,7 @@
       nautilus
       loupe
       gnome-text-editor
+      vrc-get
       decibels
       gucharmap
       miniupnpc
