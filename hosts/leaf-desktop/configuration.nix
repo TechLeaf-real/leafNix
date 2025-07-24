@@ -132,6 +132,8 @@
 
   network.hostname = "leaf-desktop";
 
+  hardware.xpadneo.enable = true;
+
   programs.ssh.startAgent = true;
 
   hardware.bluetooth.enable = true;
