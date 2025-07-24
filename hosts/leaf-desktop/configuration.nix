@@ -124,6 +124,9 @@
     ])
     ++ (with inputs.zen-browser.packages.${pkgs.system}; [
       default
+    ])
+    ++ (with inputs.jerry.packages.${pkgs.system}; [
+      default
     ]);
 
   programs.thunderbird = {
