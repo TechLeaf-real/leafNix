@@ -150,6 +150,8 @@
     flake = "~/leafNix";
   };
 
+  location.provider = "geoclue2";
+
   fileSystems."/home/techleaf/Drive" = {
     device = "dev/disk/by-uuid/2acb7912-13f1-4a4d-bb04-123a26ba088c";
     fsType = "btrfs";
