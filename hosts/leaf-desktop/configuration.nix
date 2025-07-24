@@ -22,7 +22,7 @@
     ../../modules/nixos/vscodium.nix
     ../../modules/nixos/network.nix
     ../../modules/nixos/tailscale.nix
-    ../../modules/nixos/sudo.nix
+    ../../modules/nixos/sudo-rs.nix
   ];
 
   graphics = {
