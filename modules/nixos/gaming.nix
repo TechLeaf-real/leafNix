@@ -20,10 +20,15 @@
       dedicatedServer.openFirewall = true;
     };
 
+    services.sunshine = {
+      enable = true;
+    };
+
     environment.systemPackages =
       (with pkgs; [
         heroic
         lutris
+        moonlight
       ])
       ++ (with pkgs-stable; [
         prismlauncher
