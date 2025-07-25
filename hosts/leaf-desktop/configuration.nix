@@ -23,6 +23,7 @@
     ../../modules/nixos/network.nix
     ../../modules/nixos/tailscale.nix
     ../../modules/nixos/sudo-rs.nix
+    ../../modules/nixos/direnv.nix
   ];
 
   graphics = {
