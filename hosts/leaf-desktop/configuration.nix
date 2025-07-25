@@ -214,6 +214,11 @@
     ];
   };
 
+  nix.trustedUsers = [
+    "root"
+    "techleaf"
+  ];
+
   home-manager = {
     extraSpecialArgs = {
       inherit inputs;
