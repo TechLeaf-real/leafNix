@@ -62,6 +62,7 @@
       nix-tree
       libreoffice-qt6
       mpv
+      valent
       (writeShellScriptBin "rebuild" ''
         #! nix-shell -i bash -p bash
         set -e
@@ -147,8 +148,6 @@
       libffi
     ];
   };
-
-  programs.kdeconnect.enable = true;
 
   programs.nh = {
     enable = true;
