@@ -127,6 +127,7 @@ in {
           "nm-applet"
           "pypr"
           "swayosd-server"
+          "kdeconnectd"
         ];
 
         plugin = {

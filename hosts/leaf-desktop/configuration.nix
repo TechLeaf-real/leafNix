@@ -153,6 +153,11 @@
     package = pkgs.kdePackages.kdeconnect-kde;
   };
 
+  programs.nix-index = {
+    enable = true;
+    enableFishIntegration = true;
+  };
+
   programs.nh = {
     enable = true;
     clean.enable = true;
