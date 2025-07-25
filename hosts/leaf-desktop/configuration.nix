@@ -33,6 +33,7 @@
   environment.systemPackages =
     (with pkgs; [
       obsidian
+      nix-health
       kdePackages.kdenlive
       alcom
       parabolic
@@ -214,7 +215,7 @@
     ];
   };
 
-  nix.trustedUsers = [
+  nix.settings.trusted-users = [
     "root"
     "techleaf"
   ];
