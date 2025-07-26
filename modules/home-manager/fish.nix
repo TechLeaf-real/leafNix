@@ -15,6 +15,7 @@
         ls = "eza";
         cd = "z";
         cat = "bat";
+        wormhole = "wormhole-rs";
       };
     };
 
