@@ -207,7 +207,6 @@
 
   programs.pay-respects = {
     enable = true;
-    alias = "thefuck";
   };
 
   console.keyMap = "us";
