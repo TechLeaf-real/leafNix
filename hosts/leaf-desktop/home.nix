@@ -10,6 +10,7 @@
     ../../modules/home-manager/fish.nix
     ../../modules/home-manager/git.nix
     ../../modules/home-manager/fastfetch.nix
+    ../../modules/home-manager/codium.nix
   ];
 
   home.username = "techleaf";
