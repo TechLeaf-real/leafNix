@@ -209,6 +209,11 @@
     enable = true;
   };
 
+  programs.appimage = {
+    enable = true;
+    binfmt = true;
+  };
+
   console.keyMap = "us";
 
   users.users.techleaf = {
