@@ -39,7 +39,6 @@
       alcom
       parabolic
       gimp3
-      firefox
       ghostty
       btop-rocm
       legcord
@@ -145,6 +144,10 @@
   programs.ssh.startAgent = true;
 
   hardware.bluetooth.enable = true;
+
+  programs.firefox = {
+    enable = true;
+  };
 
   programs.nix-ld = {
     enable = true;
