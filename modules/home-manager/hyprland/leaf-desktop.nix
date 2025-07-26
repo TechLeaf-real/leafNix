@@ -23,7 +23,7 @@ in {
       };
       fileManager = lib.mkOption {
         type = lib.types.str;
-        default = "nautilus";
+        default = "dolphin";
       };
       appLauncher = lib.mkOption {
         type = lib.types.str;

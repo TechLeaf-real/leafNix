@@ -44,7 +44,7 @@
       btop-rocm
       legcord
       btop
-      nautilus
+      kdePackages.dolphin
       loupe
       gnome-text-editor
       vrc-get
