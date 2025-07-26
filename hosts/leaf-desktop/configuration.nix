@@ -52,6 +52,7 @@
       miniupnpc
       papers
       scarab
+      aseprite
       warp
       timg
       godot
