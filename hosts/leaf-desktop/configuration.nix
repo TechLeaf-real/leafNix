@@ -205,6 +205,10 @@
     variant = "";
   };
 
+  programs.pay-respects = {
+    enable = true;
+  };
+
   console.keyMap = "us";
 
   users.users.techleaf = {
