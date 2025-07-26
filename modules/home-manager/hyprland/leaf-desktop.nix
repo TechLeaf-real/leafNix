@@ -130,6 +130,10 @@ in {
           "kdeconnectd"
         ];
 
+        windowrule = [
+          "tile, class:Aseprite"
+        ];
+
         plugin = {
           dynamic-cursors = {
             enabled = true;
