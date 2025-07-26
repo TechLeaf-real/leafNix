@@ -186,6 +186,8 @@
 
   programs.obs-studio = {
     enable = true;
+    enableVirtualCamera = true;
+    plugins = [];
   };
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
