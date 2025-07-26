@@ -82,7 +82,7 @@
           # inputs.agenix.homeManagerModules.default
           home-manager.nixosModules.home-manager
           {
-            home-manager.userGlobalPkgs = true;
+            # home-manager.userGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.techleaf = ./hosts/leaf-laptop/home.nix;
           }
