@@ -213,20 +213,6 @@
     variant = "";
   };
 
-  programs.pay-respects = {
-    enable = true;
-  };
-
-  programs.television = {
-    enable = true;
-    enableFishIntegration = true;
-  };
-
-  programs.atop = {
-    enable = true;
-    atopgpu.enable = true;
-  };
-
   programs.appimage = {
     enable = true;
     binfmt = true;
