@@ -64,6 +64,8 @@
   home.packages = with pkgs; [
   ];
 
+  programs.floorp.enable = true;
+
   home.file = {
   };
 
