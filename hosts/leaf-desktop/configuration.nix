@@ -222,6 +222,11 @@
     enableFishIntegration = true;
   };
 
+  programs.atop = {
+    enable = true;
+    atopgpu.enable = true;
+  };
+
   programs.appimage = {
     enable = true;
     binfmt = true;
