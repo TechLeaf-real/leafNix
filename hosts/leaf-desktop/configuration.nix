@@ -55,7 +55,6 @@
       scarab
       warp
       timg
-      corectrl
       godot
       blender-hip
       jq
@@ -132,6 +131,10 @@
     ]);
 
   programs.thunderbird = {
+    enable = true;
+  };
+
+  programs.corectrl = {
     enable = true;
   };
 
