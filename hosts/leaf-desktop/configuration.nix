@@ -19,7 +19,7 @@
     ../../modules/nixos/stylix.nix
     ../../modules/nixos/kernel.nix
     ../../modules/nixos/grub.nix
-    # ../../modules/nixos/vscodium.nix
+    ../../modules/nixos/vscodium.nix
     ../../modules/nixos/network.nix
     ../../modules/nixos/tailscale.nix
     ../../modules/nixos/sudo-rs.nix
