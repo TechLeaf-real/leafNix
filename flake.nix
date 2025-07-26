@@ -58,6 +58,7 @@
     nixpkgs,
     stable-nixpkgs,
     pyprland,
+    home-manager,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -76,10 +77,15 @@
         };
         modules = [
           ./hosts/leaf-laptop/configuration.nix
-          inputs.home-manager.nixosModules.default
           inputs.stylix.nixosModules.stylix
           inputs.agenix.nixosModules.default
           # inputs.agenix.homeManagerModules.default
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.userGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.techleaf = ./hosts/leaf-laptop/home.nix;
+          }
         ];
       };
 
@@ -96,10 +102,15 @@
         };
         modules = [
           ./hosts/leaf-desktop/configuration.nix
-          inputs.home-manager.nixosModules.default
           inputs.stylix.nixosModules.stylix
           inputs.agenix.nixosModules.default
           # inputs.agenix.homeManagerModules.default
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.techleaf = ./hosts/leaf-desktop/home.nix;
+          }
         ];
       };
     };

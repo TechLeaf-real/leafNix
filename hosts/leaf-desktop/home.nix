@@ -40,23 +40,23 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  programs.vscode = {
-    enable = true;
-    package = pkgs.vscodium;
-    profiles.default = {
-      userSettings = {
-        "files.autoSave" = "off";
-      };
-      userTasks = {
-      };
-      keybindings = [
-      ];
-      globalSnippets = {
-      };
-      languageSnippets = {
-      };
-    };
-  };
+  # programs.vscode = {
+  #   enable = true;
+  #   package = pkgs.vscodium;
+  #   profiles.default = {
+  #     userSettings = {
+  #       "files.autoSave" = "off";
+  #     };
+  #     userTasks = {
+  #     };
+  #     keybindings = [
+  #     ];
+  #     globalSnippets = {
+  #     };
+  #     languageSnippets = {
+  #     };
+  #   };
+  # };
 
   hyprland.terminal = "ghostty";
 
