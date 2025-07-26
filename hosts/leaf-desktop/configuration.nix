@@ -217,6 +217,11 @@
     enable = true;
   };
 
+  programs.television = {
+    enable = true;
+    enableFishIntegration = true;
+  };
+
   programs.appimage = {
     enable = true;
     binfmt = true;
