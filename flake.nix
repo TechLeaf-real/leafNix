@@ -46,6 +46,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    copyparty = {
+      url = "github:9001/copyparty";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -59,6 +64,7 @@
     stable-nixpkgs,
     pyprland,
     home-manager,
+    copyparty,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -86,6 +92,7 @@
             home-manager.useUserPackages = true;
             home-manager.users.techleaf = ./hosts/leaf-laptop/home.nix;
           }
+          copyparty.nixosModules.default
         ];
       };
 
@@ -111,6 +118,7 @@
             home-manager.useUserPackages = true;
             home-manager.users.techleaf = ./hosts/leaf-desktop/home.nix;
           }
+          copyparty.nixosModules.default
         ];
       };
     };
