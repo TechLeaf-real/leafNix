@@ -11,5 +11,14 @@
     # accounts = {
     #   techleaf.passwordFile = "";
     # };
+
+    volumes = {
+      "/" = {
+        path = "/home/techleaf";
+        access = {
+          r = "*";
+        };
+      };
+    };
   };
 }
