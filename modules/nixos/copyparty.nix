@@ -20,5 +20,6 @@
         };
       };
     };
+    openFilesLimit = 8192;
   };
 }
