@@ -25,7 +25,7 @@
     ../../modules/nixos/sudo-rs.nix
     ../../modules/nixos/direnv.nix
     ../../modules/nixos/ai.nix
-    # ../../modules/nixos/copyparty.nix
+    ../../modules/nixos/copyparty.nix
   ];
 
   graphics = {
