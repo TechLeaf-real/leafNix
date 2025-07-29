@@ -18,6 +18,9 @@
       # package = pkgs.millennium;
       remotePlay.openFirewall = true;
       dedicatedServer.openFirewall = true;
+      extraCompatPackages = with pkgs; [
+        proton-ge-bin
+      ];
     };
 
     services.sunshine = {
@@ -28,7 +31,7 @@
     environment.systemPackages =
       (with pkgs; [
         heroic
-        lutris
+        # lutris
         moonlight
       ])
       ++ (with pkgs-stable; [
