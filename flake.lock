@@ -131,11 +131,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1753896418,
-        "narHash": "sha256-jDIvVX/NgTqrdwrMIlPolbLxn7OcL2fMuGalTUlXkh8=",
+        "lastModified": 1753898531,
+        "narHash": "sha256-DS8dQDsqrTnlDuzbKc770asunSTJURy9qLO8hbUrQvs=",
         "owner": "9001",
         "repo": "copyparty",
-        "rev": "053de61907fa3d83a9c6b0dd699c8e2b973dd3ae",
+        "rev": "a9d07c63ed82b11c172009a767c6dbb4f1f78d03",
         "type": "github"
       },
       "original": {
@@ -273,6 +273,24 @@
       }
     },
     "flake-parts_2": {
+      "inputs": {
+        "nixpkgs-lib": "nixpkgs-lib"
+      },
+      "locked": {
+        "lastModified": 1749398372,
+        "narHash": "sha256-tYBdgS56eXYaWVW3fsnPQ/nFlgWi/Z2Ymhyu21zVM98=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "9305fe4e5c2a6fcf5ba6a3ff155720fbe4076569",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "type": "github"
+      }
+    },
+    "flake-parts_3": {
       "inputs": {
         "nixpkgs-lib": [
           "stylix",
@@ -775,6 +793,26 @@
         "type": "github"
       }
     },
+    "millennium": {
+      "inputs": {
+        "flake-parts": "flake-parts_2",
+        "nixpkgs": "nixpkgs_3"
+      },
+      "locked": {
+        "lastModified": 1753897949,
+        "narHash": "sha256-zriGSTAxFTpCmPgwqp52hKHJR3SqFpZeXgwRjWR7iJs=",
+        "ref": "refs/heads/main",
+        "rev": "31b6e01a43a7fc9e5f6bb4a635e05e01e4f2cf01",
+        "revCount": 2015,
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/SteamClientHomebrew/Millennium"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://github.com/SteamClientHomebrew/Millennium"
+      }
+    },
     "nix-alien": {
       "inputs": {
         "flake-compat": "flake-compat_2",
@@ -856,6 +894,21 @@
         "type": "github"
       }
     },
+    "nixpkgs-lib": {
+      "locked": {
+        "lastModified": 1748740939,
+        "narHash": "sha256-rQaysilft1aVMwF14xIdGS3sj1yHlI6oKQNBRTF40cc=",
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "rev": "656a64127e9d791a334452c6b6606d17539476e2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "type": "github"
+      }
+    },
     "nixpkgs_2": {
       "locked": {
         "lastModified": 1752687322,
@@ -874,6 +927,22 @@
     },
     "nixpkgs_3": {
       "locked": {
+        "lastModified": 1750506804,
+        "narHash": "sha256-VLFNc4egNjovYVxDGyBYTrvVCgDYgENp5bVi9fPTDYc=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "4206c4cb56751df534751b058295ea61357bbbaa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_4": {
+      "locked": {
         "lastModified": 1753694789,
         "narHash": "sha256-cKgvtz6fKuK1Xr5LQW/zOUiAC0oSQoA9nOISB0pJZqM=",
         "owner": "nixos",
@@ -888,7 +957,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_4": {
+    "nixpkgs_5": {
       "locked": {
         "lastModified": 1719082008,
         "narHash": "sha256-jHJSUH619zBQ6WdC21fFAlDxHErKVDJ5fpN0Hgx4sjs=",
@@ -980,7 +1049,7 @@
     "pyprland": {
       "inputs": {
         "flake-compat": "flake-compat_3",
-        "nixpkgs": "nixpkgs_4",
+        "nixpkgs": "nixpkgs_5",
         "poetry2nix": "poetry2nix",
         "systems": "systems_7"
       },
@@ -1008,8 +1077,9 @@
         "hyprland": "hyprland",
         "hyprland-plugins": "hyprland-plugins",
         "jerry": "jerry",
+        "millennium": "millennium",
         "nix-alien": "nix-alien",
-        "nixpkgs": "nixpkgs_3",
+        "nixpkgs": "nixpkgs_4",
         "pyprland": "pyprland",
         "stable-nixpkgs": "stable-nixpkgs",
         "stylix": "stylix",
@@ -1039,7 +1109,7 @@
         "base16-helix": "base16-helix",
         "base16-vim": "base16-vim",
         "firefox-gnome-theme": "firefox-gnome-theme",
-        "flake-parts": "flake-parts_2",
+        "flake-parts": "flake-parts_3",
         "gnome-shell": "gnome-shell",
         "nixpkgs": [
           "nixpkgs"

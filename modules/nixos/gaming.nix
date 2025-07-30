@@ -1,6 +1,7 @@
 {
   pkgs,
   pkgs-stable,
+  # inputs,
   ...
 }: {
   options = {
@@ -31,7 +32,6 @@
     environment.systemPackages =
       (with pkgs; [
         heroic
-        # lutris
         moonlight
       ])
       ++ (with pkgs-stable; [
