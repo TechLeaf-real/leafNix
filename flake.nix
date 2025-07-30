@@ -55,11 +55,6 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    millennium = {
-      url = "git+file:/home/techleaf/Downloads/Millennium";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs = {

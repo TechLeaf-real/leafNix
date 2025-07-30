@@ -1,7 +1,6 @@
 {
   pkgs,
   pkgs-stable,
-  # inputs,
   ...
 }: {
   options = {
@@ -10,13 +9,8 @@
   config = {
     programs.gamemode.enable = true;
 
-    # nixpkgs.overlays = [
-    # inputs.millennium.overlays.default
-    # ];
-
     programs.steam = {
       enable = true;
-      # package = pkgs.millennium;
       remotePlay.openFirewall = true;
       dedicatedServer.openFirewall = true;
       extraCompatPackages = with pkgs; [
