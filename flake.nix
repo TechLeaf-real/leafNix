@@ -56,7 +56,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    millennium.url = "git+https://github.com/SteamClientHomebrew/Millennium";
+    millennium = {
+      url = "git+file:/home/techleaf/Downloads/Millennium";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
