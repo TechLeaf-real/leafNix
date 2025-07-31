@@ -67,6 +67,7 @@
       libreoffice-qt6
       mpv
       unityhub
+      nushell
     ])
     ++ (with inputs.self.packages.x86_64-linux; [
       rebuild
