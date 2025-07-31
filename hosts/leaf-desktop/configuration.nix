@@ -66,15 +66,14 @@
       magic-wormhole-rs
       libreoffice-qt6
       mpv
+      unityhub
     ])
     ++ (with inputs.self.packages.x86_64-linux; [
       rebuild
       update
     ])
     ++ (with pkgs-stable; [
-      unityhub
-      # modrinth-app
-    ])
+      ])
     ++ (with inputs.nix-alien.packages.${pkgs.system}; [
       nix-alien
     ])
