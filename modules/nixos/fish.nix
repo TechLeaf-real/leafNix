@@ -27,9 +27,6 @@
     uutils-coreutils-noprefix
     nix-your-shell
     pokeget-rs
-    bat-extras.batgrep
-    bat-extras.batman
-    bat-extras.prettybat
   ];
 
   programs.bash.interactiveShellInit = ''
