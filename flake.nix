@@ -120,5 +120,24 @@
         ];
       };
     };
+
+    packages.x86_64-linux = {
+      rebuild = let
+        pkgs = import nixpkgs {system = "x86_64-linux";};
+
+        pkg_name = "rebuild";
+        src = builtins.readFile ./assets/scripts/rebuild.sh;
+        script = (pkgs.writeShellScriptBin pkg_name src).overrideAttrs (old: {
+          buildCommand = "${old.buildCommand}\n patchShebangs $out";
+        });
+        pkg_buildInputs = with pkgs; [];
+      in
+        pkgs.symlinkJoin {
+          name = pkg_name;
+          paths = [script] ++ pkg_buildInputs;
+          buildInputs = [pkgs.makeWrapper];
+          postBuild = "wrapProgram $out/bin/${pkg_name} --prefix PATH : $out/bin";
+        };
+    };
   };
 }
