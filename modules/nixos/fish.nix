@@ -27,7 +27,6 @@
     uutils-coreutils-noprefix
     nix-your-shell
     pokeget-rs
-    krabby
   ];
 
   programs.bash.interactiveShellInit = ''
