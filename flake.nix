@@ -130,7 +130,30 @@
         script = (pkgs.writeShellScriptBin pkg_name src).overrideAttrs (old: {
           buildCommand = "${old.buildCommand}\n patchShebangs $out";
         });
-        pkg_buildInputs = with pkgs; [];
+        pkg_buildInputs = with pkgs; [
+          nh
+          git
+        ];
+      in
+        pkgs.symlinkJoin {
+          name = pkg_name;
+          paths = [script] ++ pkg_buildInputs;
+          buildInputs = [pkgs.makeWrapper];
+          postBuild = "wrapProgram $out/bin/${pkg_name} --prefix PATH : $out/bin";
+        };
+
+      update = let
+        pkgs = import nixpkgs {system = "x86_64-linux";};
+
+        pkg_name = "update";
+        src = builtins.readFile ./assets/scripts/update.sh;
+        script = (pkgs.writeShellScriptBin pkg_name src).overrideAttrs (old: {
+          buildCommand = "${old.buildCommand}\n patchShebangs $out";
+        });
+        pkg_buildInputs = with pkgs; [
+          nh
+          git
+        ];
       in
         pkgs.symlinkJoin {
           name = pkg_name;
