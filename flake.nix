@@ -31,11 +31,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    agenix = {
-      url = "github:ryantm/agenix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -82,8 +77,6 @@
         modules = [
           ./hosts/leaf-laptop/configuration.nix
           inputs.stylix.nixosModules.stylix
-          inputs.agenix.nixosModules.default
-          # inputs.agenix.homeManagerModules.default
           home-manager.nixosModules.home-manager
           {
             # home-manager.userGlobalPkgs = true;
@@ -108,8 +101,6 @@
         modules = [
           ./hosts/leaf-desktop/configuration.nix
           inputs.stylix.nixosModules.stylix
-          inputs.agenix.nixosModules.default
-          # inputs.agenix.homeManagerModules.default
           home-manager.nixosModules.home-manager
           {
             # home-manager.useGlobalPkgs = true;
