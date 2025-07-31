@@ -133,6 +133,7 @@
         pkg_buildInputs = with pkgs; [
           nh
           git
+          alejandra
         ];
       in
         pkgs.symlinkJoin {
@@ -153,6 +154,7 @@
         pkg_buildInputs = with pkgs; [
           nh
           git
+          alejandra
         ];
       in
         pkgs.symlinkJoin {
