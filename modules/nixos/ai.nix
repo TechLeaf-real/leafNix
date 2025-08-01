@@ -6,12 +6,13 @@
     loadModels = [
       "deepseek-r1:14b"
       "gemma3:12b"
+      "gemma3:4b"
+      "gemma3:12b-it-qat"
       "llava:13b"
       "qwen2.5vl:7b"
       "llama3.2-vision:11b"
       "llama3.1:8b"
       "llama2-uncensored:7b"
-      "gemma3:4b"
     ];
     rocmOverrideGfx = "10.3.0";
   };
