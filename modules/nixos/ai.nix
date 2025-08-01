@@ -11,6 +11,6 @@
   # services.open-webui.enable = true;
 
   environment.systemPackages = with pkgs; [
-    alpaca
+    (alpaca.override {ollama = pkgs.ollama-rocm;})
   ];
 }
