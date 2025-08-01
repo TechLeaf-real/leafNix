@@ -1,4 +1,4 @@
-{...}: {
+{pkgs, ...}: {
   services.ollama = {
     enable = true;
     acceleration = "rocm";
@@ -8,5 +8,9 @@
       "deepseek-r1:14b"
     ];
   };
-  services.open-webui.enable = true;
+  # services.open-webui.enable = true;
+
+  environment.systemPackages = with pkgs; [
+    alpaca
+  ];
 }
