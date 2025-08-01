@@ -26,6 +26,6 @@
 
   environment.systemPackages = with pkgs; [
     # (alpaca.override {ollama = pkgs.ollama-rocm;})
-    oterm
+    alpaca
   ];
 }
