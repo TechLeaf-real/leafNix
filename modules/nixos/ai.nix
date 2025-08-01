@@ -2,11 +2,11 @@
   services.ollama = {
     enable = true;
     acceleration = "rocm";
-    # home = "/home/techleaf";
     openFirewall = true;
     loadModels = [
       "deepseek-r1:14b"
     ];
+    rocmOverrideGfx = "10.3.0";
   };
 
   systemd.services.ollama.serviceConfig = {
