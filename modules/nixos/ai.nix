@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{...}: {
   services.ollama = {
     enable = true;
     acceleration = "rocm";
@@ -10,7 +10,7 @@
   };
   # services.open-webui.enable = true;
 
-  environment.systemPackages = with pkgs; [
-    (alpaca.override {ollama = pkgs.ollama-rocm;})
-  ];
+  # environment.systemPackages = with pkgs; [
+  #   (alpaca.override {ollama = pkgs.ollama-rocm;})
+  # ];
 }
