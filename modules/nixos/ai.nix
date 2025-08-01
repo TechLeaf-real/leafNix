@@ -5,6 +5,7 @@
     openFirewall = true;
     loadModels = [
       "deepseek-r1:14b"
+      "gemma3:12b"
     ];
     rocmOverrideGfx = "10.3.0";
   };
