@@ -206,7 +206,7 @@ in {
         bind = [
           "$mod1, T, exec, ${cfg.terminal}"
           "$mod1, E, exec, ${cfg.fileManager}"
-          "$mod1, A, exec, jerry --rofi"
+          "$mod1, A, exec, jerry --rofi --dub"
           "$mod2, Q, killactive"
           "$mod1, P, fullscreen"
           "$mod1 SHIFT, S, exec, hyprshot -m region"
