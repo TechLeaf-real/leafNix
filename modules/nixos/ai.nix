@@ -11,6 +11,7 @@
       "llama3.2-vision:11b"
       "llama3.1:8b"
       "llama2-uncensored:7b"
+      "gemma3:4b"
     ];
     rocmOverrideGfx = "10.3.0";
   };
