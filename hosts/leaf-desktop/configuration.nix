@@ -177,7 +177,7 @@
   };
 
   fileSystems."/home/techleaf/leaf-server" = {
-    device = "//192.168.1.239/Store";
+    device = "//192.168.1.115/Store";
     fsType = "cifs";
   };
 
