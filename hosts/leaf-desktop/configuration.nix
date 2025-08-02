@@ -176,6 +176,11 @@
     binfmt = true;
   };
 
+  fileSystems."/home/techleaf/leaf-server" = {
+    device = "//192.168.1.239/Store";
+    fsType = "cifs";
+  };
+
   console.keyMap = "us";
 
   users.users.techleaf = {
