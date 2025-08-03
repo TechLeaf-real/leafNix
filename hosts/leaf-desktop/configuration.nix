@@ -111,6 +111,7 @@
     enable = true;
     libraries = with pkgs; [
       libffi
+      icu
     ];
   };
 
