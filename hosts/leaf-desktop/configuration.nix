@@ -68,6 +68,8 @@
       mpv
       unityhub
       ghex
+      xclicker
+      antimatter-dimensions
     ])
     ++ (with inputs.self.packages.x86_64-linux; [
       rebuild
