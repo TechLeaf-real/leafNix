@@ -14,6 +14,10 @@
       xwayland.enable = true;
     };
 
+    services.clipcat = {
+      enable = true;
+    };
+
     services.greetd = {
       enable = true;
       settings = {
