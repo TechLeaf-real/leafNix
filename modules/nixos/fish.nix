@@ -27,6 +27,7 @@
     uutils-coreutils-noprefix
     nix-your-shell
     pokeget-rs
+    blahaj
   ];
 
   programs.bash.interactiveShellInit = ''
