@@ -78,7 +78,8 @@
       update
     ])
     ++ (with pkgs-stable; [
-      ])
+      carbon-now-cli
+    ])
     ++ (with inputs.nix-alien.packages.${pkgs.system}; [
       nix-alien
     ])
