@@ -71,6 +71,7 @@
       xclicker
       antimatter-dimensions
       blockbench
+      bottles
     ])
     ++ (with inputs.self.packages.x86_64-linux; [
       rebuild
