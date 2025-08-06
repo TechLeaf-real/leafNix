@@ -70,6 +70,7 @@
       ghex
       xclicker
       antimatter-dimensions
+      blockbench
     ])
     ++ (with inputs.self.packages.x86_64-linux; [
       rebuild
