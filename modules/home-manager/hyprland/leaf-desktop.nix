@@ -55,6 +55,15 @@ in {
       swayosd
     ];
 
+    gtk = {
+      gtk3.iconTheme = {
+        name = "papirus-folders";
+        package = pkgs.catppuccin-papirus-folders.override {
+          accent = "yellow";
+        };
+      };
+    };
+
     home.pointerCursor = {
       gtk.enable = true;
       name = "Catppuccin-Mocha-Dark-Cursors";
