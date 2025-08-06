@@ -57,7 +57,7 @@ in {
 
     gtk = {
       gtk3.iconTheme = {
-        name = "papirus-folders";
+        name = "Papirus";
         package = pkgs.catppuccin-papirus-folders.override {
           accent = "yellow";
         };
