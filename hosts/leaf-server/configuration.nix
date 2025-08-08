@@ -10,6 +10,7 @@
   ];
 
   network.hostname = "leaf-server";
+  networking.hostId = "737572d5";
 
   environment.systemPackages =
     (with pkgs; [
