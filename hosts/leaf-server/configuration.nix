@@ -59,4 +59,6 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   networking.networkmanager.enable = true;
+
+  system.stateVersion = "25.05";
 }
