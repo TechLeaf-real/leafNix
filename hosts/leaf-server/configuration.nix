@@ -8,7 +8,7 @@
     ../../modules/nixos/misc/network.nix
   ];
 
-  network.hostName = "leaf-server";
+  network.hostname = "leaf-server";
 
   environment.systemPackages =
     (with pkgs; [
