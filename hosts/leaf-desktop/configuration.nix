@@ -73,6 +73,7 @@
       blockbench
       bottles
       switcheroo
+      gnome-disk-utility
     ])
     ++ (with inputs.self.packages.x86_64-linux; [
       rebuild
