@@ -20,7 +20,7 @@
     ../../modules/nixos/client/kernel.nix
     ../../modules/nixos/client/grub.nix
     ../../modules/nixos/client/vscodium.nix
-    ../../modules/nixos/client/network.nix
+    ../../modules/nixos/misc/network.nix
     ../../modules/nixos/client/tailscale.nix
     ../../modules/nixos/client/sudo-rs.nix
     ../../modules/nixos/client/direnv.nix
@@ -186,10 +186,10 @@
     binfmt = true;
   };
 
-  fileSystems."/home/techleaf/leaf-server" = {
-    device = "//192.168.1.115/Store";
-    fsType = "cifs";
-  };
+  # fileSystems."/home/techleaf/leaf-server" = {
+  #   device = "//192.168.1.115/Store";
+  #   fsType = "cifs";
+  # };
 
   console.keyMap = "us";
 

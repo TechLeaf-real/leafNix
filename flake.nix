@@ -110,6 +110,22 @@
           copyparty.nixosModules.default
         ];
       };
+
+      leaf-server = nixpkgs.lib.nixosSystem {
+        specialArgs = {
+          inherit inputs;
+          inherit system;
+
+          pkgs-stable = import stable-nixpkgs {
+            inherit system;
+            config.allowUnfree = true;
+          };
+        };
+        modules = [
+          ./hosts/leaf-server/configuration.nix
+          copyparty.nixosModules.default
+        ];
+      };
     };
 
     packages.x86_64-linux = {
