@@ -29,6 +29,7 @@
         moonlight
         prismlauncher
         ftb-app
+        gale
       ])
       ++ (with pkgs-stable; [
         ]);
