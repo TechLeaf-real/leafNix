@@ -4,10 +4,14 @@
     ../../modules/nixos/misc/network.nix
   ];
 
-  networking.hostName = "leaf-server";
+  network.hostName = "leaf-server";
 
-  environment.systemPackages = with pkgs; [
-  ];
+  environment.systemPackages =
+    (with pkgs; [
+      ])
+    ++ (with inputs.self.packages.x86_64-linux; [
+      server-rebuild
+    ]);
 
   services.openssh.enable = true;
   programs.git.enable = true;

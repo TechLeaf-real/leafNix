@@ -150,6 +150,26 @@
           postBuild = "wrapProgram $out/bin/${pkg_name} --prefix PATH : $out/bin";
         };
 
+      server-rebuild = let
+        pkgs = import nixpkgs {system = "x86_64-linux";};
+
+        pkg_name = "rebuild";
+        src = builtins.readFile ./assets/scripts/server-rebuild.sh;
+        script = (pkgs.writeShellScriptBin pkg_name src).overrideAttrs (old: {
+          buildCommand = "${old.buildCommand}\n patchShebangs $out";
+        });
+        pkg_buildInputs = with pkgs; [
+          nh
+          git
+        ];
+      in
+        pkgs.symlinkJoin {
+          name = pkg_name;
+          paths = [script] ++ pkg_buildInputs;
+          buildInputs = [pkgs.makeWrapper];
+          postBuild = "wrapProgram $out/bin/${pkg_name} --prefix PATH : $out/bin";
+        };
+
       update = let
         pkgs = import nixpkgs {system = "x86_64-linux";};
 
