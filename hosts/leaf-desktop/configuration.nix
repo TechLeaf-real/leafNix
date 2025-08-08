@@ -8,24 +8,24 @@
   imports = [
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.default
-    ../../modules/nixos/hyprland.nix
-    ../../modules/nixos/syncthing.nix
-    ../../modules/nixos/gaming.nix
-    ../../modules/nixos/emulation.nix
-    ../../modules/nixos/vr.nix
-    ../../modules/nixos/audio.nix
-    ../../modules/nixos/graphics.nix
-    ../../modules/nixos/fish.nix
-    ../../modules/nixos/stylix.nix
-    ../../modules/nixos/kernel.nix
-    ../../modules/nixos/grub.nix
-    ../../modules/nixos/vscodium.nix
-    ../../modules/nixos/network.nix
-    ../../modules/nixos/tailscale.nix
-    ../../modules/nixos/sudo-rs.nix
-    ../../modules/nixos/direnv.nix
-    ../../modules/nixos/ai.nix
-    # ../../modules/nixos/copyparty.nix
+    ../../modules/nixos/client/hyprland.nix
+    ../../modules/nixos/client/syncthing.nix
+    ../../modules/nixos/client/gaming.nix
+    ../../modules/nixos/client/emulation.nix
+    ../../modules/nixos/client/vr.nix
+    ../../modules/nixos/client/audio.nix
+    ../../modules/nixos/client/graphics.nix
+    ../../modules/nixos/client/fish.nix
+    ../../modules/nixos/client/stylix.nix
+    ../../modules/nixos/client/kernel.nix
+    ../../modules/nixos/client/grub.nix
+    ../../modules/nixos/client/vscodium.nix
+    ../../modules/nixos/client/network.nix
+    ../../modules/nixos/client/tailscale.nix
+    ../../modules/nixos/client/sudo-rs.nix
+    ../../modules/nixos/client/direnv.nix
+    ../../modules/nixos/client/ai.nix
+    # ../../modules/nixos/client/copyparty.nix
   ];
 
   graphics = {
