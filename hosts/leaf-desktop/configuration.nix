@@ -72,6 +72,7 @@
       antimatter-dimensions
       blockbench
       bottles
+      switcheroo
     ])
     ++ (with inputs.self.packages.x86_64-linux; [
       rebuild
