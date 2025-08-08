@@ -46,6 +46,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    disko = {
+      url = "github:nix-community/disko/latest";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -58,6 +63,7 @@
     pyprland,
     home-manager,
     copyparty,
+    disko,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -124,6 +130,7 @@
         modules = [
           ./hosts/leaf-server/configuration.nix
           copyparty.nixosModules.default
+          disko.nixosModules.disko
         ];
       };
     };
