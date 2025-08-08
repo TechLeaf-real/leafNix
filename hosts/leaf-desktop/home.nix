@@ -42,6 +42,8 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  services.udiskie.enable = true;
+
   hyprland.terminal = "ghostty";
 
   home.packages = with pkgs; [
