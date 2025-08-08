@@ -27,9 +27,10 @@
       (with pkgs; [
         heroic
         moonlight
+        prismlauncher
+        ftb-app
       ])
       ++ (with pkgs-stable; [
-        prismlauncher
-      ]);
+        ]);
   };
 }
