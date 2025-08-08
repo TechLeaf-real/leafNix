@@ -42,7 +42,7 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  # services.udiskie.enable = true;
+  services.udiskie.enable = true;
 
   hyprland.terminal = "ghostty";
 
