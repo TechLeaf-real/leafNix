@@ -134,7 +134,6 @@
         };
         modules = [
           ./hosts/leaf-server/configuration.nix
-          copyparty.nixosModules.default
           disko.nixosModules.disko
         ];
       };
