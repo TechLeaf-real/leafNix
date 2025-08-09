@@ -79,64 +79,11 @@
         postCreateHook = "zfs list -t snapshot -H -o name | grep -E '^zroot@blank$' || zfs snapshot zroot@blank";
 
         datasets = {
-          zfs_fs = {
+          main_pool = {
             type = "zfs_fs";
-            mountpoint = "/zfs_fs";
+            mountpoint = "/pool";
             options."com.sun:auto-snapshot" = "true";
           };
-          zfs_unmounted_fs = {
-            type = "zfs_fs";
-            options.mountpoint = "none";
-          };
-          zfs_legacy_fs = {
-            type = "zfs_fs";
-            options.mountpoint = "legacy";
-            mountpoint = "/zfs_legacy_fs";
-          };
-          zfs_volume = {
-            type = "zfs_volume";
-            size = "10M";
-            content = {
-              type = "filesystem";
-              format = "ext4";
-              mountpoint = "/ext4onzfs";
-            };
-          };
-          zfs_volume_no_content = {
-            type = "zfs_volume";
-            size = "10M";
-          };
-          # zfs_encryptedvolume = {
-          #   type = "zfs_volume";
-          #   size = "10M";
-          #   options = {
-          #     encryption = "aes-256-gcm";
-          #     keyformat = "passphrase";
-          #     keylocation = "file:///tmp/secret.key";
-          #   };
-          #   content = {
-          #     type = "filesystem";
-          #     format = "ext4";
-          #     mountpoint = "/ext4onzfsencrypted";
-          #   };
-          # };
-          # encrypted = {
-          #   type = "zfs_fs";
-          #   options = {
-          #     mountpoint = "none";
-          #     encryption = "aes-256-gcm";
-          #     keyformat = "passphrase";
-          #     keylocation = "file:///tmp/secret.key";
-          #   };
-          #   # use this to read the key during boot
-          #   # postCreateHook = ''
-          #   #   zfs set keylocation="prompt" "zroot/$name";
-          #   # '';
-          # };
-          # "encrypted/test" = {
-          #   type = "zfs_fs";
-          #   mountpoint = "/zfs_crypted";
-          # };
         };
       };
     };
