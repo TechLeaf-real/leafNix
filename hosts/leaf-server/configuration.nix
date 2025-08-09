@@ -5,7 +5,7 @@
 }: {
   imports = [
     ./hardware-configuration.nix
-    ./disko-config.nix
+    ./disk-config.nix
     ../../modules/nixos/misc/network.nix
   ];
 

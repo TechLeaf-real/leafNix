@@ -51,6 +51,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nixos-facter-modules = {
+      url = "github:numtide/nixos-facter-modules";
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -64,6 +68,7 @@
     home-manager,
     copyparty,
     disko,
+    nixos-facter-modules,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -131,6 +136,17 @@
           ./hosts/leaf-server/configuration.nix
           copyparty.nixosModules.default
           disko.nixosModules.disko
+        ];
+      };
+
+      generic = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          disko.nixosModules.disko
+          ./hosts/generic/configuration.nix
+          ./hosts/generic/hardware-configuration.nix
+          nixos-facter-modules.nixosModules.facter
+          {config.facter.reportPath = ./facter.json;}
         ];
       };
     };
