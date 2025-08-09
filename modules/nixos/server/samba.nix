@@ -8,7 +8,7 @@
         "server string" = "leaf-server";
         "netbios name" = "leaf-server";
         "security" = "user";
-        "hosts allow" = "192.168.1.112 127.0.0.1, localhost";
+        "hosts allow" = "192.168.1. 127.0.0.1, localhost";
         "hosts deny" = "0.0.0.0/0";
         "guest account" = "nobody";
         "map to guest" = "bad user";
@@ -20,7 +20,7 @@
         "guest ok" = "yes";
         "create mask" = "0644";
         "directory mask" = "0755";
-        # "force user" = "username";
+        "force user" = "techleaf";
         # "force group" = "groupname";
       };
     };
