@@ -43,6 +43,12 @@
     layout = "us";
   };
 
+  users.users.techleaf = {
+    isNormalUser = true;
+    description = "Techleaf";
+    extraGroups = ["networkmanager"];
+  };
+
   console.keyMap = "us";
 
   users.users.root.openssh.authorizedKeys.keys = [
