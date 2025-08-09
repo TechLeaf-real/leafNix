@@ -1,37 +1,37 @@
 {
   disko.devices = {
     disk = {
-      # main = {
-      #   type = "disk";
-      #   device = "/dev/nvme0n1";
-      #   content = {
-      #     type = "gpt";
-      #     partitions = {
-      #       boot = {
-      #         size = "1M";
-      #         type = "EF02";
-      #       };
-      #       ESP = {
-      #         size = "1G";
-      #         type = "EF00";
-      #         content = {
-      #           type = "filesystem";
-      #           format = "vfat";
-      #           mountpoint = "/boot";
-      #           mountOptions = ["umask=0077"];
-      #         };
-      #       };
-      #       root = {
-      #         size = "100%";
-      #         content = {
-      #           type = "filesystem";
-      #           format = "ext4";
-      #           mountpoint = "/";
-      #         };
-      #       };
-      #     };
-      #   };
-      # };
+      main = {
+        type = "disk";
+        device = "/dev/nvme0n1";
+        content = {
+          type = "gpt";
+          partitions = {
+            boot = {
+              size = "1M";
+              type = "EF02";
+            };
+            ESP = {
+              size = "1G";
+              type = "EF00";
+              content = {
+                type = "filesystem";
+                format = "vfat";
+                mountpoint = "/boot";
+                mountOptions = ["umask=0077"];
+              };
+            };
+            root = {
+              size = "100%";
+              content = {
+                type = "filesystem";
+                format = "ext4";
+                mountpoint = "/";
+              };
+            };
+          };
+        };
+      };
       zfs1 = {
         type = "disk";
         device = "/dev/sda";
@@ -106,37 +106,37 @@
             type = "zfs_volume";
             size = "10M";
           };
-          zfs_encryptedvolume = {
-            type = "zfs_volume";
-            size = "10M";
-            options = {
-              encryption = "aes-256-gcm";
-              keyformat = "passphrase";
-              keylocation = "file:///tmp/secret.key";
-            };
-            content = {
-              type = "filesystem";
-              format = "ext4";
-              mountpoint = "/ext4onzfsencrypted";
-            };
-          };
-          encrypted = {
-            type = "zfs_fs";
-            options = {
-              mountpoint = "none";
-              encryption = "aes-256-gcm";
-              keyformat = "passphrase";
-              keylocation = "file:///tmp/secret.key";
-            };
-            # use this to read the key during boot
-            # postCreateHook = ''
-            #   zfs set keylocation="prompt" "zroot/$name";
-            # '';
-          };
-          "encrypted/test" = {
-            type = "zfs_fs";
-            mountpoint = "/zfs_crypted";
-          };
+          # zfs_encryptedvolume = {
+          #   type = "zfs_volume";
+          #   size = "10M";
+          #   options = {
+          #     encryption = "aes-256-gcm";
+          #     keyformat = "passphrase";
+          #     keylocation = "file:///tmp/secret.key";
+          #   };
+          #   content = {
+          #     type = "filesystem";
+          #     format = "ext4";
+          #     mountpoint = "/ext4onzfsencrypted";
+          #   };
+          # };
+          # encrypted = {
+          #   type = "zfs_fs";
+          #   options = {
+          #     mountpoint = "none";
+          #     encryption = "aes-256-gcm";
+          #     keyformat = "passphrase";
+          #     keylocation = "file:///tmp/secret.key";
+          #   };
+          #   # use this to read the key during boot
+          #   # postCreateHook = ''
+          #   #   zfs set keylocation="prompt" "zroot/$name";
+          #   # '';
+          # };
+          # "encrypted/test" = {
+          #   type = "zfs_fs";
+          #   mountpoint = "/zfs_crypted";
+          # };
         };
       };
     };
