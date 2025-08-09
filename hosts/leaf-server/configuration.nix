@@ -10,6 +10,7 @@
     ./disk-config.nix
     ./hardware-configuration.nix
     ../../modules/nixos/misc/network.nix
+    ../../modules/nixos/client/fish.nix
   ];
 
   network.hostname = "leaf-server";
