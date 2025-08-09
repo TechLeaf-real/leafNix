@@ -12,7 +12,7 @@
     ../../modules/nixos/gaming.nix
     ../../modules/nixos/vr.nix
     # ../../modules/nixos/catppuccin.nix
-    ../../modules/nixos/audio.nix
+    # ../../modules/nixos/audio.nix
     # ../../modules/nixos/power_management.nix
     ../../modules/nixos/graphics.nix
     # ../../modules/nixos/fish.nix
