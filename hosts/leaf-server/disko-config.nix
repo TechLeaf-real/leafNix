@@ -42,7 +42,7 @@
               size = "100%";
               content = {
                 type = "zfs";
-                pool = "zroot";
+                pool = "main_pool";
               };
             };
           };
@@ -58,7 +58,7 @@
               size = "100%";
               content = {
                 type = "zfs";
-                pool = "zroot";
+                pool = "main_pool";
               };
             };
           };
@@ -66,23 +66,18 @@
       };
     };
     zpool = {
-      zroot = {
+      main_pool = {
         type = "zpool";
         mode = "mirror";
-        # Workaround: cannot import 'zroot': I/O error in disko tests
-        options.cachefile = "none";
-        rootFsOptions = {
-          compression = "zstd";
-          "com.sun:auto-snapshot" = "false";
-        };
         mountpoint = "/pool";
-        postCreateHook = "zfs list -t snapshot -H -o name | grep -E '^zroot@blank$' || zfs snapshot zroot@blank";
+        rootFsOptions = {
+          canmount = "off";
+        };
 
         datasets = {
-          main_pool = {
+          dataset = {
             type = "zfs_fs";
-            mountpoint = "/pool";
-            options."com.sun:auto-snapshot" = "true";
+            mountpoint = "/pool/dataset";
           };
         };
       };
