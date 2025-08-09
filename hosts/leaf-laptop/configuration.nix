@@ -7,7 +7,7 @@
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.default
-    ../../modules/nixos/hyprland.nix
+    # ../../modules/nixos/hyprland.nix
     ../../modules/nixos/syncthing.nix
     ../../modules/nixos/gaming.nix
     ../../modules/nixos/vr.nix
