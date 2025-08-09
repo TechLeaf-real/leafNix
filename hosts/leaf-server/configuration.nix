@@ -1,5 +1,6 @@
 {
   inputs,
+  modulesPath,
   pkgs,
   ...
 }: {
@@ -7,6 +8,7 @@
     (modulesPath + "/installer/scan/not-detected.nix")
     (modulesPath + "/profiles/qemu-guest.nix")
     ./disk-config.nix
+    ./hardware-configuration.nix
     ../../modules/nixos/misc/network.nix
   ];
 
