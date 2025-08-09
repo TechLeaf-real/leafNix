@@ -70,9 +70,6 @@
         type = "zpool";
         mode = "mirror";
         mountpoint = "/pool";
-        rootFsOptions = {
-          canmount = "off";
-        };
 
         datasets = {
           dataset = {
