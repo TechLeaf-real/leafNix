@@ -104,6 +104,8 @@
     enable = true;
   };
 
+  services.gvfs.enable = true;
+
   network.hostname = "leaf-desktop";
 
   hardware.xpadneo.enable = true;
