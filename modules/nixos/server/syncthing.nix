@@ -3,6 +3,7 @@
     enable = true;
     overrideDevices = true;
     overrideFolders = true;
+    guiAddress = "0.0.0.0:8384";
     settings = {
       devices = {
         leaf-desktop.id = "CPCL5BF-PM44KRA-B5RFMMS-TFA3L33-MOF4VFL-2KRLHY5-LTOTZCO-Q7MCEAM";
