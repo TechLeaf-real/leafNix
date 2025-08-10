@@ -60,6 +60,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nixarr = {
+      url = "github:rasmus-kirk/nixarr";
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -74,6 +78,7 @@
     copyparty,
     disko,
     declarative-jellyfin,
+    nixarr,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -141,6 +146,7 @@
           ./hosts/leaf-server/configuration.nix
           disko.nixosModules.disko
           declarative-jellyfin.nixosModules.default
+          nixarr.nixosModules.default
         ];
       };
     };

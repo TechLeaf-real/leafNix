@@ -1,4 +1,4 @@
-{...}: {
+{lib, ...}: {
   services = {
     declarative-jellyfin = {
       enable = true;
@@ -49,41 +49,53 @@
       };
     };
 
-    radarr = {
-      enable = true;
-      openFirewall = true;
-      group = "media";
-    };
+    # radarr = {
+    #   enable = true;
+    #   openFirewall = true;
+    #   group = "media";
+    # };
 
-    lidarr = {
-      enable = true;
-      openFirewall = true;
-      group = "media";
-    };
+    # lidarr = {
+    #   enable = true;
+    #   openFirewall = true;
+    #   group = "media";
+    # };
 
-    sonarr = {
-      enable = true;
-      openFirewall = true;
-      group = "media";
-    };
+    # sonarr = {
+    #   enable = true;
+    #   openFirewall = true;
+    #   group = "media";
+    # };
 
-    jellyseerr = {
-      enable = true;
-      openFirewall = true;
-    };
+    # jellyseerr = {
+    #   enable = true;
+    #   openFirewall = true;
+    # };
 
-    jackett = {
-      enable = true;
-      openFirewall = true;
-      group = "media";
-    };
+    # jackett = {
+    #   enable = true;
+    #   openFirewall = true;
+    #   group = "media";
+    # };
+  };
+
+  nixarr = {
+    enable = true;
+    mediaDir = "/pool/dataset/media";
+    stateDir = "pool/dataset/.state/nixarr";
+
+    radarr.enable = true;
+    lidarr.enable = true;
+    sonarr.enable = true;
+    prowlarr.enable = true;
+    jellyseerr.enable = true;
   };
 
   hardware.graphics.enable = true;
   users.users = {
     jellyfin = {
       isSystemUser = true;
-      group = "media";
+      group = lib.mkForce "media";
       extraGroups = ["video" "render"];
     };
   };
