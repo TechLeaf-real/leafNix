@@ -63,7 +63,7 @@
     group = "media";
   };
 
-  services.jellyeerr = {
+  services.jellyseerr = {
     enable = true;
     openFirewall = true;
   };
