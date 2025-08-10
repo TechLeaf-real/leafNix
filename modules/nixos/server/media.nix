@@ -33,7 +33,7 @@
       libraries = {
         Movies = {
           enabled = true;
-          contentType = "moves";
+          contentType = "movies";
           pathInfos = ["/pool/dataset/media/Movies"];
         };
         Shows = {
