@@ -47,5 +47,9 @@
   };
 
   hardware.graphics.enable = true;
-  users.users.jellyfin.extraGroups = ["video" "render"];
+  users.users.jellyfin = {
+    isSystemUser = true;
+    group = "jellyfin";
+    extraGroups = ["video" "render"];
+  };
 }
