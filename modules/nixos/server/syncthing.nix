@@ -21,8 +21,8 @@
           id = "wjun3-prxf2";
         };
         "DCIM" = {
-          path = "/pool/dataset/LeafBox/DCIM";
-          devices = ["leaf-desktop"];
+          path = "/pool/dataset/LeafBox/Pictures/DCIM";
+          devices = [""];
           id = "nookf-u7zge";
         };
         "Emulation" = {
@@ -47,7 +47,7 @@
         };
         "Roms" = {
           path = "/pool/dataset/LeafBox/Emulation/Roms";
-          devices = ["leaf-desktop"];
+          devices = [""];
           id = "e2ede-ugswh";
         };
         "Soundboard" = {
