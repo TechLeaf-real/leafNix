@@ -47,5 +47,5 @@
   };
 
   hardware.graphics.enable = true;
-  users.users.${services.jellyfin.user}.extraGroups = ["video" "render"];
+  users.users.jellyfin.extraGroups = ["video" "render"];
 }
