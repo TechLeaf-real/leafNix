@@ -68,6 +68,15 @@
     openFirewall = true;
   };
 
+  services.deluge = {
+    enable = true;
+    declarative = true;
+    openFirewall = true;
+    config = {
+      download_location = "/pool/dataset/media/downloads";
+    };
+  };
+
   hardware.graphics.enable = true;
   users.users = {
     jellyfin = {
