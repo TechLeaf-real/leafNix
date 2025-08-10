@@ -1,6 +1,7 @@
 {...}: {
   services.syncthing = {
     enable = true;
+    openFirewall = true;
     overrideDevices = true;
     overrideFolders = true;
     openDefaultPorts = true;

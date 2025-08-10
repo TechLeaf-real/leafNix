@@ -2,6 +2,7 @@
   services = {
     declarative-jellyfin = {
       enable = true;
+      openFirewall = true;
       system = {
         serverName = "LeafNet Streaming";
       };
