@@ -12,6 +12,7 @@
     ../../modules/nixos/misc/network.nix
     ../../modules/nixos/client/fish.nix
     ../../modules/nixos/server/samba.nix
+    ../../modules/nixos/server/syncthing.nix
   ];
 
   network.hostname = "leaf-server";
