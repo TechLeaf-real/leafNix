@@ -22,7 +22,7 @@
         };
         "DCIM" = {
           path = "/pool/dataset/LeafBox/Pictures/DCIM";
-          devices = [""];
+          devices = [];
           id = "nookf-u7zge";
         };
         "Emulation" = {
@@ -47,7 +47,7 @@
         };
         "Roms" = {
           path = "/pool/dataset/LeafBox/Emulation/Roms";
-          devices = [""];
+          devices = [];
           id = "e2ede-ugswh";
         };
         "Soundboard" = {
