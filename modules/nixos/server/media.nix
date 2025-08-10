@@ -51,32 +51,22 @@
     group = "media";
   };
 
-  # nixarr = {
-  #   enable = true;
-  #   mediaDir = "/pool/dataset/media";
-  #   stateDir = "/pool/dataset/.state/nixarr";
+  services.lidarr = {
+    enable = true;
+    openFirewall = true;
+    group = "media";
+  };
 
-  #   radarr = {
-  #     enable = true;
-  #     openFirewall = true;
-  #   };
-  #   lidarr = {
-  #     enable = true;
-  #     openFirewall = true;
-  #   };
-  #   sonarr = {
-  #     enable = true;
-  #     openFirewall = true;
-  #   };
-  #   prowlarr = {
-  #     enable = true;
-  #     openFirewall = true;
-  #   };
-  #   jellyseerr = {
-  #     enable = true;
-  #     openFirewall = true;
-  #   };
-  # };
+  services.sonarr = {
+    enable = true;
+    openFirewall = true;
+    group = "media";
+  };
+
+  services.jellyeerr = {
+    enable = true;
+    openFirewall = true;
+  };
 
   hardware.graphics.enable = true;
   users.users = {
