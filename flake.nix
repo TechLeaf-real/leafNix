@@ -55,6 +55,11 @@
       url = "github:numtide/nixos-facter-modules";
     };
 
+    declarative-jellyfin = {
+      url = "github:Sveske-Juice/declarative-jellyfin";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -68,6 +73,7 @@
     home-manager,
     copyparty,
     disko,
+    declarative-jellyfin,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -134,6 +140,7 @@
         modules = [
           ./hosts/leaf-server/configuration.nix
           disko.nixosModules.disko
+          declarative-jellyfin.nixosModules.default
         ];
       };
     };
