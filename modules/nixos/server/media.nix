@@ -29,6 +29,24 @@
           "av1"
         ];
       };
+
+      libraries = {
+        Movies = {
+          enabled = true;
+          contentType = "moves";
+          pathInfos = ["/pool/dataset/media/Movies"];
+        };
+        Shows = {
+          enabled = true;
+          contentType = "tvshows";
+          pathInfos = ["/pool/dataset/media/tv"];
+        };
+        Music = {
+          enabled = true;
+          contentType = "music";
+          pathInfos = ["/pool/dataset/media/music"];
+        };
+      };
     };
 
     # radarr = {
