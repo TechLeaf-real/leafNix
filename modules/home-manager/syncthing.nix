@@ -28,8 +28,7 @@ in {
       settings = {
         devices = {
           leaf-server = {
-            id = "O23FQNU-BNPEFVK-D7BEAAC-DRKV2D3-XF62HMQ-HTXDH4A-4EFJH72-HQYO4Q7";
-            address = "tcp://192.168.1.115:22000";
+            id = "YRUU5FO-XKW2ZAA-5EZQWS4-36K3IAW-YKJNUA6-GFTFLWW-YJENKLV-URVFPA3";
           };
         };
         folders = {
