@@ -13,6 +13,7 @@
     ../../modules/nixos/client/fish.nix
     ../../modules/nixos/server/samba.nix
     ../../modules/nixos/server/syncthing.nix
+    ../../modules/nixos/server/vaultwarden.nix
   ];
 
   network.hostname = "leaf-server";
