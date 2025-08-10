@@ -1,82 +1,48 @@
 {lib, ...}: {
-  services = {
-    declarative-jellyfin = {
-      enable = true;
-      openFirewall = true;
-      system = {
-        serverName = "LeafNet Streaming";
-      };
-
-      users = {
-        techleaf = {
-          mutable = false;
-          permissions.isAdministrator = true;
-          hashedPassword = "$PBKDF2-SHA512$iterations=210000$4BCE7FB5229C58DF3FA49CA4660803E2$10CD54D9DAE819548CAB50D0F1F09E0F4B964C3BDB73D9DDD3667CBE7194BA02C2D25C89520C8FB7C31E4AF42CAA8882D8DD75839922EB4EE12713DC29D01616";
-        };
-      };
-
-      encoding = {
-        enableHardwareEncoding = true;
-        hardwareAccelerationType = "vaapi";
-        enableDecodingColorDepth10Hevc = true;
-        allowHevcEncoding = true;
-        hardwareDecodingCodecs = [
-          "h264"
-          "hevc"
-          "mpeg2video"
-          "vc1"
-          "vp9"
-          "av1"
-        ];
-      };
-
-      libraries = {
-        Movies = {
-          enabled = true;
-          contentType = "movies";
-          pathInfos = ["/pool/dataset/media/Movies"];
-        };
-        Shows = {
-          enabled = true;
-          contentType = "tvshows";
-          pathInfos = ["/pool/dataset/media/tv"];
-        };
-        Music = {
-          enabled = true;
-          contentType = "music";
-          pathInfos = ["/pool/dataset/media/music"];
-        };
+  services.declarative-jellyfin = {
+    enable = true;
+    openFirewall = true;
+    system = {
+      serverName = "LeafNet Streaming";
+    };
+    users = {
+      techleaf = {
+        mutable = false;
+        permissions.isAdministrator = true;
+        hashedPassword = "$PBKDF2-SHA512$iterations=210000$4BCE7FB5229C58DF3FA49CA4660803E2$10CD54D9DAE819548CAB50D0F1F09E0F4B964C3BDB73D9DDD3667CBE7194BA02C2D25C89520C8FB7C31E4AF42CAA8882D8DD75839922EB4EE12713DC29D01616";
       };
     };
-
-    # radarr = {
-    #   enable = true;
-    #   openFirewall = true;
-    #   group = "media";
-    # };
-
-    # lidarr = {
-    #   enable = true;
-    #   openFirewall = true;
-    #   group = "media";
-    # };
-
-    # sonarr = {
-    #   enable = true;
-    #   openFirewall = true;
-    #   group = "media";
-    # };
-
-    # jellyseerr = {
-    #   enable = true;
-    #   openFirewall = true;
-    # };
-
-    # jackett = {
-    #   enable = true;
-    #   openFirewall = true;
-    #   group = "media";
-    # };
+    encoding = {
+      enableHardwareEncoding = true;
+      hardwareAccelerationType = "vaapi";
+      enableDecodingColorDepth10Hevc = true;
+      allowHevcEncoding = true;
+      hardwareDecodingCodecs = [
+        "h264"
+        "hevc"
+        "mpeg2video"
+        "vc1"
+        "vp9"
+        "av1"
+      ];
+    };
+    libraries = {
+      Movies = {
+        enabled = true;
+        contentType = "movies";
+        pathInfos = ["/pool/dataset/media/Movies"];
+      };
+      Shows = {
+        enabled = true;
+        contentType = "tvshows";
+        pathInfos = ["/pool/dataset/media/tv"];
+      };
+      Music = {
+        enabled = true;
+        contentType = "music";
+        pathInfos = ["/pool/dataset/media/music"];
+      };
+    };
   };
 
   nixarr = {
@@ -84,11 +50,26 @@
     mediaDir = "/pool/dataset/media";
     stateDir = "/pool/dataset/.state/nixarr";
 
-    radarr.enable = true;
-    lidarr.enable = true;
-    sonarr.enable = true;
-    prowlarr.enable = true;
-    jellyseerr.enable = true;
+    radarr = {
+      enable = true;
+      openFirewall = true;
+    };
+    lidarr = {
+      enable = true;
+      openFirewall = true;
+    };
+    sonarr = {
+      enable = true;
+      openFirewall = true;
+    };
+    prowlarr = {
+      enable = true;
+      openFirewall = true;
+    };
+    jellyseerr = {
+      enable = true;
+      openFirewall = true;
+    };
   };
 
   hardware.graphics.enable = true;
