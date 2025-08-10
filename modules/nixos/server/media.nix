@@ -72,6 +72,7 @@
     enable = true;
     declarative = true;
     openFirewall = true;
+    authFile = "/run/keys/deluge-auth";
     config = {
       download_location = "/pool/dataset/media/downloads";
     };
