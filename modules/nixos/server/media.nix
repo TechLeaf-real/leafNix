@@ -49,29 +49,45 @@
       };
     };
 
-    # radarr = {
-    #   enable = true;
-    # };
+    radarr = {
+      enable = true;
+      openFirewall = true;
+      group = "media";
+    };
 
-    # sonarr = {
-    #   enable = true;
-    # };
+    lidarr = {
+      enable = true;
+      openFirewall = true;
+      group = "media";
+    };
 
-    # jellyseerr = {
-    #   enable = true;
-    # };
+    sonarr = {
+      enable = true;
+      openFirewall = true;
+      group = "media";
+    };
 
-    # jackett = {
-    #   enable = true;
-    # };
+    jellyseerr = {
+      enable = true;
+      openFirewall = true;
+      group = "media";
+    };
+
+    jackett = {
+      enable = true;
+      openFirewall = true;
+      group = "media";
+    };
   };
 
   hardware.graphics.enable = true;
-  users.users.jellyfin = {
-    isSystemUser = true;
-    group = "jellyfin";
-    extraGroups = ["video" "render"];
+  users.users = {
+    jellyfin = {
+      isSystemUser = true;
+      group = "media";
+      extraGroups = ["video" "render"];
+    };
   };
 
-  users.groups.jellyfin = {};
+  users.groups.media = {};
 }
