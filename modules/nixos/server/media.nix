@@ -82,7 +82,7 @@
   nixarr = {
     enable = true;
     mediaDir = "/pool/dataset/media";
-    stateDir = "pool/dataset/.state/nixarr";
+    stateDir = "/pool/dataset/.state/nixarr";
 
     radarr.enable = true;
     lidarr.enable = true;
