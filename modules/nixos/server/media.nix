@@ -49,7 +49,7 @@
   hardware.graphics.enable = true;
   users.users.jellyfin = {
     isSystemUser = true;
-    group = "jellyfin";
+    # group = "jellyfin";
     extraGroups = ["video" "render"];
   };
 }
