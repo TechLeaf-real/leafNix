@@ -1,6 +1,7 @@
 {...}: {
   services = {
     declarative-jellyfin = {
+      enable = true;
       system = {
         serverName = "LeafNet Streaming";
       };
