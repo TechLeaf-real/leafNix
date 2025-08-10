@@ -73,6 +73,7 @@
     declarative = true;
     openFirewall = true;
     authFile = "/run/keys/deluge-auth";
+    group = "media";
     web = {
       enable = true;
       openFirewall = true;
