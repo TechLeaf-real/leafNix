@@ -1,8 +1,4 @@
-{
-  lib,
-  pkgs,
-  ...
-}: {
+{lib, ...}: {
   services.declarative-jellyfin = {
     enable = true;
     openFirewall = true;
@@ -72,26 +68,18 @@
     openFirewall = true;
   };
 
-  # services.transmission = {
-  #   enable = true;
-  #   group = "media";
-  #   openFirewall = true;
-  #   settings = {
-  #     download-dir = "/pool/dataset/media/downloads";
-  #   };
-  # };
-
   services.deluge = {
     enable = true;
     group = "media";
-    declarative = true;
-    authFile = pkgs.writeTextFile {
-      name = "deluge-auth";
-      text = ''
-        localclient:deluge:10
-      '';
-    };
-    openFirewall = true;
+    dataDir = "/pool/dataset/media/deluge";
+    # declarative = true;
+    # authFile = pkgs.writeTextFile {
+    #   name = "deluge-auth";
+    #   text = ''
+    #     localclient:deluge:10
+    #   '';
+    # };
+    # openFirewall = true;
     config = {
       download_location = "/pool/dataset/media/downloads";
     };
