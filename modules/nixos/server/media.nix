@@ -1,4 +1,8 @@
-{lib, ...}: {
+{
+  lib,
+  pkgs,
+  ...
+}: {
   services.declarative-jellyfin = {
     enable = true;
     openFirewall = true;
