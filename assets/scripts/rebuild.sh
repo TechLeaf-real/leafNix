@@ -4,7 +4,7 @@ pushd ~/leafNix
 clear
 sudo deadnix -e
 clear
-if git diff --quiet '*.nix'; then
+if git diff --quiet ; then
     echo "\nNo changes detected, exiting."
     popd
     exit 0
