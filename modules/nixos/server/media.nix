@@ -82,6 +82,10 @@
     openFirewall = true;
   };
 
+  services.cloudflared = {
+    enable = true;
+  };
+
   hardware.graphics.enable = true;
   users.users = {
     jellyfin = {
