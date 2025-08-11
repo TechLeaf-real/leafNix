@@ -83,6 +83,7 @@
     config = {
       download_location = "/pool/dataset/media/downloads";
       enabled_plugins = ["label"];
+      max_download_speed = "40000.0";
     };
     web = {
       enable = true;
