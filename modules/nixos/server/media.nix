@@ -82,8 +82,9 @@
     openFirewall = true;
   };
 
-  services.cloudflared = {
+  services.flaresolverr = {
     enable = true;
+    openFirewall = true;
   };
 
   hardware.graphics.enable = true;
