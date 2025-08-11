@@ -77,11 +77,13 @@
   #   };
   # };
 
-  services.rtorrent = {
+  services.deluge = {
     enable = true;
     group = "media";
     openFirewall = true;
-    downloadDir = "/pool/dataset/media/downloads";
+    config = {
+      download_location = "/pool/dataset/media/downloads";
+    };
   };
 
   services.prowlarr = {
