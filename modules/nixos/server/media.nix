@@ -82,6 +82,7 @@
     # openFirewall = true;
     config = {
       download_location = "/pool/dataset/media/downloads";
+      enabled_plugins = ["label"];
     };
     web = {
       enable = true;
