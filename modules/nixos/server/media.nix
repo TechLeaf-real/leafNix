@@ -68,18 +68,27 @@
     openFirewall = true;
   };
 
-  services.deluge = {
+  # services.deluge = {
+  #   enable = true;
+  #   declarative = true;
+  #   openFirewall = true;
+  #   authFile = "/run/keys/deluge-auth";
+  #   group = "media";
+  #   web = {
+  #     enable = true;
+  #     openFirewall = true;
+  #   };
+  #   config = {
+  #     download_location = "/pool/dataset/media/downloads";
+  #   };
+  # };
+
+  services.transmission = {
     enable = true;
-    declarative = true;
-    openFirewall = true;
-    authFile = "/run/keys/deluge-auth";
     group = "media";
-    web = {
-      enable = true;
-      openFirewall = true;
-    };
-    config = {
-      download_location = "/pool/dataset/media/downloads";
+    openFirewall = true;
+    settings = {
+      download_dir = "/pool/dataset/media/downloads";
     };
   };
 
