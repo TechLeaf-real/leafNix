@@ -84,6 +84,10 @@
     config = {
       download_location = "/pool/dataset/media/downloads";
     };
+    web = {
+      enable = true;
+      openFirewall = true;
+    };
   };
 
   services.prowlarr = {
