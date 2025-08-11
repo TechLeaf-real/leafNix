@@ -68,13 +68,20 @@
     openFirewall = true;
   };
 
-  services.transmission = {
+  # services.transmission = {
+  #   enable = true;
+  #   group = "media";
+  #   openFirewall = true;
+  #   settings = {
+  #     download-dir = "/pool/dataset/media/downloads";
+  #   };
+  # };
+
+  services.rtorrent = {
     enable = true;
     group = "media";
     openFirewall = true;
-    settings = {
-      download-dir = "/pool/dataset/media/downloads";
-    };
+    downloadDir = "/pool/dataset/media/downloads";
   };
 
   services.prowlarr = {
