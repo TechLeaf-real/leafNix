@@ -80,6 +80,13 @@
   services.deluge = {
     enable = true;
     group = "media";
+    declarative = true;
+    authFile = pkgs.writeTextFile {
+      name = "deluge-auth";
+      text = ''
+        localclient:deluge:10
+      '';
+    };
     openFirewall = true;
     config = {
       download_location = "/pool/dataset/media/downloads";
