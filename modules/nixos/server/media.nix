@@ -30,12 +30,12 @@
       Movies = {
         enabled = true;
         contentType = "movies";
-        pathInfos = ["/pool/dataset/media/Movies"];
+        pathInfos = ["/pool/dataset/media/movies"];
       };
       Shows = {
         enabled = true;
         contentType = "tvshows";
-        pathInfos = ["/pool/dataset/media/tv"];
+        pathInfos = ["/pool/dataset/media/shows"];
       };
       Music = {
         enabled = true;
@@ -83,7 +83,7 @@
     config = {
       download_location = "/pool/dataset/media/downloads";
       enabled_plugins = ["label"];
-      max_download_speed = "40000.0";
+      max_download_speed = "4000.0";
     };
     web = {
       enable = true;
