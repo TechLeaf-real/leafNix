@@ -68,21 +68,6 @@
     openFirewall = true;
   };
 
-  # services.deluge = {
-  #   enable = true;
-  #   declarative = true;
-  #   openFirewall = true;
-  #   authFile = "/run/keys/deluge-auth";
-  #   group = "media";
-  #   web = {
-  #     enable = true;
-  #     openFirewall = true;
-  #   };
-  #   config = {
-  #     download_location = "/pool/dataset/media/downloads";
-  #   };
-  # };
-
   services.transmission = {
     enable = true;
     group = "media";
@@ -90,6 +75,11 @@
     settings = {
       download_dir = "/pool/dataset/media/downloads";
     };
+  };
+
+  services.prowlarr = {
+    enable = true;
+    openFirewall = true;
   };
 
   hardware.graphics.enable = true;
