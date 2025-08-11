@@ -73,7 +73,7 @@
     group = "media";
     openFirewall = true;
     settings = {
-      download_dir = "/pool/dataset/media/downloads";
+      download-dir = "/pool/dataset/media/downloads";
     };
   };
 
