@@ -50,7 +50,7 @@
   users.users.techleaf = {
     isNormalUser = true;
     description = "Techleaf";
-    extraGroups = ["networkmanager"];
+    extraGroups = ["networkmanager" "media"];
   };
 
   console.keyMap = "us";
