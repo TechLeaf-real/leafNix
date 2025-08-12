@@ -9,14 +9,14 @@ in {
     syncthing = {
       blender = lib.mkEnableOption "blender";
       code = lib.mkEnableOption "code";
-      dcim = lib.mkEnableOption "dcim";
+      # dcim = lib.mkEnableOption "dcim";
       emulation = lib.mkEnableOption "emulation";
       ssh = lib.mkEnableOption "ssh";
       obsidian = lib.mkEnableOption "obsidian";
-      pictures = lib.mkEnableOption "pictures";
+      # pictures = lib.mkEnableOption "pictures";
       roms = lib.mkEnableOption "roms";
       soundboard = lib.mkEnableOption "soundboard";
-      videos = lib.mkEnableOption "videos";
+      # videos = lib.mkEnableOption "videos";
     };
   };
 
@@ -42,11 +42,11 @@ in {
             devices = ["leaf-server"];
             id = "wjun3-prxf2";
           };
-          "DCIM" = lib.mkIf cfg.dcim {
-            path = "~/DCIM";
-            devices = ["leaf-server"];
-            id = "nookf-u7zge";
-          };
+          # "DCIM" = lib.mkIf cfg.dcim {
+          #   path = "~/DCIM";
+          #   devices = ["leaf-server"];
+          #   id = "nookf-u7zge";
+          # };
           "Emulation" = lib.mkIf cfg.emulation {
             path = "~/Emulation";
             devices = ["leaf-server"];
@@ -62,11 +62,11 @@ in {
             devices = ["leaf-server"];
             id = "vsujy-eplhq";
           };
-          "Pictures" = lib.mkIf cfg.pictures {
-            path = "~/Pictures";
-            devices = ["leaf-server"];
-            id = "al5vz-yucjc";
-          };
+          # "Pictures" = lib.mkIf cfg.pictures {
+          #   path = "~/Pictures";
+          #   devices = ["leaf-server"];
+          #   id = "al5vz-yucjc";
+          # };
           "Roms" = lib.mkIf cfg.roms {
             path = "~/Roms";
             devices = ["leaf-server"];
@@ -77,11 +77,11 @@ in {
             devices = ["leaf-server"];
             id = "hqy5y-ahisy";
           };
-          "Videos" = lib.mkIf cfg.videos {
-            path = "~/Videos";
-            devices = ["leaf-server"];
-            id = "5yge6-zfxyn";
-          };
+          # "Videos" = lib.mkIf cfg.videos {
+          #   path = "~/Videos";
+          #   devices = ["leaf-server"];
+          #   id = "5yge6-zfxyn";
+          # };
         };
       };
     };

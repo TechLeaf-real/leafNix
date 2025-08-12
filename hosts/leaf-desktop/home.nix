@@ -24,9 +24,9 @@
     code = true;
     ssh = true;
     obsidian = true;
-    pictures = true;
+    # pictures = true;
     soundboard = true;
-    videos = true;
+    # videos = true;
     emulation = true;
   };
 
