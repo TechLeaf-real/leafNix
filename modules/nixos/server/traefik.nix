@@ -24,8 +24,8 @@
     };
 
     dynamicConfigOptions = {
-      http.routers = {};
-      http.services = {};
+      # http.routers = {};
+      # http.services = {};
     };
   };
 }
