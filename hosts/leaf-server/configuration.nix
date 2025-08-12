@@ -18,6 +18,7 @@
     ../../modules/nixos/server/syncthing.nix
     ../../modules/nixos/server/media.nix
     ../../modules/nixos/server/immich.nix
+    ../../modules/nixos/server/traefik.nix
   ];
 
   network.hostname = "leaf-server";
