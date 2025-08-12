@@ -1,7 +1,12 @@
 {...}: {
-  security.acme.acceptTerms = true;
-  security.acme.certs = {
-    "techleaf.dev".email = "mikiediggins@gmail.com";
+  security.acme = {
+    acceptTerms = true;
+    certs."techleaf.dev" = {
+      email = "mikiediggins@gmail.com";
+      dnsProvider = "cloudflare";
+      dnsResolver = "1.1.1.1:53";
+      environmentFile = "/var/lib/acme/cloudflare.s";
+    };
   };
 
   services.nginx = {
