@@ -11,12 +11,12 @@
     ./hardware-configuration.nix
     # ../../modules/nixos/server/vaultwarden.nix
     # ../../modules/nixos/server/nginx.nix
+    # ../../modules/nixos/server/gitea.nix
     ../../modules/nixos/misc/network.nix
     ../../modules/nixos/client/fish.nix
     ../../modules/nixos/server/samba.nix
     ../../modules/nixos/server/syncthing.nix
     ../../modules/nixos/server/media.nix
-    ../../modules/nixos/server/gitea.nix
   ];
 
   network.hostname = "leaf-server";
