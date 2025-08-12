@@ -16,6 +16,7 @@
     ../../modules/nixos/server/samba.nix
     ../../modules/nixos/server/syncthing.nix
     ../../modules/nixos/server/media.nix
+    ../../modules/nixos/server/gitea.nix
   ];
 
   network.hostname = "leaf-server";
