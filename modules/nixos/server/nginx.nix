@@ -6,6 +6,7 @@
       dnsProvider = "cloudflare";
       dnsResolver = "1.1.1.1:53";
       environmentFile = "/var/lib/acme/cloudflare.s";
+      webroot = null;
     };
   };
 
