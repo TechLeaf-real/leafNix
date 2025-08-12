@@ -22,5 +22,10 @@
       api.dashboard = true;
       api.insecure = true;
     };
+
+    dynamicConfigOptions = {
+      http.routers = {};
+      http.services = {};
+    };
   };
 }
