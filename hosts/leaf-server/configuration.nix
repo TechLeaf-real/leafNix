@@ -15,13 +15,13 @@
     # ../../modules/nixos/server/httpd.nix
     # ../../modules/nixos/server/nginx.nix
     # ../../modules/nixos/server/traefik.nix
+    # ../../modules/nixos/server/cloudflared.nix
     ../../modules/nixos/misc/network.nix
     ../../modules/nixos/client/fish.nix
     ../../modules/nixos/server/samba.nix
     ../../modules/nixos/server/syncthing.nix
     ../../modules/nixos/server/media.nix
     ../../modules/nixos/server/immich.nix
-    ../../modules/nixos/server/cloudflared.nix
   ];
 
   network.hostname = "leaf-server";
