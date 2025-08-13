@@ -1,14 +1,18 @@
 {...}: {
-  security.acme = {
-    acceptTerms = true;
-    certs."techleaf.dev" = {
-      email = "mikiediggins@gmail.com";
-      dnsProvider = "cloudflare";
-      dnsResolver = "1.1.1.1:53";
-      environmentFile = "/var/lib/acme/cloudflare.s";
-      webroot = null;
-    };
-  };
+  # security.acme = {
+  #   acceptTerms = true;
+  #   certs."techleaf.dev" = {
+  #     email = "mikiediggins@gmail.com";
+  #     dnsProvider = "cloudflare";
+  #     dnsResolver = "1.1.1.1:53";
+  #     environmentFile = "/var/lib/acme/cloudflare.s";
+  #     webroot = null;
+  #   };
+  # };
+
+  security.pki.certificateFiles = [
+    "/pool/dataset/certs/techleaf.dev.pem"
+  ];
 
   services.nginx = {
     enable = true;
