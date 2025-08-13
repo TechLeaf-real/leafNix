@@ -75,6 +75,7 @@
       switcheroo
       gnome-disk-utility
       alacritty
+      finamp
     ])
     ++ (with inputs.self.packages.x86_64-linux; [
       rebuild
