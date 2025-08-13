@@ -2,8 +2,8 @@
   services.cloudflared = {
     enable = true;
     tunnels = {
-      "c950419a-532f-40ad-bf09-12ebc0476cb0" = {
-        credentialsFile = "/root/.cloudflared/c950419a-532f-40ad-bf09-12ebc0476cb0.json";
+      "4296602e-eee8-4837-9196-6f40dd895506" = {
+        credentialsFile = "/root/.cloudflared/4296602e-eee8-4837-9196-6f40dd895506.json";
         ingress = {
           "media.techleaf.dev" = {
             service = "http://localhost:8096";
