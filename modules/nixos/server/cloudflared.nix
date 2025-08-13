@@ -7,7 +7,9 @@
         ingress = {
           "media.techleaf.dev" = {
             service = "http://localhost:8096";
-            # path = "/*.(jpg|pns|css|js)";
+          };
+          "seerr.techleaf.dev" = {
+            service = "http://localhost:5055";
           };
         };
         default = "http_status:404";
