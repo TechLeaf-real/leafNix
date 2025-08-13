@@ -10,7 +10,7 @@ if git diff --quiet ; then
     exit 0
 fi
 clear
-git diff -U0 '*.nix'
+git diff -U0
 set +o pipefail
 nh os switch ~/leafNix || exit 0
 set -o pipefail
