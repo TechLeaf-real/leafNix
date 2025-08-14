@@ -53,7 +53,7 @@
         options = {
           default = {
             cipherSuites = [
-              "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256"
+              "TLS_AEAD-CHACHA20-POLY1305-SHA256"
             ];
           };
         };
