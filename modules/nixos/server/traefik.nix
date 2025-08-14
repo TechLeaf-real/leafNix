@@ -51,7 +51,7 @@
       tls = {
         options = {
           default = {
-            sniStrict = false;
+            # sniStrict = false;
             minVersion = "VersionTLS13";
             cipherSuites = [
               "TLS_CHACHA20_POLY1305_SHA256"
