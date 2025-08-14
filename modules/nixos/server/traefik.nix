@@ -27,6 +27,17 @@
 
     dynamicConfigOptions = {
       routers = {
+        api = {
+          rule = "Host('api.techleaf.dev')";
+          service = "api@internal";
+          entrypoints = ["websecure"];
+          tls = {
+            certificates = {
+              certFile = "/root/techleaf.dev.pem";
+              keyFile = "/root/techleaf.dev.key";
+            };
+          };
+        };
         media = {
           rule = "Host('media.techleaf.dev')";
           service = "media";
