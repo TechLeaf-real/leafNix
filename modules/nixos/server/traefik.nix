@@ -32,7 +32,7 @@
       http = {
         routers = {
           media = {
-            rule = "Host('techleaf.dev')";
+            rule = "Host(`media.techleaf.dev`)";
             service = "media@file";
             entrypoints = ["websecure"];
           };
