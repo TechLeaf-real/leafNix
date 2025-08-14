@@ -12,11 +12,11 @@
       entryPoints = {
         web = {
           address = ":80";
-          http.redirections.entryPoint = {
-            to = "websecure";
-            scheme = "https";
-            permanent = true;
-          };
+          # http.redirections.entryPoint = {
+          #   to = "websecure";
+          #   scheme = "https";
+          #   permanent = true;
+          # };
         };
 
         websecure = {
@@ -27,6 +27,18 @@
 
     dynamicConfigOptions = {
       routers = {
+        default = {
+          rule = "Host('*')";
+          service = "media";
+          # entrypoints = ["websecure"];
+          priority = 1;
+          # tls = {
+          #   certificates = {
+          #     certFile = "/root/techleaf.dev.pem";
+          #     keyFile = "/root/techleaf.dev.key";
+          #   };
+          # };
+        };
         media = {
           rule = "Host('media.techleaf.dev')";
           service = "media";
