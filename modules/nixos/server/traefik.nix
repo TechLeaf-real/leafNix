@@ -28,7 +28,7 @@
     dynamicConfigOptions = {
       routers = {
         default = {
-          rule = "Host('*')";
+          rule = "Host('192.168.1.239')";
           service = "media";
           # entrypoints = ["websecure"];
           priority = 1;
