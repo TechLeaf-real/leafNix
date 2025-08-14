@@ -5,4 +5,5 @@
       # SIGNUPS_ALLOWED = false;
     };
   };
+  networking.firewall.allowedTCPPorts = [8222];
 }
