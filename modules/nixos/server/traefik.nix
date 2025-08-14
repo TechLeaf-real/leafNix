@@ -27,18 +27,6 @@
 
     dynamicConfigOptions = {
       routers = {
-        default = {
-          rule = "Host('192.168.1.239')";
-          service = "media";
-          # entrypoints = ["websecure"];
-          priority = 1;
-          # tls = {
-          #   certificates = {
-          #     certFile = "/root/techleaf.dev.pem";
-          #     keyFile = "/root/techleaf.dev.key";
-          #   };
-          # };
-        };
         media = {
           rule = "Host('media.techleaf.dev')";
           service = "media";
