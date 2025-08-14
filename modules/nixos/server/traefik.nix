@@ -9,7 +9,7 @@
 
       api = {
         dashboard = true;
-        # insecure = true;
+        insecure = true;
       };
 
       entryPoints = {
