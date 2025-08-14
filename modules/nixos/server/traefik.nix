@@ -37,7 +37,7 @@
         };
         media = {
           rule = "Host('media.techleaf.dev')";
-          service = "media";
+          service = "media@file";
           entrypoints = ["websecure"];
         };
       };
