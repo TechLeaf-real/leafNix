@@ -14,6 +14,7 @@
     # ../../modules/nixos/server/httpd.nix
     # ../../modules/nixos/server/cloudflared.nix
     # ../../modules/nixos/server/traefik.nix
+    # ../../modules/nixos/server/copyparty.nix
     ../../modules/nixos/misc/network.nix
     ../../modules/nixos/client/fish.nix
     ../../modules/nixos/server/samba.nix
@@ -23,7 +24,6 @@
     ../../modules/nixos/server/nginx.nix
     ../../modules/nixos/server/ddclient.nix
     ../../modules/nixos/server/vaultwarden.nix
-    ../../modules/nixos/server/copyparty.nix
   ];
 
   network.hostname = "leaf-server";
