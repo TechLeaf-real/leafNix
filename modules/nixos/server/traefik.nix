@@ -23,20 +23,6 @@
           address = ":443";
         };
       };
-
-      certificatesResolvers = {
-        cloudflare = {
-          acme = {
-            storage = "/var/lib/traefik/acme.json";
-            caserver = "";
-            dnsChallenge = {
-              provider = "cloudflare";
-              resolvers = ["1.1.1.1:53" "1.0.0.1:53"];
-              # propagation.delayBeforeChecks = 60;
-            };
-          };
-        };
-      };
     };
 
     dynamicConfigOptions = {
@@ -46,7 +32,10 @@
           service = "api@interal";
           entrypoints = ["websecure"];
           tls = {
-            certResolver = "cloudflare";
+            certificates = {
+              certFile = "/root/techleaf.dev.pem";
+              keyFile = "/root/techleaf.dev.key";
+            };
           };
         };
       };
