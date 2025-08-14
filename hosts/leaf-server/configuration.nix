@@ -9,7 +9,6 @@
     (modulesPath + "/profiles/qemu-guest.nix")
     ./disk-config.nix
     ./hardware-configuration.nix
-    # ../../modules/nixos/server/vaultwarden.nix
     # ../../modules/nixos/server/gitea.nix
     # ../../modules/nixos/server/caddy.nix
     # ../../modules/nixos/server/httpd.nix
@@ -23,6 +22,7 @@
     ../../modules/nixos/server/immich.nix
     ../../modules/nixos/server/nginx.nix
     ../../modules/nixos/server/ddclient.nix
+    ../../modules/nixos/server/vaultwarden.nix
   ];
 
   network.hostname = "leaf-server";
