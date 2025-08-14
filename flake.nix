@@ -99,7 +99,6 @@
             home-manager.useUserPackages = true;
             home-manager.users.techleaf = ./hosts/leaf-laptop/home.nix;
           }
-          copyparty.nixosModules.default
         ];
       };
 
@@ -141,6 +140,7 @@
           ./hosts/leaf-server/configuration.nix
           disko.nixosModules.disko
           declarative-jellyfin.nixosModules.default
+          copyparty.nixosModules.default
         ];
       };
     };
