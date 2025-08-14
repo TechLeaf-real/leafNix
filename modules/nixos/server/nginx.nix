@@ -12,6 +12,7 @@
       };
       sslCertificate = "/root/techleaf.dev.pem";
       sslCertificateKey = "/root/techleaf.dev.key";
+      # listen.*.ssl = true;
     };
   };
   networking.firewall.allowedTCPPorts = [80 443];
