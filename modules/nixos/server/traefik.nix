@@ -29,18 +29,18 @@
     };
 
     dynamicConfigOptions = {
-      routers = {
-        api = {
-          rule = "Host('api.techleaf.dev')";
-          service = "api@internal";
-          entrypoints = ["websecure"];
-        };
-        media = {
-          rule = "Host('media.techleaf.dev')";
-          service = "media@file";
-          entrypoints = ["websecure"];
-        };
-      };
+      # routers = {
+      #   api = {
+      #     rule = "Host('api.techleaf.dev')";
+      #     service = "api@internal";
+      #     entrypoints = ["websecure"];
+      #   };
+      #   media = {
+      #     rule = "Host('media.techleaf.dev')";
+      #     service = "media@file";
+      #     entrypoints = ["websecure"];
+      #   };
+      # };
       http = {
         services = {
           media = {
