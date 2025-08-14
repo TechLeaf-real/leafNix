@@ -12,11 +12,11 @@
       entryPoints = {
         web = {
           address = ":80";
-          # http.redirections.entryPoint = {
-          #   to = "websecure";
-          #   scheme = "https";
-          #   permanent = true;
-          # };
+          http.redirections.entryPoint = {
+            to = "websecure";
+            scheme = "https";
+            permanent = true;
+          };
         };
 
         websecure = {
