@@ -32,7 +32,7 @@
           service = "api@internal";
           entrypoints = ["websecure"];
           tls = {
-            certificates = {
+            certifaicates = {
               certFile = "/root/techleaf.dev.pem";
               keyFile = "/root/techleaf.dev.key";
             };
