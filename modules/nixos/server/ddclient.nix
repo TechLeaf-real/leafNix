@@ -3,6 +3,7 @@
     enable = true;
     domains = [
       "media.techleaf.dev"
+      "pass.techleaf.dev"
     ];
     protocol = "cloudflare";
     zone = "techleaf.dev";
