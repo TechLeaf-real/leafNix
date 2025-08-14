@@ -22,6 +22,7 @@
     ../../modules/nixos/server/media.nix
     ../../modules/nixos/server/immich.nix
     ../../modules/nixos/server/nginx.nix
+    ../../modules/nixos/server/ddclient.nix
   ];
 
   network.hostname = "leaf-server";
