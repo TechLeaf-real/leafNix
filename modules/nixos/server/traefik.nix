@@ -24,6 +24,11 @@
 
         websecure = {
           address = ":443";
+          http = {
+            tls = {
+              options = "default";
+            };
+          };
         };
       };
     };
