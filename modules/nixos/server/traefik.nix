@@ -12,6 +12,8 @@
         insecure = true;
       };
 
+      serversTransport.insecureSkipVerify = true;
+
       entryPoints = {
         web = {
           address = ":80";
