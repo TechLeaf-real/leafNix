@@ -28,7 +28,7 @@
     dynamicConfigOptions = {
       routers = {
         api = {
-          rule = "Host('api.techleaf.dev')";
+          rule = "Host('192.168.1.239')";
           service = "api@interal";
           entrypoints = ["websecure"];
           tls = {
