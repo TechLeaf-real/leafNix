@@ -7,7 +7,10 @@
         level = "WARN";
       };
 
-      api = {};
+      api = {
+        dashboard = true;
+        insecure = true;
+      };
 
       entryPoints = {
         web = {
