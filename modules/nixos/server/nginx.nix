@@ -2,7 +2,7 @@
   services.nginx = {
     enable = true;
     recommendedProxySettings = true;
-    recommendedTLSSettings = true;
+    recommendedTlsSettings = true;
 
     virtualHosts."media.techleaf.dev" = {
       forceSSL = true;
