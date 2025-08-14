@@ -31,23 +31,11 @@
           rule = "Host('api.techleaf.dev')";
           service = "api@internal";
           entrypoints = ["websecure"];
-          tls = {
-            certifaicates = {
-              certFile = "/root/techleaf.dev.pem";
-              keyFile = "/root/techleaf.dev.key";
-            };
-          };
         };
         media = {
           rule = "Host('media.techleaf.dev')";
           service = "media";
           entrypoints = ["websecure"];
-          tls = {
-            certificates = {
-              certFile = "/root/techleaf.dev.pem";
-              keyFile = "/root/techleaf.dev.key";
-            };
-          };
         };
       };
       http = {
@@ -57,6 +45,16 @@
               servers = [
                 "locahost:8096"
               ];
+            };
+          };
+        };
+      };
+      tls = {
+        stores = {
+          default = {
+            defaultCertificate = {
+              certFile = "/root/techleaf.dev.pem";
+              keyFile = "/root/techleaf.dev.key";
             };
           };
         };
