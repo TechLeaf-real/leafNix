@@ -10,9 +10,8 @@
         proxyPass = "http://localhost:8096";
         proxyWebsockets = true;
       };
-      sslCertificate = "/root/techleaf.dev.pem";
-      sslCertificateKey = "/root/techleaf.dev.key";
-      # listen.*.ssl = true;
+      sslCertificate = "/pool/dataset/certs/techleaf.dev.pem";
+      sslCertificateKey = "/pool/dataset/certs/techleaf.dev.key";
     };
   };
   networking.firewall.allowedTCPPorts = [80 443];
