@@ -35,6 +35,7 @@
             rule = "Host(`media.techleaf.dev`)";
             service = "media@file";
             entrypoints = ["websecure"];
+            tls = {};
           };
         };
         services = {
