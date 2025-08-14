@@ -25,6 +25,7 @@
         websecure = {
           address = ":443";
           http = {
+            middlewares = ["security-headers@file"];
             tls = {
               options = "default";
             };
@@ -69,6 +70,24 @@
             defaultCertificate = {
               certFile = "/root/techleaf.dev.pem";
               keyFile = "/root/techleaf.dev.key";
+            };
+          };
+        };
+      };
+      middlewares = {
+        security-headers = {
+          headers = {
+            referrerPolicy = "no-referrer";
+            forceSTSHeader = true;
+            stsSeconds = 15778800;
+            sysIncludeSubdomains = true;
+            stsPreload = true;
+            contentTypeNosniff = true;
+            browserXssFilter = true;
+            customRequestHeaders.X-Forwarded-Proto = "https";
+            customResponseHeaders = {
+              X-Powered-By = "Redstone";
+              Server = "Server";
             };
           };
         };
