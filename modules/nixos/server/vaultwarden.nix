@@ -8,5 +8,4 @@
       ROCKET_PORT = 8222;
     };
   };
-  networking.firewall.allowedTCPPorts = [8000];
 }
