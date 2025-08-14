@@ -42,7 +42,7 @@
           media = {
             loadBalancer = {
               servers = [
-                "locahost:8096"
+                "http://locahost:8096"
               ];
             };
           };
