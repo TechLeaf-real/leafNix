@@ -65,7 +65,6 @@
       nix-tree
       magic-wormhole-rs
       libreoffice-qt6
-      mpv
       unityhub
       ghex
       xclicker

@@ -30,6 +30,13 @@
     emulation = true;
   };
 
+  programs.mpv = {
+    enable = true;
+    scripts = with pkgs; [
+      mpvScripts.mpris
+    ];
+  };
+
   xdg.userDirs.download = "${config.home.homeDirectory}/Downloads";
 
   programs.keychain = {
