@@ -55,6 +55,10 @@
     layout = "us";
   };
 
+  services.hardware.openrgb = {
+    enable = true;
+  };
+
   users.users.techleaf = {
     isNormalUser = true;
     description = "Techleaf";
