@@ -28,6 +28,7 @@
     nix-your-shell
     pokeget-rs
     blahaj
+    gomi
   ];
 
   programs.bash.interactiveShellInit = ''

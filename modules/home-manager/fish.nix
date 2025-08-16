@@ -17,6 +17,7 @@
         cat = "bat";
         wormhole = "wormhole-rs";
         touch = "bonk";
+        rm = "gomi";
       };
     };
 
