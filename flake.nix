@@ -158,6 +158,7 @@
           nh
           git
           alejandra
+          gum
         ];
       in
         pkgs.symlinkJoin {
