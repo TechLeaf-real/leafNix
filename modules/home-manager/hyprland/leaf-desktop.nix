@@ -208,6 +208,9 @@ in {
         decoration = {
           rounding = 10;
           border_part_of_window = false;
+          blur = {
+            enabled = false;
+          };
         };
 
         "$mod1" = cfg.primaryModifier;
