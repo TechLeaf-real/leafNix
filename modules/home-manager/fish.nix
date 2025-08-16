@@ -20,6 +20,7 @@
         rm = "gomi";
         grep = "rg";
         find = "fd";
+        n = "nix run nixpkgs#";
       };
     };
 
