@@ -64,7 +64,6 @@
       comma
       nix-tree
       magic-wormhole-rs
-      # libreoffice-qt6
       unityhub
       ghex
       xclicker
