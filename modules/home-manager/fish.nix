@@ -10,6 +10,9 @@
         nix-your-shell fish | source
       '';
       functions = {
+        n = {
+          body = "nix run nixpkgs#$argv";
+        };
       };
       shellAliases = {
         ls = "eza";
@@ -20,7 +23,6 @@
         rm = "gomi";
         grep = "rg";
         find = "fd";
-        n = "nix run nixpkgs#";
       };
     };
 
