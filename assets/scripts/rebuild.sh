@@ -12,7 +12,7 @@ fi
 clear
 git diff -U0
 set +o pipefail
-gum spin --spinner pulse --title "Switching System..." -- nh os switch ~/leafNix || exit 0
+nh os switch ~/leafNix || exit 0
 set -o pipefail
 echo  -e "\n\033[34mNixOS rebuild completed\033[0m"
 echo -ne "\rExit in 1" && sleep 1
