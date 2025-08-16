@@ -75,6 +75,7 @@
       gnome-disk-utility
       alacritty
       feishin
+      haguichi
     ])
     ++ (with inputs.self.packages.x86_64-linux; [
       rebuild
