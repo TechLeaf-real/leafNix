@@ -165,6 +165,8 @@
     plugins = [];
   };
 
+  services.logmein-hamachi.enable = true;
+
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
   time.timeZone = "Europe/London";
