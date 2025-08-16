@@ -18,6 +18,7 @@
         wormhole = "wormhole-rs";
         touch = "bonk";
         rm = "gomi";
+        grep = "rg";
       };
     };
 
