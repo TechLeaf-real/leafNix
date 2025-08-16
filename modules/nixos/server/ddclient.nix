@@ -4,6 +4,7 @@
     domains = [
       "media.techleaf.dev"
       "pass.techleaf.dev"
+      "photo.techleaf.dev"
     ];
     protocol = "cloudflare";
     zone = "techleaf.dev";
