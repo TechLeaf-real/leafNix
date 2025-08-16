@@ -64,7 +64,6 @@
       comma
       nix-tree
       magic-wormhole-rs
-      unityhub
       ghex
       xclicker
       antimatter-dimensions
@@ -81,7 +80,8 @@
       update
     ])
     ++ (with pkgs-stable; [
-      ])
+      unityhub
+    ])
     ++ (with inputs.nix-alien.packages.${pkgs.system}; [
       nix-alien
     ])
