@@ -30,6 +30,7 @@
         prismlauncher
         ftb-app
         gale
+        hydralauncher
       ])
       ++ (with pkgs-stable; [
         ]);
