@@ -29,6 +29,7 @@
     pokeget-rs
     blahaj
     gomi
+    hoard
   ];
 
   programs.bash.interactiveShellInit = ''
