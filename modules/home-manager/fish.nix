@@ -19,6 +19,7 @@
         touch = "bonk";
         rm = "gomi";
         grep = "rg";
+        find = "fd";
       };
     };
 
