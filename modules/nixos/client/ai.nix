@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{pkgs, pkgs-stable, ...}: {
   services.ollama = {
     enable = true;
     acceleration = "rocm";
@@ -23,6 +23,7 @@
 
   services.open-webui = {
     enable = true;
+    package = pkgs-stable.open-webui;
   };
 
   environment.systemPackages = with pkgs; [

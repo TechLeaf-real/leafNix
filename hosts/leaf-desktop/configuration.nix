@@ -52,7 +52,6 @@
       decibels
       gucharmap
       miniupnpc
-      papers
       scarab
       aseprite
       warp
