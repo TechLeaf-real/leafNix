@@ -78,8 +78,9 @@ in {
       settings = {
         windows = {
           overview = {
-            key = "alt_l";
-            # mod = "alt";
+            enable = true;
+            key = "tab";
+            # modifer = "alt";
             launcher = {
               max_items = 6;
               plugins.websearch = {
@@ -94,7 +95,6 @@ in {
               };
             };
           };
-          # switcher.enable = true;
         };
       };
     };
