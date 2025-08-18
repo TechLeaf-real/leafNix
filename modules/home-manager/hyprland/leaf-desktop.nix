@@ -85,13 +85,6 @@ in {
               max_items = 6;
               plugins.websearch = {
                 enable = true;
-                engines = [
-                  {
-                    name = "DuckDuckGo";
-                    url = "https://duckduckgo.com/?q=%s";
-                    key = "d";
-                  }
-                ];
               };
             };
           };
