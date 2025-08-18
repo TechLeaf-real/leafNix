@@ -1,4 +1,8 @@
-{pkgs, pkgs-stable, ...}: {
+{
+  pkgs,
+  pkgs-stable,
+  ...
+}: {
   services.ollama = {
     enable = true;
     acceleration = "rocm";

@@ -37,6 +37,7 @@ in {
     ../ghostty.nix
     ../waybar.nix
     # ../eww.nix
+    inputs.hyprshell.homeModules.hyprshell
   ];
 
   config = {
@@ -69,6 +70,33 @@ in {
       name = "Catppuccin-Mocha-Dark-Cursors";
       package = pkgs.catppuccin-cursors.mochaYellow;
       size = 16;
+    };
+
+    programs.hyprshell = {
+      enable = true;
+      systemd.args = "-v";
+      settings = {
+        windows = {
+          overview = {
+            key = "alt_l";
+            # mod = "alt";
+            launcher = {
+              max_items = 6;
+              plugins.websearch = {
+                enable = true;
+                engines = [
+                  {
+                    name = "DuckDuckGo";
+                    url = "https://duckduckgo.com/?q=%s";
+                    key = "d";
+                  }
+                ];
+              };
+            };
+          };
+          # switcher.enable = true;
+        };
+      };
     };
 
     home.sessionVariables = {

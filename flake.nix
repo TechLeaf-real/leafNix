@@ -16,6 +16,11 @@
       inputs.hyprland.follows = "hyprland";
     };
 
+    hyprshell = {
+      url = "github:H3rmt/hyprshell?ref=hyprshell-release";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     nix-alien = {
       url = "github:thiagokokada/nix-alien";
       inputs.nixpkgs.follows = "nixpkgs";
