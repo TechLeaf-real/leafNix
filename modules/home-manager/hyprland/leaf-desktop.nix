@@ -140,7 +140,7 @@ in {
     wayland.windowManager.hyprland = {
       enable = true;
       plugins = with inputs; [
-        hypr-dynamic-cursors.packages.${pkgs.system}.hypr-dynamic-cursors
+        # hypr-dynamic-cursors.packages.${pkgs.system}.hypr-dynamic-cursors
       ];
       settings = {
         monitor = [
