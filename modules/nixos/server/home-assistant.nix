@@ -9,9 +9,21 @@
       "shopping_list"
       "isal"
     ];
+    extraPackages = ps: with ps; [psycopg2];
     config = {
       default_config = {};
+      recorder.db_url = "postgresql://@/hass";
     };
+  };
+  services.postgresql = {
+    enable = true;
+    ensureDatabases = ["hass"];
+    ensureUsers = [
+      {
+        name = "hass";
+        ensureDBOwnership = true;
+      }
+    ];
   };
   networking.firewall.allowedTCPPorts = [8123];
 }
