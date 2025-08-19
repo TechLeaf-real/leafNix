@@ -24,7 +24,6 @@
     ../../modules/nixos/server/nginx.nix
     ../../modules/nixos/server/ddclient.nix
     ../../modules/nixos/server/vaultwarden.nix
-    ../../modules/nixos/server/mopidy.nix
   ];
 
   network.hostname = "leaf-server";
