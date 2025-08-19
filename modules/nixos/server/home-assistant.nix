@@ -9,8 +9,8 @@
       "shopping_list"
       "isal"
     ];
-    config = [
+    config = {
       default_config = {};
-    ];
+    };
   };
 }
