@@ -30,7 +30,6 @@
         prismlauncher
         ftb-app
         gale
-        itch
       ])
       ++ (with pkgs-stable; [
         ]);
