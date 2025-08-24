@@ -141,6 +141,10 @@
     enableFishIntegration = true;
   };
 
+  fonts.packages = with pkgs; [
+    melete
+  ];
+
   programs.nh = {
     enable = true;
     clean.enable = true;
