@@ -7,4 +7,7 @@
       ExecStart = ''${pkgs.memos}/bin/memos'';
     };
   };
+  environment.systemPackages = with pkgs; [
+    memos
+  ];
 }
