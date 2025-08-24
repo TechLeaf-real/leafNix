@@ -145,6 +145,8 @@
     melete
   ];
 
+  fonts.enableDefaultPackages = true;
+
   programs.nh = {
     enable = true;
     clean.enable = true;
