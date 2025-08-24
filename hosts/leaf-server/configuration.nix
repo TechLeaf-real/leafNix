@@ -25,6 +25,7 @@
     ../../modules/nixos/server/ddclient.nix
     ../../modules/nixos/server/vaultwarden.nix
     ../../modules/nixos/server/home-assistant.nix
+    ../../modules/nixos/server/memos.nix
   ];
 
   network.hostname = "leaf-server";
