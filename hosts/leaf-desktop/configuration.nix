@@ -74,6 +74,7 @@
       feishin
       haguichi
       finamp
+      memos
     ])
     ++ (with inputs.self.packages.x86_64-linux; [
       rebuild
