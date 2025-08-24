@@ -30,6 +30,7 @@
     blahaj
     gomi
     hoard
+    micro
   ];
 
   programs.bash.interactiveShellInit = ''

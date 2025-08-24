@@ -23,6 +23,7 @@
         rm = "gomi";
         grep = "rg";
         find = "fd";
+        nano = "micro";
       };
     };
 
