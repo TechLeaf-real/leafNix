@@ -74,7 +74,6 @@
       feishin
       haguichi
       finamp
-      min-ed-launcher
     ])
     ++ (with inputs.self.packages.x86_64-linux; [
       rebuild
