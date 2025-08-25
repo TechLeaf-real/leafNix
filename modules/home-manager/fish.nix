@@ -57,7 +57,7 @@
 
     programs.starship = {
       enable = true;
-      enableFishIntegration = false;
+      enableFishIntegration = true;
     };
 
     programs.kitty.shellIntegration.enableFishIntegration = true;
