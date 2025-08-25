@@ -25,5 +25,11 @@
       }
     ];
   };
+  services.music-assistant = {
+    enable = true;
+    providers = [
+      "jellyfin"
+    ];
+  };
   networking.firewall.allowedTCPPorts = [8123];
 }
