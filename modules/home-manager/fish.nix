@@ -59,7 +59,11 @@
       enable = true;
       enableFishIntegration = true;
       settings = {
-        right_format = "$all";
+        custom.mommy = {
+          command = "mommy -1 -s $status";
+          when = "true";
+        };
+        right_format = "$custom";
       };
     };
 
