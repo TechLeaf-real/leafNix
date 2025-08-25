@@ -146,6 +146,12 @@
           disko.nixosModules.disko
           declarative-jellyfin.nixosModules.default
           copyparty.nixosModules.default
+          home-manager.nixosModules.home-manager
+          {
+            # home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.techleaf = ./hosts/leaf-server/home.nix;
+          }
         ];
       };
     };
