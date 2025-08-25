@@ -1,35 +1,38 @@
-{...}: {
-  services.home-assistant = {
-    enable = true;
-    extraComponents = [
-      "analytics"
-      "met"
-      "radio_browser"
-      "isal"
-    ];
-    extraPackages = ps: with ps; [psycopg2];
-    config = {
-      name = "The Tree";
-      time_zone = "Europe/London";
-      default_config = {};
-      recorder.db_url = "postgresql://@/hass";
-    };
-  };
-  services.postgresql = {
-    enable = true;
-    ensureDatabases = ["hass"];
-    ensureUsers = [
-      {
-        name = "hass";
-        ensureDBOwnership = true;
-      }
-    ];
-  };
+{pkgs, ...}: {
   services.music-assistant = {
     enable = true;
     providers = [
       "jellyfin"
     ];
   };
-  networking.firewall.allowedTCPPorts = [8123 8095];
+
+  virtualisation = {
+    libvirtd = {
+      enable = true;
+      qemeOvmf = true;
+    };
+  };
+
+  environment.systemPackages = with pkgs; [
+    virt-manager
+    usbutils
+  ];
+
+  users.users.root = {
+    extraGroups = ["libvirtd"];
+  };
+
+  networking = {
+    bridges.br0.interfaces = ["enp4s0"];
+    networking.interfaces.br0 = {
+      useDHCP = false;
+      ipv4.addresses = [
+        {
+          "address" = "192.168.1.240";
+          "prefixLength" = 24;
+        }
+      ];
+    };
+  };
+  networking.firewall.allowedTCPPorts = [8095];
 }
