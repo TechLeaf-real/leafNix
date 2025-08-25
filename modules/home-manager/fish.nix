@@ -57,7 +57,7 @@
       enableFishIntegration = true;
       settings = {
         custom.mommy = {
-          command = "${pkgs.mommy} -1 -s $status";
+          command = "${pkgs.mommy}/bin/mommy -1 -s $status";
           when = "true";
         };
         right_format = "$custom";
