@@ -31,6 +31,7 @@
     gomi
     hoard
     micro
+    mommy
   ];
 
   programs.bash.interactiveShellInit = ''
