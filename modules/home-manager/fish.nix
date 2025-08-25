@@ -67,6 +67,10 @@
       };
     };
 
+    home.file.".config/mommy/config.sh".text = ''
+      MOMMY_SWEETIE="melody"
+    '';
+
     programs.kitty.shellIntegration.enableFishIntegration = true;
 
     home.packages = with pkgs; [
