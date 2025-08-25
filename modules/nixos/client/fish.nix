@@ -31,7 +31,6 @@
     gomi
     hoard
     micro
-    mommy
     lolcat
   ];
 
