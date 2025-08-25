@@ -30,6 +30,7 @@
         prismlauncher
         ftb-app
         gale
+        mindustry
       ])
       ++ (with pkgs-stable; [
         ]);
