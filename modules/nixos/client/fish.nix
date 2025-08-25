@@ -34,6 +34,7 @@
     EDITOR = "micro";
     SYSTEMD_EDITOR = "micro";
     VISUAL = "micro";
+    MICRO_TRUECOLOR = 1;
   };
 
   programs.bash.interactiveShellInit = ''
