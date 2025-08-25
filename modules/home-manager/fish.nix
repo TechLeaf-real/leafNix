@@ -70,6 +70,7 @@
     home.file.".config/mommy/config.sh".text = ''
       MOMMY_SWEETIE="girl"
       MOMMY_COLOR="lolcat"
+      MOMMY_FORBIDDEN_WORDS="fat"
     '';
 
     programs.kitty.shellIntegration.enableFishIntegration = true;
