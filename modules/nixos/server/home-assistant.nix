@@ -23,8 +23,9 @@
   };
 
   networking = {
+    firewall.allowedTCPPorts = [8095];
     bridges.br0.interfaces = ["enp4s0"];
-    networking.interfaces.br0 = {
+    interfaces.br0 = {
       useDHCP = false;
       ipv4.addresses = [
         {
@@ -34,5 +35,4 @@
       ];
     };
   };
-  networking.firewall.allowedTCPPorts = [8095];
 }
