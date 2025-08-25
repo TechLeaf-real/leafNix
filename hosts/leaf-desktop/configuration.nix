@@ -62,7 +62,6 @@
       tree
       comma
       nix-tree
-      magic-wormhole-rs
       ghex
       xclicker
       antimatter-dimensions

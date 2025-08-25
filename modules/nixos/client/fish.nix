@@ -5,7 +5,6 @@
     fishPlugins.autopair
     fishPlugins.sponge
     fzf
-    eza
     xh
     zellij
     gitui
@@ -14,7 +13,6 @@
     hyperfine
     wiki-tui
     presenterm
-    fd
     sl
     cmatrix
     cowsay
@@ -22,15 +20,12 @@
     pipes
     cbonsai
     asciiquarium
-    ripgrep
     astroterm
     uutils-coreutils-noprefix
     nix-your-shell
     pokeget-rs
     blahaj
-    gomi
     hoard
-    micro
     lolcat
   ];
 
