@@ -68,7 +68,7 @@
     };
 
     home.file.".config/mommy/config.sh".text = ''
-      MOMMY_SWEETIE="melody"
+      MOMMY_SWEETIE="girl"
       MOMMY_COLOR="lolcat"
     '';
 
