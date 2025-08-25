@@ -32,6 +32,7 @@
     hoard
     micro
     mommy
+    lolcat
   ];
 
   programs.bash.interactiveShellInit = ''

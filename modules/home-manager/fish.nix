@@ -69,6 +69,7 @@
 
     home.file.".config/mommy/config.sh".text = ''
       MOMMY_SWEETIE="melody"
+      MOMMY_COLOR="lolcat"
     '';
 
     programs.kitty.shellIntegration.enableFishIntegration = true;
