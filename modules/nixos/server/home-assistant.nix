@@ -3,10 +3,8 @@
     enable = true;
     extraComponents = [
       "analytics"
-      "google_translate"
       "met"
       "radio_browser"
-      "shopping_list"
       "isal"
     ];
     extraPackages = ps: with ps; [psycopg2];
