@@ -27,7 +27,14 @@
     blahaj
     hoard
     lolcat
+    micro
   ];
+
+  environment.variables = {
+    EDITOR = "micro";
+    SYSTEMD_EDITOR = "micro";
+    VISUAL = "micro";
+  };
 
   programs.bash.interactiveShellInit = ''
     if [[ $(${pkgs.procps}/bin/ps --no-header --pid=$PPID --format=comm) != "fish" && -z ''${BASH_EXECUTION_STRING} ]]
