@@ -56,7 +56,7 @@
     };
 
     programs.starship = {
-      enable = false;
+      enable = true;
       enableFishIntegration = false;
     };
 
