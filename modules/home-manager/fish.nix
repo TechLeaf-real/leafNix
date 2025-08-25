@@ -14,7 +14,7 @@
           body = "nix run nixpkgs#$argv";
         };
         fish_right_prompt = {
-          body = "./${pkgs.mommy}/bin/mommy -1 -s $status";
+          body = "${pkgs.mommy} -1 -s $status";
         };
       };
       shellAliases = {
