@@ -13,9 +13,6 @@
         n = {
           body = "nix run nixpkgs#$argv";
         };
-        fish_right_prompt = {
-          body = "mommy -1 -s $status";
-        };
       };
       shellAliases = {
         ls = "eza";
