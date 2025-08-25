@@ -9,7 +9,7 @@
   virtualisation = {
     libvirtd = {
       enable = true;
-      qemeOvmf = true;
+      qemuOvmf = true;
     };
   };
 
