@@ -1,6 +1,6 @@
 {...}: {
   imports = [
-    ../../modules/home-manager/fish.nix
+    # ../../modules/home-manager/fish.nix
   ];
 
   home.username = "root";

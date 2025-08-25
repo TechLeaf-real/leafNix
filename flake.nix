@@ -123,7 +123,6 @@
           inputs.stylix.nixosModules.stylix
           home-manager.nixosModules.home-manager
           {
-            # home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.techleaf = ./hosts/leaf-desktop/home.nix;
           }
@@ -148,7 +147,6 @@
           copyparty.nixosModules.default
           home-manager.nixosModules.home-manager
           {
-            # home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.techleaf = ./hosts/leaf-server/home.nix;
           }
