@@ -18,12 +18,12 @@
         ls = "${pkgs.eza}/bin/eza";
         cd = "z";
         cat = "bat";
-        wormhole = "${pkgs.magic-wormhole-rs}/bin/wormhole-rs";
-        touch = "${pkgs.bonk}/bin/bonk";
-        rm = "${pkgs.gomi}/bin/gomi";
-        grep = "${pkgs.ripgrep}/bin/rg";
-        find = "${pkgs.fd}/bin/fd";
-        nano = "${pkgs.micro}/bin/micro";
+        wormhole = "wormhole-rs";
+        touch = "bonk";
+        rm = "gomi";
+        grep = "rg";
+        find = "fd";
+        nano = "micro";
       };
     };
 
@@ -71,5 +71,15 @@
     '';
 
     programs.kitty.shellIntegration.enableFishIntegration = true;
+
+    home.packages = with pkgs; [
+      bonk
+      eza
+      magic-wormhole-rs
+      gomi
+      ripgrep
+      fd
+      micro
+    ];
   };
 }
