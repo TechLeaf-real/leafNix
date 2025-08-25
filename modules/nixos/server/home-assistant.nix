@@ -11,6 +11,8 @@
     ];
     extraPackages = ps: with ps; [psycopg2];
     config = {
+      name = "The Tree";
+      time_zone = "Europe/London";
       default_config = {};
       recorder.db_url = "postgresql://@/hass";
     };
