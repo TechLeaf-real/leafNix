@@ -4,6 +4,7 @@
     home = "/pool/dataset/nextcloud";
     config = {
       adminuser = "techleaf";
+      adminpassFile = "/pool/dataset/nextcloud-pass";
       dbtype = "mysql";
     };
     settings = {
