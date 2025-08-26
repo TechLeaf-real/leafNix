@@ -3,6 +3,7 @@
     enable = true;
     protonPackages = with pkgs; [
       proton-ge-bin
+      steamtinkerlaunch
     ];
   };
 }
