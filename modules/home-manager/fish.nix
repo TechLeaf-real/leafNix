@@ -79,6 +79,7 @@
       gomi
       ripgrep
       fd
+      navi
     ];
 
     # home.file.".config/micro/colorschemes/catppuccin-mocha.micro"
