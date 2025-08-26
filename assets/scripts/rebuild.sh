@@ -23,5 +23,8 @@ clear
 current=$(nixos-rebuild list-generations --json | jq '.[] | select (.current == true) | "\(.generation) \(.date) \(.nixosVersion) \(.kernelVersion)"')
 git commit -am "$current"
 git push origin master
+clear
+onefetch
+read
 popd
 clear

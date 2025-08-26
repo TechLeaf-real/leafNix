@@ -80,6 +80,7 @@
       ripgrep
       fd
       navi
+      onefetch
     ];
 
     # home.file.".config/micro/colorschemes/catppuccin-mocha.micro"

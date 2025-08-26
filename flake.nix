@@ -162,6 +162,7 @@
           nh
           git
           alejandra
+          onefetch
         ];
       in
         pkgs.symlinkJoin {
