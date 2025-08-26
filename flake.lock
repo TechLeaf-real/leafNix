@@ -108,11 +108,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1756071305,
-        "narHash": "sha256-X1Rs+GV5daPlu4waWuk+4G0LT3nSWySCjF2uzNhlOr4=",
+        "lastModified": 1756164812,
+        "narHash": "sha256-VtM8N0fAwkFJfrN80Q9G+U1vnsL6Sza+unQO03skQDI=",
         "owner": "9001",
         "repo": "copyparty",
-        "rev": "abffda5474cd9309c53fa0736395221c7c43bec1",
+        "rev": "599e82f24d406ed048eb4bdf4db4e56fc9050481",
         "type": "github"
       },
       "original": {
@@ -167,11 +167,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1754870144,
-        "narHash": "sha256-8zmoYu6bakvwC7QYxbKa/z9j2oZGUhnPO4gZYgte5MA=",
+        "lastModified": 1756140481,
+        "narHash": "sha256-LZzWw/6Locx7B2tU7EG+ydNgLX+VuN4jcCEI/Q5LR6M=",
         "owner": "Sveske-Juice",
         "repo": "declarative-jellyfin",
-        "rev": "d677a98fa9afe121aec802bbc62a2b8d1c5fea0c",
+        "rev": "69ca19196273c1b03589c34f2c8826dd89444129",
         "type": "github"
       },
       "original": {
@@ -1451,11 +1451,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1756096051,
-        "narHash": "sha256-TN/Go4OVmYrcZTtTysWb8iUpu8PdVeKaHR+aigPABiU=",
+        "lastModified": 1756146575,
+        "narHash": "sha256-DcYeIjzjkLXJh/NbM12LLbR+PssKh34FdqxeAg4zbrU=",
         "owner": "0xc000022070",
         "repo": "zen-browser-flake",
-        "rev": "630f8c222fb8c5ecd4189fdb8553538f9acd4fd2",
+        "rev": "9cece8af1401e19a0785de6f397de98e6b17c6d2",
         "type": "github"
       },
       "original": {
