@@ -17,6 +17,7 @@
     # ../../modules/nixos/server/copyparty.nix
     # ../../modules/nixos/server/memos.nix
     # ../../modules/nixos/server/home-assistant.nix
+    # ../../modules/nixos/server/nextcloud.nix
     ../../modules/nixos/misc/network.nix
     ../../modules/nixos/client/fish.nix
     ../../modules/nixos/server/samba.nix
@@ -26,7 +27,6 @@
     ../../modules/nixos/server/nginx.nix
     ../../modules/nixos/server/ddclient.nix
     ../../modules/nixos/server/vaultwarden.nix
-    ../../modules/nixos/server/nextcloud.nix
   ];
 
   network.hostname = "leaf-server";
