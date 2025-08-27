@@ -1,4 +1,8 @@
-{lib, ...}: {
+{
+  lib,
+  pkgs-stable,
+  ...
+}: {
   services.declarative-jellyfin = {
     enable = true;
     openFirewall = true;
@@ -94,6 +98,7 @@
   services.flaresolverr = {
     enable = true;
     openFirewall = true;
+    package = pkgs-stable.flaresolverr;
   };
 
   hardware.graphics.enable = true;
