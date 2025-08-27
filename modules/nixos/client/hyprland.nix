@@ -3,6 +3,7 @@
   inputs,
   pkgs,
   pyprland,
+  pkgs-stable,
   ...
 }: {
   config = {
@@ -16,6 +17,7 @@
 
     services.clipcat = {
       enable = true;
+      package = pkgs-stable.clipcat;
     };
 
     services.greetd = {

@@ -24,7 +24,7 @@
     ../../modules/nixos/client/tailscale.nix
     ../../modules/nixos/client/sudo-rs.nix
     ../../modules/nixos/client/direnv.nix
-    ../../modules/nixos/client/ai.nix
+    # ../../modules/nixos/client/ai.nix
     # ../../modules/nixos/client/copyparty.nix
   ];
 
@@ -47,7 +47,6 @@
       btop
       nautilus
       loupe
-      gnome-text-editor
       vrc-get
       decibels
       gucharmap
@@ -66,7 +65,6 @@
       xclicker
       antimatter-dimensions
       blockbench
-      bottles
       switcheroo
       gnome-disk-utility
       alacritty
@@ -79,6 +77,8 @@
       update
     ])
     ++ (with pkgs-stable; [
+      bottles
+      gnome-text-editor
       unityhub
     ])
     ++ (with inputs.nix-alien.packages.${pkgs.system}; [
@@ -165,7 +165,7 @@
   networking.hostName = "leaf-desktop";
 
   programs.obs-studio = {
-    enable = true;
+    enable = false;
     enableVirtualCamera = true;
     plugins = [];
   };

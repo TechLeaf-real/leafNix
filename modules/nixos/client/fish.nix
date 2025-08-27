@@ -7,7 +7,7 @@
     fzf
     xh
     zellij
-    gitui
+    # gitui
     dust
     yazi
     hyperfine
