@@ -32,6 +32,7 @@
         ftb-app
         gale
         mindustry
+        osu-lazer-bin
       ])
       ++ (with pkgs-stable; [
         ]);
