@@ -84,29 +84,6 @@
     system = "x86_64-linux";
   in {
     nixosConfigurations = {
-      leaf-laptop = nixpkgs.lib.nixosSystem {
-        specialArgs = {
-          inherit inputs;
-          inherit system;
-          inherit pyprland;
-
-          pkgs-stable = import stable-nixpkgs {
-            inherit system;
-            config.allowUnfree = true;
-          };
-        };
-        modules = [
-          ./hosts/leaf-laptop/configuration.nix
-          inputs.stylix.nixosModules.stylix
-          home-manager.nixosModules.home-manager
-          {
-            # home-manager.userGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.techleaf = ./hosts/leaf-laptop/home.nix;
-          }
-        ];
-      };
-
       leaf-desktop = nixpkgs.lib.nixosSystem {
         specialArgs = {
           inherit inputs;
