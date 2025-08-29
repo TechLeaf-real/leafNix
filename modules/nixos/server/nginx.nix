@@ -16,7 +16,7 @@
     virtualHosts."pass.techleaf.dev" = {
       forceSSL = true;
       locations."/" = {
-        proxyPass = "http://localhost:8000";
+        proxyPass = "http://localhost:8222";
         proxyWebsockets = true;
       };
       sslCertificate = "/pool/dataset/cloudflare/techleaf.dev.pem";
