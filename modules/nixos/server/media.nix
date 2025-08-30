@@ -21,6 +21,7 @@
       skiesofarcadia = {
         mutable = false;
         preferences.enabledLibraries = ["Music"];
+        permissions.enableAllFolders = false;
         hashedPassword = "$PBKDF2-SHA512$iterations=210000$0EA3301092582097849440FF654DD9BD$36BB092A31F7AF3882A9073BABE16265DA2196C69FC12A0AF5A69427584041E2B6C49D88D9A95CBCA9573CC3471F2CC0977A65918E2DC26C92414D0EA4B9A801";
       };
     };
