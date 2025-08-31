@@ -52,6 +52,7 @@
       gucharmap
       miniupnpc
       scarab
+      lumafly
       aseprite
       warp
       timg
