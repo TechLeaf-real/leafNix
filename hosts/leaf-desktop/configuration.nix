@@ -51,7 +51,6 @@
       decibels
       gucharmap
       miniupnpc
-      scarab
       lumafly
       aseprite
       warp

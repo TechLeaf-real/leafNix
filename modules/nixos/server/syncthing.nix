@@ -8,7 +8,7 @@
     settings = {
       devices = {
         leaf-desktop.id = "CPCL5BF-PM44KRA-B5RFMMS-TFA3L33-MOF4VFL-2KRLHY5-LTOTZCO-Q7MCEAM";
-        leaf-pixel.id = "GZQ7CVG-ZTM2Q3R-LA2FZJS-AYJ7NT6-L2MXWEP-5WHUJDQ-QAK4UTN-7BYWTAX";
+        leaf-pixel.id = "DKY2QW5-FGVVFWS-TC54UB7-JK6ODAR-WSYDVAP-U2HH4V5-KLEELOB-RGN67AM";
       };
       folders = {
         "Blender" = {
