@@ -165,7 +165,7 @@ in {
           "noborder, class:homesprite"
           "noblur, class:homesprite"
           "norounding, class:homesprite"
-          "noanim, class:homesprite"
+          "noshadow, class:homesprite"
         ];
 
         plugin = {
