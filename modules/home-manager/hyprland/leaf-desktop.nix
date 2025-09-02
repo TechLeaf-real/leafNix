@@ -162,7 +162,7 @@ in {
 
         windowrule = [
           "tile, class:Aseprite"
-          "decorate [off], class:homesprite"
+          "noborder, class:homesprite"
         ];
 
         plugin = {
