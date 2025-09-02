@@ -163,6 +163,9 @@ in {
         windowrule = [
           "tile, class:Aseprite"
           "noborder, class:homesprite"
+          "noblur, class:homesprite"
+          "norounding, class:homesprite"
+          "noanim, class:homesprite"
         ];
 
         plugin = {
