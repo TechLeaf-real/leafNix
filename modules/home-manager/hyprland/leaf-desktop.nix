@@ -72,25 +72,25 @@ in {
       size = 16;
     };
 
-    programs.hyprshell = {
-      enable = true;
-      systemd.args = "-v";
-      settings = {
-        windows = {
-          overview = {
-            enable = true;
-            key = "tab";
-            launcher = {
-              enable = true;
-              max_items = 6;
-              plugins.websearch = {
-                enable = true;
-              };
-            };
-          };
-        };
-      };
-    };
+    # programs.hyprshell = {
+    #   enable = true;
+    #   systemd.args = "-v";
+    #   settings = {
+    #     windows = {
+    #       overview = {
+    #         enable = true;
+    #         key = "tab";
+    #         launcher = {
+    #           enable = true;
+    #           max_items = 6;
+    #           plugins.websearch = {
+    #             enable = true;
+    #           };
+    #         };
+    #       };
+    #     };
+    #   };
+    # };
 
     home.sessionVariables = {
       QT_AUTO_SCREEN_SCALE_FACTOR = 0;

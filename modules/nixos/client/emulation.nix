@@ -14,10 +14,10 @@
         cemu
         dolphin-emu
         rpcs3
-        xemu
       ])
       ++ (with pkgs-stable; [
         # emulationstation-de
+        xemu
       ]);
   };
 }

@@ -189,6 +189,17 @@
           buildInputs = [pkgs.makeWrapper];
           postBuild = "wrapProgram $out/bin/${pkg_name} --prefix PATH : $out/bin";
         };
+      
+      # homesprite = let
+      #   pkgs = import nixpkgs {system = "x86_64-linux";};
+
+      #   pkg_name = "homesprite";
+      #   src = fetchtar {
+      #     url = "https://github.com/ismslv/HomeSprite/releases/download/1.0.0/homesprite-1.0.0.tar.gz";
+      #     sha256 = "";
+      #   };
+      # in
+      
     };
   };
 }
