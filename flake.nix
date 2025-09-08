@@ -189,7 +189,7 @@
           buildInputs = [pkgs.makeWrapper];
           postBuild = "wrapProgram $out/bin/${pkg_name} --prefix PATH : $out/bin";
         };
-      
+
       # homesprite = let
       #   pkgs = import nixpkgs {system = "x86_64-linux";};
 
@@ -199,7 +199,6 @@
       #     sha256 = "";
       #   };
       # in
-      
     };
   };
 }
