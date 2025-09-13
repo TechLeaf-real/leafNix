@@ -33,6 +33,7 @@
         gale
         mindustry
         osu-lazer-bin
+        # satisfactorymodmanager
       ])
       ++ (with pkgs-stable; [
         ]);

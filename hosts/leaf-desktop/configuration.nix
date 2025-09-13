@@ -21,7 +21,7 @@
     ../../modules/nixos/client/grub.nix
     ../../modules/nixos/client/vscodium.nix
     ../../modules/nixos/misc/network.nix
-    ../../modules/nixos/client/tailscale.nix
+    # ../../modules/nixos/client/tailscale.nix
     ../../modules/nixos/client/sudo-rs.nix
     ../../modules/nixos/client/direnv.nix
     ../../modules/nixos/client/plymouth.nix
@@ -53,7 +53,6 @@
       gucharmap
       miniupnpc
       lumafly
-      aseprite
       warp
       timg
       godot
@@ -78,6 +77,7 @@
       update
     ])
     ++ (with pkgs-stable; [
+      aseprite
       bottles
       gnome-text-editor
       unityhub
