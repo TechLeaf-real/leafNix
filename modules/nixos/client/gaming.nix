@@ -34,6 +34,7 @@
         mindustry
         osu-lazer-bin
         satisfactorymodmanager
+        sgdboop
       ])
       ++ (with pkgs-stable; [
         ]);
