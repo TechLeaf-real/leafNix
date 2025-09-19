@@ -10,6 +10,7 @@
     environment.systemPackages =
       (with pkgs; [
         wlx-overlay-s
+        wayvr-dashboard
         android-tools
         stardust-xr-server
         stardust-xr-gravity
