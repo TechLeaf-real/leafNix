@@ -11,12 +11,15 @@
       (with pkgs; [
         wlx-overlay-s
         android-tools
+        stardust-xr-server
+        stardust-xr-gravity
+        stardust-xr-flatland
+        stardust-xr-atmosphere
       ])
       ++ (with inputs.stardustxr-telescope.packages.x86_64-linux; [
         # flatscreen
         # telescope
       ]);
-
     services.wivrn = {
       enable = true;
       openFirewall = true;
