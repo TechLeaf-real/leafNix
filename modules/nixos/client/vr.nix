@@ -12,6 +12,7 @@
         wlx-overlay-s
         wayvr-dashboard
         android-tools
+        eepyxr
         # stardust-xr-server
         # stardust-xr-gravity
         # stardust-xr-flatland
