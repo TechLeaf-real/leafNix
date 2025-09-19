@@ -1,12 +1,21 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
   options = {
   };
 
   config = {
-    environment.systemPackages = with pkgs; [
-      wlx-overlay-s
-      android-tools
-    ];
+    environment.systemPackages =
+      (with pkgs; [
+        wlx-overlay-s
+        android-tools
+      ])
+      ++ (with inputs.stardustxr-telescope.packages.x86_64-linux; [
+        # flatscreen
+        # telescope
+      ]);
 
     services.wivrn = {
       enable = true;

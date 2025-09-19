@@ -65,6 +65,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    stardustxr-telescope = {
+      url = "github:StardustXR/telescope";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";

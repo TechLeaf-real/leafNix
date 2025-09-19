@@ -100,6 +100,28 @@
         "type": "github"
       }
     },
+    "black_hole": {
+      "inputs": {
+        "crane": "crane_2",
+        "nixpkgs": [
+          "stardustxr-telescope",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1724218535,
+        "narHash": "sha256-f8p6v+cACvoyjSBQDNbbb7dWLX0Jc/bOmdBjb7TvoiA=",
+        "owner": "StardustXR",
+        "repo": "black-hole",
+        "rev": "875603d95bee7c4eb41a6aa7e16e3d5827e2098d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "StardustXR",
+        "repo": "black-hole",
+        "type": "github"
+      }
+    },
     "copyparty": {
       "inputs": {
         "flake-utils": "flake-utils",
@@ -128,6 +150,117 @@
         "owner": "ipetkov",
         "repo": "crane",
         "rev": "305707bbc27d83aa1039378e91d7dd816f4cac10",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ipetkov",
+        "repo": "crane",
+        "type": "github"
+      }
+    },
+    "crane_2": {
+      "inputs": {
+        "nixpkgs": [
+          "stardustxr-telescope",
+          "black_hole",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1712681629,
+        "narHash": "sha256-bMDXn4AkTXLCpoZbII6pDGoSeSe9gI87jxPsHRXgu/E=",
+        "owner": "ipetkov",
+        "repo": "crane",
+        "rev": "220387ac8e99cbee0ca4c95b621c4bc782b6a235",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ipetkov",
+        "repo": "crane",
+        "type": "github"
+      }
+    },
+    "crane_3": {
+      "inputs": {
+        "nixpkgs": [
+          "stardustxr-telescope",
+          "flatland",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1712681629,
+        "narHash": "sha256-bMDXn4AkTXLCpoZbII6pDGoSeSe9gI87jxPsHRXgu/E=",
+        "owner": "ipetkov",
+        "repo": "crane",
+        "rev": "220387ac8e99cbee0ca4c95b621c4bc782b6a235",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ipetkov",
+        "repo": "crane",
+        "type": "github"
+      }
+    },
+    "crane_4": {
+      "inputs": {
+        "nixpkgs": [
+          "stardustxr-telescope",
+          "gravity",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1712681629,
+        "narHash": "sha256-bMDXn4AkTXLCpoZbII6pDGoSeSe9gI87jxPsHRXgu/E=",
+        "owner": "ipetkov",
+        "repo": "crane",
+        "rev": "220387ac8e99cbee0ca4c95b621c4bc782b6a235",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ipetkov",
+        "repo": "crane",
+        "type": "github"
+      }
+    },
+    "crane_5": {
+      "inputs": {
+        "nixpkgs": [
+          "stardustxr-telescope",
+          "protostar",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1712681629,
+        "narHash": "sha256-bMDXn4AkTXLCpoZbII6pDGoSeSe9gI87jxPsHRXgu/E=",
+        "owner": "ipetkov",
+        "repo": "crane",
+        "rev": "220387ac8e99cbee0ca4c95b621c4bc782b6a235",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ipetkov",
+        "repo": "crane",
+        "type": "github"
+      }
+    },
+    "crane_6": {
+      "inputs": {
+        "nixpkgs": [
+          "stardustxr-telescope",
+          "server",
+          "flatland",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1712681629,
+        "narHash": "sha256-bMDXn4AkTXLCpoZbII6pDGoSeSe9gI87jxPsHRXgu/E=",
+        "owner": "ipetkov",
+        "repo": "crane",
+        "rev": "220387ac8e99cbee0ca4c95b621c4bc782b6a235",
         "type": "github"
       },
       "original": {
@@ -308,6 +441,63 @@
     },
     "flake-parts_3": {
       "inputs": {
+        "nixpkgs-lib": "nixpkgs-lib"
+      },
+      "locked": {
+        "lastModified": 1722555600,
+        "narHash": "sha256-XOQkdLafnb/p9ij77byFQjDf5m5QYl9b2REiVClC+x4=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "8471fe90ad337a8074e957b69ca4d0089218391d",
+        "type": "github"
+      },
+      "original": {
+        "id": "flake-parts",
+        "type": "indirect"
+      }
+    },
+    "flake-parts_4": {
+      "inputs": {
+        "nixpkgs-lib": "nixpkgs-lib_2"
+      },
+      "locked": {
+        "lastModified": 1722555600,
+        "narHash": "sha256-XOQkdLafnb/p9ij77byFQjDf5m5QYl9b2REiVClC+x4=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "8471fe90ad337a8074e957b69ca4d0089218391d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "type": "github"
+      }
+    },
+    "flake-parts_5": {
+      "inputs": {
+        "nixpkgs-lib": [
+          "stardustxr-telescope",
+          "server",
+          "hercules-ci-effects",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1712014858,
+        "narHash": "sha256-sB4SWl2lX95bExY2gMFG5HIzvva5AVMJd4Igm+GpZNw=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "9126214d0a59633752a136528f5f3b9aa8565b7d",
+        "type": "github"
+      },
+      "original": {
+        "id": "flake-parts",
+        "type": "indirect"
+      }
+    },
+    "flake-parts_6": {
+      "inputs": {
         "nixpkgs-lib": [
           "stylix",
           "nixpkgs"
@@ -357,6 +547,48 @@
       "original": {
         "owner": "numtide",
         "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "flatland": {
+      "inputs": {
+        "crane": "crane_3",
+        "nixpkgs": [
+          "stardustxr-telescope",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1723505450,
+        "narHash": "sha256-WNCKo9R5N8bbqIliusz/M9/2SHwDBoahH87GWmGjgSY=",
+        "owner": "StardustXR",
+        "repo": "flatland",
+        "rev": "d2b0b6c83f4a52cf4206a04df7c4aa941fb6ae8b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "StardustXR",
+        "ref": "dev",
+        "repo": "flatland",
+        "type": "github"
+      }
+    },
+    "flatland_2": {
+      "inputs": {
+        "crane": "crane_6",
+        "nixpkgs": "nixpkgs_5"
+      },
+      "locked": {
+        "lastModified": 1713050562,
+        "narHash": "sha256-m7c6XpmpTM1URuqMG2KqtaWbL2Vt8vJFJtmvq123BmY=",
+        "owner": "StardustXR",
+        "repo": "flatland",
+        "rev": "b3b0f29c4ea1b82c96cf9de507837bf15a5e4c0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "StardustXR",
+        "repo": "flatland",
         "type": "github"
       }
     },
@@ -412,6 +644,48 @@
         "owner": "GNOME",
         "ref": "48.2",
         "repo": "gnome-shell",
+        "type": "github"
+      }
+    },
+    "gravity": {
+      "inputs": {
+        "crane": "crane_4",
+        "nixpkgs": [
+          "stardustxr-telescope",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1724217374,
+        "narHash": "sha256-R87u7CX2n7iOOEEB3cHae2doqCn/skChHgeU+RNsHVk=",
+        "owner": "StardustXR",
+        "repo": "gravity",
+        "rev": "96787ed3139717ea6061f6e259e9fed3e483274a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "StardustXR",
+        "ref": "dev",
+        "repo": "gravity",
+        "type": "github"
+      }
+    },
+    "hercules-ci-effects": {
+      "inputs": {
+        "flake-parts": "flake-parts_5",
+        "nixpkgs": "nixpkgs_6"
+      },
+      "locked": {
+        "lastModified": 1719226092,
+        "narHash": "sha256-YNkUMcCUCpnULp40g+svYsaH1RbSEj6s4WdZY/SHe38=",
+        "owner": "hercules-ci",
+        "repo": "hercules-ci-effects",
+        "rev": "11e4b8dc112e2f485d7c97e1cee77f9958f498f5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "hercules-ci-effects",
         "type": "github"
       }
     },
@@ -929,6 +1203,30 @@
         "type": "github"
       }
     },
+    "nixpkgs-lib": {
+      "locked": {
+        "lastModified": 1722555339,
+        "narHash": "sha256-uFf2QeW7eAHlYXuDktm9c25OxOyCoUOQmh5SZ9amE5Q=",
+        "type": "tarball",
+        "url": "https://github.com/NixOS/nixpkgs/archive/a5d394176e64ab29c852d03346c1fc9b0b7d33eb.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://github.com/NixOS/nixpkgs/archive/a5d394176e64ab29c852d03346c1fc9b0b7d33eb.tar.gz"
+      }
+    },
+    "nixpkgs-lib_2": {
+      "locked": {
+        "lastModified": 1722555339,
+        "narHash": "sha256-uFf2QeW7eAHlYXuDktm9c25OxOyCoUOQmh5SZ9amE5Q=",
+        "type": "tarball",
+        "url": "https://github.com/NixOS/nixpkgs/archive/a5d394176e64ab29c852d03346c1fc9b0b7d33eb.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://github.com/NixOS/nixpkgs/archive/a5d394176e64ab29c852d03346c1fc9b0b7d33eb.tar.gz"
+      }
+    },
     "nixpkgs_2": {
       "locked": {
         "lastModified": 1757487488,
@@ -973,6 +1271,38 @@
       "original": {
         "owner": "NixOS",
         "ref": "nixos-unstable-small",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_5": {
+      "locked": {
+        "lastModified": 1712791164,
+        "narHash": "sha256-3sbWO1mbpWsLepZGbWaMovSO7ndZeFqDSdX0hZ9nVyw=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "1042fd8b148a9105f3c0aca3a6177fd1d9360ba5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_6": {
+      "locked": {
+        "lastModified": 1713714899,
+        "narHash": "sha256-+z/XjO3QJs5rLE5UOf015gdVauVRQd2vZtsFkaXBq2Y=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "6143fc5eeb9c4f00163267708e26191d1e918932",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -1050,6 +1380,29 @@
         "type": "github"
       }
     },
+    "protostar": {
+      "inputs": {
+        "crane": "crane_5",
+        "nixpkgs": [
+          "stardustxr-telescope",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1721395853,
+        "narHash": "sha256-TPpkjTOZVtyVZdK65C951DpEzfI9aaRMXclZ31dAk9s=",
+        "owner": "StardustXR",
+        "repo": "protostar",
+        "rev": "39499a061af74c3a2d5e1e46e4ad21aca5727219",
+        "type": "github"
+      },
+      "original": {
+        "owner": "StardustXR",
+        "ref": "dev",
+        "repo": "protostar",
+        "type": "github"
+      }
+    },
     "pyprland": {
       "inputs": {
         "flake-compat": "flake-compat_3",
@@ -1088,8 +1441,34 @@
         "nixpkgs": "nixpkgs_3",
         "pyprland": "pyprland",
         "stable-nixpkgs": "stable-nixpkgs",
+        "stardustxr-telescope": "stardustxr-telescope",
         "stylix": "stylix",
         "zen-browser": "zen-browser"
+      }
+    },
+    "server": {
+      "inputs": {
+        "flake-parts": "flake-parts_4",
+        "flatland": "flatland_2",
+        "hercules-ci-effects": "hercules-ci-effects",
+        "nixpkgs": [
+          "stardustxr-telescope",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1725441283,
+        "narHash": "sha256-/auxbL5TNvIVD2UpzRWgLlbFxOmczmC26F+IWUHDdK0=",
+        "owner": "StardustXR",
+        "repo": "server",
+        "rev": "4683710f095310317633d6aed495d835a5fa609c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "StardustXR",
+        "ref": "dev",
+        "repo": "server",
+        "type": "github"
       }
     },
     "stable-nixpkgs": {
@@ -1108,6 +1487,32 @@
         "type": "github"
       }
     },
+    "stardustxr-telescope": {
+      "inputs": {
+        "black_hole": "black_hole",
+        "flake-parts": "flake-parts_3",
+        "flatland": "flatland",
+        "gravity": "gravity",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "protostar": "protostar",
+        "server": "server"
+      },
+      "locked": {
+        "lastModified": 1744490832,
+        "narHash": "sha256-oF+ic743mtdZvGaLYeYzZ7cNN4EP0OdeqsaOJfc5vUg=",
+        "owner": "StardustXR",
+        "repo": "telescope",
+        "rev": "e33764c69179e35b60ad03931544a87357e1e81f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "StardustXR",
+        "repo": "telescope",
+        "type": "github"
+      }
+    },
     "stylix": {
       "inputs": {
         "base16": "base16",
@@ -1115,7 +1520,7 @@
         "base16-helix": "base16-helix",
         "base16-vim": "base16-vim",
         "firefox-gnome-theme": "firefox-gnome-theme",
-        "flake-parts": "flake-parts_3",
+        "flake-parts": "flake-parts_6",
         "gnome-shell": "gnome-shell",
         "nixpkgs": [
           "nixpkgs"
