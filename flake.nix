@@ -70,6 +70,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -84,6 +86,7 @@
     copyparty,
     disko,
     declarative-jellyfin,
+    nixpkgs-xr,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -104,6 +107,7 @@
           ./hosts/leaf-desktop/configuration.nix
           inputs.stylix.nixosModules.stylix
           home-manager.nixosModules.home-manager
+          nixpkgs-xr.nixosModules.nixpkgs-xr
           {
             home-manager.useUserPackages = true;
             home-manager.users.techleaf = ./hosts/leaf-desktop/home.nix;

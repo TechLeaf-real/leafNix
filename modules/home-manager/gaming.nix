@@ -1,8 +1,9 @@
 {pkgs, ...}: {
   programs.lutris = {
     enable = true;
-    protonPackages = with pkgs; [
-      proton-ge-bin
+    protonPackages = [
+      pkgs.proton-ge-bin
+      # pkgs.proton-ge-rtsp-bin
     ];
   };
 }
