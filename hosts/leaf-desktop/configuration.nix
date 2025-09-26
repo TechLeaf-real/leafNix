@@ -72,6 +72,7 @@
       haguichi
       finamp
       _7zz
+      _7zz-rar
       unp
     ])
     ++ (with inputs.self.packages.x86_64-linux; [
