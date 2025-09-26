@@ -71,8 +71,7 @@
       feishin
       haguichi
       finamp
-      _7zz
-      _7zz-rar
+      p7zip
       unp
     ])
     ++ (with inputs.self.packages.x86_64-linux; [
