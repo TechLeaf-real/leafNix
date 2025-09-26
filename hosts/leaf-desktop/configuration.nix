@@ -71,7 +71,7 @@
       feishin
       haguichi
       finamp
-      p7zip
+      unrar-free
       unp
     ])
     ++ (with inputs.self.packages.x86_64-linux; [
