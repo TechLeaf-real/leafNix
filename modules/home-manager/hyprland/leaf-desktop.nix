@@ -40,17 +40,6 @@ in {
     inputs.hyprshell.homeModules.hyprshell
   ];
 
-  # xdg.portal = {
-  #   enable = true;
-  #   xdgOpenUsePortal = true;
-  #   extraPortals = with pkgs; [
-  #     xdg-desktop-portal-gtk
-  #     xdg-desktop-portal-hyprland
-  #     # xdg-desktop-portal-wlr
-  #   ];
-  #   # wlr.enable = true;
-  # };
-
   config = {
     home.packages = with pkgs; [
       (catppuccin-kvantum.override {
