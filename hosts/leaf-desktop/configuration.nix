@@ -133,6 +133,11 @@
     ];
   };
 
+  xdg.mime.defaultApplications = {
+    "x-scheme-handler/http" = "firefox.desktop";
+    "x-scheme-handler/https" = "firefox.desktop";
+  };
+
   programs.kdeconnect = {
     enable = true;
     package = pkgs.kdePackages.kdeconnect-kde;
