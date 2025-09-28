@@ -50,6 +50,7 @@
         wtype
         libqalculate
         hyprnome
+        xdg-utils
       ])
       ++ (with pyprland.packages.${pkgs.system}; [
         pyprland
