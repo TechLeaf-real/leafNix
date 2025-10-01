@@ -73,6 +73,7 @@
       finamp
       unrar-free
       unp
+      papers
     ])
     ++ (with inputs.self.packages.x86_64-linux; [
       rebuild
