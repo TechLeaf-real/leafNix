@@ -98,10 +98,10 @@
       default
     ]);
 
-  services.desktopManager.cosmic = {
-    enable = true;
-    xwayland.enable = true;
-  };
+  # services.desktopManager.cosmic = {
+  #   enable = true;
+  #   xwayland.enable = true;
+  # };
 
   programs.thunderbird = {
     enable = true;
@@ -123,7 +123,7 @@
 
   hardware.xpadneo.enable = true;
 
-  # programs.ssh.startAgent = true;
+  programs.ssh.startAgent = true;
 
   hardware.bluetooth.enable = true;
 
