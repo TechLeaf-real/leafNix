@@ -38,16 +38,16 @@
       HYPRSHOT_DIR = "Pictures/Screenshots";
     };
 
-    xdg.portal = {
-      enable = true;
-      xdgOpenUsePortal = true;
-      extraPortals = with pkgs; [
-        xdg-desktop-portal-gtk
-        # xdg-desktop-portal-hyprland
-        xdg-desktop-portal-wlr
-      ];
-      wlr.enable = true;
-    };
+    # xdg.portal = {
+    #   enable = true;
+    #   xdgOpenUsePortal = true;
+    #   extraPortals = with pkgs; [
+    #     xdg-desktop-portal-gtk
+    #     # xdg-desktop-portal-hyprland
+    #     xdg-desktop-portal-wlr
+    #   ];
+    #   wlr.enable = true;
+    # };
 
     environment.systemPackages =
       (with pkgs; [
