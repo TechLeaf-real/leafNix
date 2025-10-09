@@ -14,6 +14,7 @@
         dolphin-emu
         # emulationstation-de
         rpcs3
+        # nur.repos.aprilthepink.suyu-mainline
       ])
       ++ (with pkgs-stable; [
         retroarch-full

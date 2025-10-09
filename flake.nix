@@ -76,6 +76,11 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -105,6 +110,7 @@
         };
         modules = [
           ./hosts/leaf-desktop/configuration.nix
+          inputs.nur.modules.nixos.default
           inputs.stylix.nixosModules.stylix
           home-manager.nixosModules.home-manager
           nixpkgs-xr.nixosModules.nixpkgs-xr
