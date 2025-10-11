@@ -50,7 +50,6 @@ in {
       libsForQt5.qt5ct
       papirus-folders
       pamixer
-      # networkmanagerapplet
       hyprshot
       cava
       swayosd

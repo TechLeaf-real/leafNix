@@ -10,15 +10,15 @@
     environment.systemPackages =
       (with pkgs; [
         ryubing
-        cemu
         dolphin-emu
         # emulationstation-de
         rpcs3
         # nur.repos.aprilthepink.suyu-mainline
+        xemu
       ])
       ++ (with pkgs-stable; [
         retroarch-full
-        xemu
+        cemu
       ]);
   };
 }

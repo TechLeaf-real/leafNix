@@ -35,8 +35,10 @@
         osu-lazer-bin
         satisfactorymodmanager
         sgdboop
+        vintagestory
       ])
       ++ (with pkgs-stable; [
-        ]);
+        libvdpau-va-gl
+      ]);
   };
 }

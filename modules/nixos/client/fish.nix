@@ -20,7 +20,7 @@
     pipes
     cbonsai
     asciiquarium
-    astroterm
+    # astroterm
     uutils-coreutils-noprefix
     nix-your-shell
     pokeget-rs

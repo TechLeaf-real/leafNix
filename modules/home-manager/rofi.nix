@@ -5,11 +5,10 @@
       plugins = with pkgs; [
         rofi-calc
         rofi-games
-        rofi-file-browser
       ];
     };
     extraConfig = {
-      modi = "drun,games,calc,file-browser-extended,bluetooth:rofi-bluetooth,power:rofi-power-menu,network:rofi-network-manager";
+      modi = "drun,games,calc,bluetooth:rofi-bluetooth,power:rofi-power-menu,network:rofi-network-manager";
       show-icons = true;
       drun-display-format = "{icon} {name}";
       disable-history = false;
