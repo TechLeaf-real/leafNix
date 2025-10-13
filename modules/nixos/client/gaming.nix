@@ -36,6 +36,7 @@
         satisfactorymodmanager
         sgdboop
         vintagestory
+        poptracker
       ])
       ++ (with pkgs-stable; [
         libvdpau-va-gl
