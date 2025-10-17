@@ -8,6 +8,7 @@
       interactiveShellInit = ''
         set fish_greeting
         nix-your-shell fish | source
+        direnv hook fish | source
       '';
       functions = {
         n = {
