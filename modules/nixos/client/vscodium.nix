@@ -10,6 +10,7 @@
         catppuccin.catppuccin-vsc
         kamadorueda.alejandra
         mkhl.direnv
+        vadimcn.vscode-lldb
       ];
     })
   ];
