@@ -23,7 +23,6 @@
     ../../modules/nixos/misc/network.nix
     ../../modules/nixos/client/tailscale.nix
     ../../modules/nixos/client/sudo-rs.nix
-    ../../modules/nixos/client/direnv.nix
     ../../modules/nixos/client/plymouth.nix
     # ../../modules/nixos/client/ai.nix
     # ../../modules/nixos/client/copyparty.nix

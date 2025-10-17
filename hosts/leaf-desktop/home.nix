@@ -12,6 +12,7 @@
     ../../modules/home-manager/fastfetch.nix
     ../../modules/home-manager/gaming.nix
     # ../../modules/home-manager/codium.nix
+    ../../modules/home-manager/direnv.nix
   ];
 
   home.username = "techleaf";
