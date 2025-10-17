@@ -9,6 +9,7 @@
         catppuccin.catppuccin-vsc-icons
         catppuccin.catppuccin-vsc
         kamadorueda.alejandra
+        mkhl.direnv
       ];
     })
   ];
