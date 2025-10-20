@@ -2,11 +2,12 @@
   config = {
     programs.git = {
       enable = true;
-      delta = {
-        enable = true;
-      };
-      userEmail = "mikiediggins@gmail.com";
-      userName = "Techleaf";
+      settings.user.email = "mikiediggins@gmail.com";
+      settings.user.name = "Techleaf";
+    };
+    programs.delta = {
+      enable = true;
+      enableGitIntegration = true;
     };
   };
 }
