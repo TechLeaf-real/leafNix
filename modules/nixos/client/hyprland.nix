@@ -41,11 +41,12 @@
 
     xdg.portal = {
       enable = true;
-      # wlr.enable = true;
+      wlr.enable = true;
       xdgOpenUsePortal = true;
       extraPortals = [
         pkgs.xdg-desktop-portal-gtk
         inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland
+        pkgs.xdg-desktop-portal-wlr
       ];
     };
 
