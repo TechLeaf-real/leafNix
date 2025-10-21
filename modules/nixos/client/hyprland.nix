@@ -36,16 +36,16 @@
 
     environment.sessionVariables = {
       HYPRSHOT_DIR = "Pictures/Screenshots";
+      NIXOS_OZONE_WL = "1";
     };
 
     xdg.portal = {
       enable = true;
-      wlr.enable = true;
+      # wlr.enable = true;
       xdgOpenUsePortal = true;
-      extraPortals = with pkgs; [
-        xdg-desktop-portal-gtk
-        # xdg-desktop-portal-hyprland
-        # xdg-desktop-portal-wlr
+      extraPortals = [
+        pkgs.xdg-desktop-portal-gtk
+        inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland
       ];
     };
 
