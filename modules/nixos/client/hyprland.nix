@@ -1,6 +1,5 @@
 {
   lib,
-  inputs,
   pkgs,
   pyprland,
   pkgs-stable,
@@ -9,8 +8,8 @@
   config = {
     programs.hyprland = {
       enable = true;
-      package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
-      portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+      # package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+      # portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
       withUWSM = true;
       xwayland.enable = true;
     };
@@ -41,12 +40,12 @@
 
     xdg.portal = {
       enable = true;
-      wlr.enable = true;
+      # wlr.enable = true;
       xdgOpenUsePortal = true;
       extraPortals = [
-        pkgs.xdg-desktop-portal-gtk
-        inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland
-        pkgs.xdg-desktop-portal-wlr
+        # pkgs.xdg-desktop-portal-gtk
+        pkgs.xdg-desktop-portal-hyprland
+        # pkgs.xdg-desktop-portal-wlr
       ];
     };
 
