@@ -37,6 +37,7 @@
         sgdboop
         vintagestory
         poptracker
+        edmarketconnector
       ])
       ++ (with pkgs-stable; [
         libvdpau-va-gl
