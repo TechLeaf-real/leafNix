@@ -23,7 +23,7 @@
       enable = true;
       settings = {
         default_session = {
-          command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd dbus-run-session Hyprland";
+          command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd 'dbus-run-session Hyprland'";
           user = "techleaf";
         };
       };
