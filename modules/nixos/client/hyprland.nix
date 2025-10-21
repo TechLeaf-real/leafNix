@@ -23,7 +23,7 @@
       enable = true;
       settings = {
         default_session = {
-          command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd hyprland";
+          command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd dbus-run-session Hyprland";
           user = "techleaf";
         };
       };
@@ -40,13 +40,8 @@
 
     xdg.portal = {
       enable = true;
-      # wlr.enable = true;
       xdgOpenUsePortal = true;
-      extraPortals = [
-        # pkgs.xdg-desktop-portal-gtk
-        pkgs.xdg-desktop-portal-hyprland
-        # pkgs.xdg-desktop-portal-wlr
-      ];
+      extraPortals = [pkgs.xdg-desktop-portal-hyprland];
     };
 
     environment.systemPackages =
