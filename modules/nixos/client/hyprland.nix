@@ -1,7 +1,7 @@
 {
   lib,
   pkgs,
-  pyprland,
+  # pyprland,
   pkgs-stable,
   ...
 }: {
@@ -44,22 +44,21 @@
       extraPortals = [pkgs.xdg-desktop-portal-hyprland];
     };
 
-    environment.systemPackages =
-      (with pkgs; [
-        rofi-bluetooth
-        rofi-systemd
-        rofi-power-menu
-        rofi-network-manager
-        rofi-obsidian
-        rofi-rbw
-        rofi-pulse-select
-        wtype
-        libqalculate
-        hyprnome
-        xdg-utils
-      ])
-      ++ (with pyprland.packages.${pkgs.system}; [
-        pyprland
-      ]);
+    environment.systemPackages = with pkgs; [
+      rofi-bluetooth
+      rofi-systemd
+      rofi-power-menu
+      rofi-network-manager
+      rofi-obsidian
+      rofi-rbw
+      rofi-pulse-select
+      wtype
+      libqalculate
+      hyprnome
+      xdg-utils
+    ];
+    # ++ (with pyprland.packages.${pkgs.system}; [
+    #   pyprland
+    # ]);
   };
 }
