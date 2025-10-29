@@ -9,7 +9,7 @@
     ../../modules/home-manager/hyprland/leaf-desktop.nix
     ../../modules/home-manager/fish.nix
     ../../modules/home-manager/git.nix
-    ../../modules/home-manager/fastfetch.nix
+    # ../../modules/home-manager/fastfetch.nix
     ../../modules/home-manager/gaming.nix
     # ../../modules/home-manager/codium.nix
     ../../modules/home-manager/direnv.nix
