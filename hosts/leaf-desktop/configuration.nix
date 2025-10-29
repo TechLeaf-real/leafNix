@@ -12,7 +12,7 @@
     ../../modules/nixos/client/syncthing.nix
     ../../modules/nixos/client/gaming.nix
     # ../../modules/nixos/client/emulation.nix
-    # ../../modules/nixos/client/vr.nix
+    ../../modules/nixos/client/vr.nix
     ../../modules/nixos/client/audio.nix
     ../../modules/nixos/client/graphics.nix
     ../../modules/nixos/client/fish.nix
