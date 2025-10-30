@@ -73,6 +73,7 @@
       unrar-free
       unp
       papers
+      docker-compose
     ])
     ++ (with inputs.self.packages.x86_64-linux; [
       rebuild
