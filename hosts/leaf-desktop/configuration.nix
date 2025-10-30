@@ -102,6 +102,10 @@
   #   xwayland.enable = true;
   # };
 
+  virtualisation.docker = {
+    enable = true;
+  };
+
   programs.thunderbird = {
     enable = true;
   };
