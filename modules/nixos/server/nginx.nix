@@ -31,6 +31,15 @@
       sslCertificate = "/pool/dataset/cloudflare/techleaf.dev.pem";
       sslCertificateKey = "/pool/dataset/cloudflare/techleaf.dev.key";
     };
+    virtualHosts."cloudflare.techleaf.dev" = {
+      forceSSL = true;
+      locations."/" = {
+        proxyPass = "http://192.168.1.112:3000";
+        proxyWebsockets = true;
+      };
+      sslCertificate = "/pool/dataset/cloudflare/techleaf.dev.pem";
+      sslCertificateKey = "/pool/dataset/cloudflare/techleaf.dev.key";
+    };
     # virtualHosts."cloud.techleaf.dev" = {
     #   forceSSL = true;
     #   locations."/" = {

@@ -5,6 +5,7 @@
       "media.techleaf.dev"
       "pass.techleaf.dev"
       "photo.techleaf.dev"
+      "dicecloud.techleaf.dev"
     ];
     protocol = "cloudflare";
     zone = "techleaf.dev";
