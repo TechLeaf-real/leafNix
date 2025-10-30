@@ -4,6 +4,15 @@
     recommendedProxySettings = true;
     recommendedTlsSettings = true;
 
+    virtualHosts."dicecloud.techleaf.dev" = {
+      forceSSL = true;
+      locations."/" = {
+        proxyPass = "http://192.168.1.112:3000";
+        proxyWebsockets = true;
+      };
+      sslCertificate = "/pool/dataset/cloudflare/techleaf.dev.pem";
+      sslCertificateKey = "/pool/dataset/cloudflare/techleaf.dev.key";
+    };
     virtualHosts."media.techleaf.dev" = {
       forceSSL = true;
       locations."/" = {
@@ -26,15 +35,6 @@
       forceSSL = true;
       locations."/" = {
         proxyPass = "http://localhost:2283";
-        proxyWebsockets = true;
-      };
-      sslCertificate = "/pool/dataset/cloudflare/techleaf.dev.pem";
-      sslCertificateKey = "/pool/dataset/cloudflare/techleaf.dev.key";
-    };
-    virtualHosts."dicecloud.techleaf.dev" = {
-      forceSSL = true;
-      locations."/" = {
-        proxyPass = "http://192.168.1.112:3000";
         proxyWebsockets = true;
       };
       sslCertificate = "/pool/dataset/cloudflare/techleaf.dev.pem";
