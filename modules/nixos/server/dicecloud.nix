@@ -109,7 +109,7 @@
     };
     script = ''
       cd /etc/nixos/assets/docker/dicecloud
-      docker build -t compose2nix/dicecloud .
+      docker build -t compose2nix:dicecloud .
     '';
     partOf = ["docker-compose-dicecloud-root.target"];
     wantedBy = ["docker-compose-dicecloud-root.target"];
