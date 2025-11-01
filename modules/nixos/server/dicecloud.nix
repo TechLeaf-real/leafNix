@@ -1,6 +1,8 @@
-{ pkgs, lib, ... }:
-
 {
+  pkgs,
+  lib,
+  ...
+}: {
   # Runtime
   virtualisation.docker = {
     enable = true;
@@ -54,7 +56,7 @@
     volumes = [
       "/pool/dataset/docker/dicecloud/db:/data/db:rw"
     ];
-    cmd = [ "--storageEngine=wiredTiger" ];
+    cmd = ["--storageEngine=wiredTiger"];
     log-driver = "journald";
     extraOptions = [
       "--network-alias=dicecloud-db"
@@ -81,7 +83,7 @@
 
   # Networks
   systemd.services."docker-network-dicecloud_default" = {
-    path = [ pkgs.docker ];
+    path = [pkgs.docker];
     serviceConfig = {
       Type = "oneshot";
       RemainAfterExit = true;
@@ -90,13 +92,13 @@
     script = ''
       docker network inspect dicecloud_default || docker network create dicecloud_default
     '';
-    partOf = [ "docker-compose-dicecloud-root.target" ];
-    wantedBy = [ "docker-compose-dicecloud-root.target" ];
+    partOf = ["docker-compose-dicecloud-root.target"];
+    wantedBy = ["docker-compose-dicecloud-root.target"];
   };
 
   # Builds
   systemd.services."docker-build-dicecloud" = {
-    path = [ pkgs.docker pkgs.git ];
+    path = [pkgs.docker pkgs.git];
     serviceConfig = {
       Type = "oneshot";
       TimeoutSec = 300;
@@ -114,6 +116,6 @@
     unitConfig = {
       Description = "";
     };
-    wantedBy = [ "multi-user.target" ];
+    wantedBy = ["multi-user.target"];
   };
 }
