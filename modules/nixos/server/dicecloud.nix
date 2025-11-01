@@ -104,7 +104,7 @@
       TimeoutSec = 300;
     };
     script = ''
-      cd /leafNix/assets/docker/dicecloud
+      cd /etc/nixos/assets/docker/dicecloud
       docker build -t local/dicecloud .
     '';
   };
