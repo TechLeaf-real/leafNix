@@ -105,7 +105,7 @@
     serviceConfig = {
       Type = "oneshot";
       RemainAfterExit = true;
-      TimeoutSec = 300;
+      TimeoutSec = 0;
     };
     script = ''
       cd /etc/nixos/assets/docker/dicecloud
