@@ -16,7 +16,7 @@ in {
 
   config = {
     networking = {
-      firewall.allowedTCPPorts = [1234];
+      firewall.allowedTCPPorts = [1234 27017];
       hostName = cfg.hostname;
       nameservers = [
         "1.1.1.1"
