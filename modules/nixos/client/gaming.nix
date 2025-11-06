@@ -37,6 +37,7 @@
         sgdboop
         vintagestory
         poptracker
+        javaPackages.compiler.temurin-bin.jdk-25
       ])
       ++ (with pkgs-stable; [
         libvdpau-va-gl
