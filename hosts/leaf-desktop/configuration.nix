@@ -141,6 +141,8 @@
   programs.nix-ld = {
     enable = true;
     libraries = with pkgs; [
+      libunwind
+      libcxx
       libffi
       icu
     ];
