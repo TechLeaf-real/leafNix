@@ -26,7 +26,7 @@
 
     environment.systemPackages =
       (with pkgs; [
-        heroic
+        # heroic
         moonlight
         prismlauncher
         ftb-app

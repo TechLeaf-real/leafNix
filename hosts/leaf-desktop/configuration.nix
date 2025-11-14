@@ -67,7 +67,7 @@
       switcheroo
       gnome-disk-utility
       alacritty
-      feishin
+      # feishin
       haguichi
       finamp
       unrar-free
