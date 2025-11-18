@@ -40,6 +40,7 @@
         javaPackages.compiler.temurin-bin.jdk-25
       ])
       ++ (with pkgs-stable; [
+        modrinth-app
         libvdpau-va-gl
         edmarketconnector
       ]);
