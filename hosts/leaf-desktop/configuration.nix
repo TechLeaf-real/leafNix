@@ -74,6 +74,7 @@
       unp
       papers
       docker-compose
+      delfin
     ])
     ++ (with inputs.self.packages.x86_64-linux; [
       rebuild
