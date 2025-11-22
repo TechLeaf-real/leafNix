@@ -139,6 +139,8 @@
     enable = true;
   };
 
+  networking.firewall.allowedTCPPorts = [25565];
+
   programs.nix-ld = {
     enable = true;
     libraries = with pkgs; [
