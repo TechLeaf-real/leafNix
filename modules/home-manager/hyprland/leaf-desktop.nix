@@ -165,6 +165,7 @@ in {
           "noblur, class:homesprite"
           "norounding, class:homesprite"
           "noshadow, class:homesprite"
+          "tile, class:Godot"
         ];
 
         plugin = {
