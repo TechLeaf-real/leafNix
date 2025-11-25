@@ -139,7 +139,7 @@
     enable = true;
   };
 
-  networking.firewall.allowedTCPPorts = [25565 25564];
+  networking.firewall.allowedTCPPorts = [25565 24454];
 
   programs.nix-ld = {
     enable = true;
