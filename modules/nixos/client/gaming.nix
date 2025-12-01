@@ -17,6 +17,7 @@
         proton-ge-bin
         steamtinkerlaunch
       ];
+      protontricks.enable = true;
     };
 
     services.sunshine = {
@@ -38,6 +39,7 @@
         vintagestory
         poptracker
         javaPackages.compiler.temurin-bin.jdk-25
+        archipelago
       ])
       ++ (with pkgs-stable; [
         modrinth-app

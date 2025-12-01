@@ -32,7 +32,7 @@
     };
 
     deadnix = {
-      url = "github:astro/deadnix?rev=e430f41ca56638b42906980e078393d2a7466b35";
+      url = "github:astro/deadnix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
