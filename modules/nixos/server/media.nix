@@ -11,6 +11,24 @@
     };
     system = {
       serverName = "LeafNet Streaming";
+      pluginRepositories = [
+        {
+          content = {
+            Enabled = true;
+            Name = "Jellyfin Stable";
+            Url = "https://repo.jellyfin.org/files/plugin/manifest.json";
+          };
+          tag = "RepositoryInfo";
+        }
+        {
+          content = {
+            Enabled = true;
+            Name = "Intro Skipper";
+            Url = "https://intro-skipper.org/manifest.json";
+          };
+          tag = "RepositoryInfo";
+        }
+      ];
     };
     users = {
       techleaf = {
@@ -32,6 +50,8 @@
         "vp9"
         "av1"
       ];
+      enableVppTonemapping = true;
+      enableTonemapping = true;
     };
     libraries = {
       Movies = {
