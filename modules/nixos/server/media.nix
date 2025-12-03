@@ -3,6 +3,11 @@
   pkgs-stable,
   ...
 }: {
+  services.jellyfin = {
+    enable = true;
+    openFirewall = false;
+  };
+
   services.declarative-jellyfin = {
     enable = true;
     openFirewall = true;
