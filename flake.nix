@@ -72,6 +72,8 @@
 
     nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
 
+    millennium.url = "git+https://github.com/SteamClientHomebrew/Millennium";
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -114,6 +116,7 @@
           inputs.stylix.nixosModules.stylix
           home-manager.nixosModules.home-manager
           nixpkgs-xr.nixosModules.nixpkgs-xr
+          # inputs.millennium.overlays.default
           {
             home-manager.useUserPackages = true;
             home-manager.users.techleaf = ./hosts/leaf-desktop/home.nix;

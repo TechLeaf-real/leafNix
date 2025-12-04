@@ -11,6 +11,7 @@
 
     programs.steam = {
       enable = true;
+      # package = pkgs.steam-millennium;
       remotePlay.openFirewall = true;
       dedicatedServer.openFirewall = true;
       extraCompatPackages = with pkgs; [
