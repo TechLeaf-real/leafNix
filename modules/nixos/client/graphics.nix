@@ -27,7 +27,6 @@ in {
       # enable32Bit = true;
       package = pkgs-stable.mesa;
       extraPackages = with pkgs-stable; [
-        mesa
         libva
         libvdpau-va-gl
         vulkan-loader
