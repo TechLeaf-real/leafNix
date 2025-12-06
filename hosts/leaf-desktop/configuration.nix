@@ -129,7 +129,7 @@
 
   network.hostname = "leaf-desktop";
 
-  hardware.xpadneo.enable = true;
+  # hardware.xpadneo.enable = true;
 
   programs.ssh.startAgent = true;
 
