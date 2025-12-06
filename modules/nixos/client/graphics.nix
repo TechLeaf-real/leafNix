@@ -1,7 +1,7 @@
 {
   lib,
   config,
-  pkgs,
+  pkgs-stable,
   ...
 }: let
   cfg = config.graphics;
@@ -24,8 +24,9 @@ in {
   config = {
     hardware.graphics = {
       enable = true;
-      enable32Bit = true;
-      extraPackages = with pkgs; [
+      # enable32Bit = true;
+      package = pkgs-stable.mesa;
+      extraPackages = with pkgs-stable; [
         mesa
         libva
         libvdpau-va-gl
