@@ -32,7 +32,6 @@
         moonlight
         prismlauncher
         ftb-app
-        gale
         mindustry
         osu-lazer-bin
         satisfactorymodmanager
@@ -43,6 +42,7 @@
         archipelago
       ])
       ++ (with pkgs-stable; [
+        gale
         modrinth-app
         libvdpau-va-gl
         edmarketconnector
