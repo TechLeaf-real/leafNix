@@ -40,7 +40,7 @@
         poptracker
         javaPackages.compiler.temurin-bin.jdk-25
         archipelago
-        mcpelauncher-client
+        mcpelauncher-ui-qt
       ])
       ++ (with pkgs-stable; [
         gale
