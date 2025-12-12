@@ -41,6 +41,7 @@
         javaPackages.compiler.temurin-bin.jdk-25
         archipelago
         mcpelauncher-ui-qt
+        heroic
       ])
       ++ (with pkgs-stable; [
         gale
