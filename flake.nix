@@ -72,7 +72,7 @@
 
     nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
 
-    millennium.url = "git+https://github.com/SteamClientHomebrew/Millennium";
+    # millennium.url = "git+https://github.com/SteamClientHomebrew/Millennium";
 
     home-manager = {
       url = "github:nix-community/home-manager";
