@@ -41,6 +41,7 @@
         archipelago
         mcpelauncher-ui-qt
         heroic
+        owmods-gui
       ])
       ++ (with pkgs-stable; [
         gale
