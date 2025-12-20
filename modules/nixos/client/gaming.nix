@@ -35,7 +35,7 @@
         osu-lazer-bin
         satisfactorymodmanager
         sgdboop
-        vintagestory
+        # vintagestory
         poptracker
         javaPackages.compiler.temurin-bin.jdk-25
         archipelago

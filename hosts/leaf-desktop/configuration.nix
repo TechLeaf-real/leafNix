@@ -72,7 +72,7 @@
       finamp
       unrar-free
       unp
-      papers
+      # papers
       docker-compose
       delfin
     ])
