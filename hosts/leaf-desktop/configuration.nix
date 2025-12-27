@@ -86,16 +86,16 @@
       gnome-text-editor
       unityhub
     ])
-    ++ (with inputs.nix-alien.packages.${pkgs.system}; [
+    ++ (with inputs.nix-alien.packages.${pkgs.stdenv.hostPlatform.system}; [
       nix-alien
     ])
-    ++ (with inputs.deadnix.packages.${pkgs.system}; [
+    ++ (with inputs.deadnix.packages.${pkgs.stdenv.hostPlatform.system}; [
       deadnix
     ])
-    ++ (with inputs.zen-browser.packages.${pkgs.system}; [
+    ++ (with inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}; [
       default
     ])
-    ++ (with inputs.jerry.packages.${pkgs.system}; [
+    ++ (with inputs.jerry.packages.${pkgs.stdenv.hostPlatform.system}; [
       default
     ]);
 
