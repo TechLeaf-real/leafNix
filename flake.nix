@@ -65,6 +65,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    jellarr.url = "github:venkyr77/jellarr";
+
     stardustxr-telescope = {
       url = "github:StardustXR/telescope";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -139,6 +141,7 @@
           ./hosts/leaf-server/configuration.nix
           disko.nixosModules.disko
           declarative-jellyfin.nixosModules.default
+          inputs.jellar.nixosModules.default
           copyparty.nixosModules.default
         ];
       };
