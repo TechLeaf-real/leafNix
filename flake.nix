@@ -141,7 +141,7 @@
           ./hosts/leaf-server/configuration.nix
           disko.nixosModules.disko
           declarative-jellyfin.nixosModules.default
-          inputs.jellar.nixosModules.default
+          inputs.jellarr.nixosModules.default
           copyparty.nixosModules.default
         ];
       };
