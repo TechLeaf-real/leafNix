@@ -6,6 +6,7 @@
   services.jellyfin = {
     enable = true;
     openFirewall = false;
+    group = "media";
   };
 
   # services.declarative-jellyfin = {
