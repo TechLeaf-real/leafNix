@@ -72,7 +72,7 @@
       Music = {
         enabled = true;
         contentType = "music";
-        pathInfos = ["/pool/dataset/media/music" "/pool/dataset/media/newMusic"];
+        pathInfos = ["/pool/dataset/media/music" "/pool/dataset/media/newMusic" "/pool/dataset/media/rippedMusic"];
       };
     };
   };
