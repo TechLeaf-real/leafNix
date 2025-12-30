@@ -6,7 +6,7 @@
   imports = [
     ../../modules/home-manager/syncthing.nix
     # ../../modules/home-manager/catppuccin.nix
-    ../../modules/home-manager/hyprland/leaf-desktop.nix
+    ../../modules/home-manager/hyprland.nix
     ../../modules/home-manager/fish.nix
     ../../modules/home-manager/git.nix
     # ../../modules/home-manager/fastfetch.nix

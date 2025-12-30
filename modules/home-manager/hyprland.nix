@@ -33,9 +33,9 @@ in {
   };
 
   imports = [
-    ../rofi.nix
-    ../ghostty.nix
-    ../waybar.nix
+    ./rofi.nix
+    ./ghostty.nix
+    ./waybar.nix
     # ../eww.nix
     inputs.hyprshell.homeModules.hyprshell
   ];
