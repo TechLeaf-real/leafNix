@@ -4,6 +4,7 @@
   ...
 }: {
   imports = [
+    ./packages.nix
     ../../modules/home-manager/syncthing.nix
     # ../../modules/home-manager/catppuccin.nix
     ../../modules/home-manager/hyprland.nix
@@ -11,7 +12,6 @@
     ../../modules/home-manager/git.nix
     # ../../modules/home-manager/fastfetch.nix
     ../../modules/home-manager/gaming.nix
-    # ../../modules/home-manager/codium.nix
     ../../modules/home-manager/direnv.nix
   ];
 
@@ -53,9 +53,6 @@
   services.udiskie.enable = true;
 
   hyprland.terminal = "ghostty";
-
-  home.packages = with pkgs; [
-  ];
 
   home.file = {
   };
