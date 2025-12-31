@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    stable-nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+    stable-nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
     hyprland.url = "github:hyprwm/hyprland";
     pyprland.url = "github:hyprland-community/pyprland";
