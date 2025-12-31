@@ -22,7 +22,7 @@
         wormhole = "${pkgs.magic-wormhole-rs}/bin/wormhole-rs";
         touch = "${pkgs.bonk}/bin/bonk";
         rm = "${pkgs.gomi}/bin/gomi";
-        grep = "${pkgs.ripgrep}/bin/rg";
+        grep = "${pkgs.ripgrep-all}/bin/rg";
         find = "${pkgs.fd}/bin/fd";
       };
     };
