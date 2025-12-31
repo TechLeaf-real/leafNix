@@ -7,7 +7,6 @@
     fzf
     xh
     zellij
-    # gitui
     dust
     yazi
     hyperfine
@@ -20,7 +19,6 @@
     pipes
     cbonsai
     asciiquarium
-    # astroterm
     uutils-coreutils-noprefix
     nix-your-shell
     pokeget-rs
