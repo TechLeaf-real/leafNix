@@ -11,7 +11,6 @@
 
     programs.steam = {
       enable = true;
-      # package = pkgs.steam-millennium;
       remotePlay.openFirewall = true;
       dedicatedServer.openFirewall = true;
       extraCompatPackages = with pkgs; [
@@ -35,9 +34,7 @@
         osu-lazer-bin
         satisfactorymodmanager
         sgdboop
-        # vintagestory
         poptracker
-        javaPackages.compiler.temurin-bin.jdk-25
         archipelago
         mcpelauncher-ui-qt
         heroic

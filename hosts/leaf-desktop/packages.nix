@@ -16,6 +16,7 @@
       legcord
       blender-hip
       parabolic
+      javaPackages.compiler.temurin-bin.jdk-25
       warp
     ])
     ++ (with pkgs-stable; [
