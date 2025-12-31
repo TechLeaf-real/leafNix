@@ -15,7 +15,7 @@
     ../../modules/nixos/client/audio.nix
     ../../modules/nixos/client/graphics.nix
     ../../modules/nixos/client/fish.nix
-    ../../modules/nixos/client/stylix.nix
+    # ../../modules/nixos/client/stylix.nix
     ../../modules/nixos/client/kernel.nix
     ../../modules/nixos/client/grub.nix
     ../../modules/nixos/client/vscodium.nix
@@ -24,6 +24,8 @@
     ../../modules/nixos/client/sudo-rs.nix
     ../../modules/nixos/client/plymouth.nix
   ];
+
+  services.desktopManager.gnome.enable = true;
 
   graphics = {
     gpuBrand = "amd";
@@ -39,7 +41,7 @@
     };
   };
 
-  programs.ssh.startAgent = true;
+  # programs.ssh.startAgent = true;
   programs.thunderbird.enable = true;
   services.hardware.openrgb.enable = true;
   services.udisks2.enable = true;
