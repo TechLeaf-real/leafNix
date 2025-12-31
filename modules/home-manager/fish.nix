@@ -23,7 +23,7 @@
         touch = "${pkgs.bonk.out}/bin/bonk";
         rm = "${pkgs.gomi.out}/bin/gomi";
         grep = "${pkgs.ripgrep.out}/bin/rg";
-        find = "${pkgs.fd.out}/bin/fd";
+        find = "${pkgs.fd}/bin/fd";
       };
     };
 
@@ -75,6 +75,7 @@
     home.packages = with pkgs; [
       navi
       onefetch
+      fd
     ];
   };
 }
