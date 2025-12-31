@@ -16,14 +16,14 @@
         };
       };
       shellAliases = {
-        ls = "${pkgs.eza}/bin/eza";
+        ls = "eza";
         cd = "z";
         cat = "bat";
-        wormhole = "${pkgs.magic-wormhole-rs.out}/bin/wormhole-rs";
-        touch = "${pkgs.bonk.out}/bin/bonk";
-        rm = "${pkgs.gomi.out}/bin/gomi";
-        grep = "${pkgs.ripgrep.out}/bin/rg";
-        find = "${pkgs.fd}/bin/fd";
+        wormhole = "wormhole-rs";
+        touch = "bonk";
+        rm = "gomi";
+        grep = "rg";
+        find = "fd";
       };
     };
 
@@ -76,6 +76,11 @@
       navi
       onefetch
       fd
+      ripgrep
+      gomi
+      bonk
+      magic-wormhole-rs
+      eza
     ];
   };
 }
