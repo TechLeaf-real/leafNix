@@ -19,11 +19,11 @@
         ls = "${pkgs.eza}/bin/eza";
         cd = "z";
         cat = "bat";
-        wormhole = "${pkgs.magic-wormhole-rs}/bin/wormhole-rs";
-        touch = "${pkgs.bonk}/bin/bonk";
-        rm = "${pkgs.gomi}/bin/gomi";
-        grep = "${pkgs.ripgrep-all}/bin/rg";
-        find = "${pkgs.fd}/bin/fd";
+        wormhole = "${pkgs.magic-wormhole-rs.out}/bin/wormhole-rs";
+        touch = "${pkgs.bonk.out}/bin/bonk";
+        rm = "${pkgs.gomi.out}/bin/gomi";
+        grep = "${pkgs.ripgrep.out}/bin/rg";
+        find = "${pkgs.fd.out}/bin/fd";
       };
     };
 
