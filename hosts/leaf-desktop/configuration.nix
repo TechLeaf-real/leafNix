@@ -2,7 +2,6 @@
   pkgs,
   pkgs-stable,
   inputs,
-  # pyprland,
   ...
 }: {
   imports = [
@@ -144,7 +143,6 @@
     extraSpecialArgs = {
       inherit inputs;
       inherit pkgs-stable;
-      # inherit pyprland;
     };
     users = {
       "techleaf" = import ./home.nix;

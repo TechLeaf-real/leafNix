@@ -6,7 +6,6 @@
     stable-nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
     hyprland.url = "github:hyprwm/hyprland";
-    pyprland.url = "github:hyprland-community/pyprland";
     hyprland-plugins = {
       url = "github:hyprwm/hyprland-plugins";
       inputs.hyprland.follows = "hyprland";
@@ -90,7 +89,6 @@
   outputs = {
     nixpkgs,
     stable-nixpkgs,
-    pyprland,
     home-manager,
     copyparty,
     disko,
@@ -105,7 +103,6 @@
         specialArgs = {
           inherit inputs;
           inherit system;
-          inherit pyprland;
 
           pkgs-stable = import stable-nixpkgs {
             inherit system;

@@ -1,7 +1,6 @@
 {
   lib,
   pkgs,
-  # pyprland,
   pkgs-stable,
   ...
 }: {
@@ -57,8 +56,5 @@
       hyprnome
       xdg-utils
     ];
-    # ++ (with pyprland.packages.${pkgs.system}; [
-    #   pyprland
-    # ]);
   };
 }
