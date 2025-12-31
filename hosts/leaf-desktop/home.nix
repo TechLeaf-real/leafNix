@@ -6,11 +6,9 @@
   imports = [
     ./packages.nix
     ../../modules/home-manager/syncthing.nix
-    # ../../modules/home-manager/catppuccin.nix
     ../../modules/home-manager/hyprland.nix
     ../../modules/home-manager/fish.nix
     ../../modules/home-manager/git.nix
-    # ../../modules/home-manager/fastfetch.nix
     ../../modules/home-manager/gaming.nix
     ../../modules/home-manager/direnv.nix
   ];
@@ -18,16 +16,12 @@
   home.username = "techleaf";
   home.homeDirectory = "/home/techleaf";
 
-  home.stateVersion = "25.05";
-
   syncthing = {
     blender = true;
     code = true;
     ssh = true;
     obsidian = true;
-    # pictures = true;
     soundboard = true;
-    # videos = true;
     emulation = true;
   };
 
@@ -49,16 +43,9 @@
   };
 
   nixpkgs.config.allowUnfree = true;
-
   services.udiskie.enable = true;
-
   hyprland.terminal = "ghostty";
-
-  home.file = {
-  };
-
-  home.sessionVariables = {
-  };
-
   programs.home-manager.enable = true;
+
+  home.stateVersion = "25.05";
 }

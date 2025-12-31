@@ -31,6 +31,8 @@
     enableOffload = false;
   };
 
+  network.hostname = "leaf-desktop";
+
   virtualisation.docker = {
     enable = true;
     rootless = {
@@ -38,33 +40,14 @@
     };
   };
 
-  programs.thunderbird = {
-    enable = true;
-  };
-
-  services.hardware.openrgb = {
-    enable = true;
-  };
-
-  services.udisks2.enable = true;
-
-  programs.corectrl = {
-    enable = true;
-  };
-
-  services.gvfs.enable = true;
-
-  network.hostname = "leaf-desktop";
-
-  # hardware.xpadneo.enable = true;
-
   programs.ssh.startAgent = true;
-
+  programs.thunderbird.enable = true;
+  services.hardware.openrgb.enable = true;
+  services.udisks2.enable = true;
+  programs.corectrl.enable = true;
+  services.gvfs.enable = true;
   hardware.bluetooth.enable = true;
-
-  programs.firefox = {
-    enable = true;
-  };
+  programs.firefox.enable = true;
 
   networking.firewall.allowedTCPPorts = [25565 24454];
 
@@ -78,16 +61,6 @@
     ];
   };
 
-  # xdg.mime.enable = true;
-  # xdg.mime.defaultApplications = {
-  #   "text/html" = "firefox.desktop";
-  #   "x-scheme-handler/http" = "firefox.desktop";
-  #   "x-scheme-handler/https" = "firefox.desktop";
-  #   "x-scheme-handler/about" = "firefox.desktop";
-  #   "x-scheme-handler/unknown" = "firefox.desktop";
-  # };
-  # environment.sessionVariables.DEFAULT_BROWSER = "${pkgs.firefox}/bin/firefox";
-
   programs.kdeconnect = {
     enable = true;
     package = pkgs.kdePackages.kdeconnect-kde;
@@ -97,10 +70,6 @@
     enable = true;
     enableFishIntegration = true;
   };
-
-  fonts.packages = with pkgs; [
-    melete
-  ];
 
   fonts.enableDefaultPackages = true;
 
@@ -119,14 +88,6 @@
   };
 
   nix.settings.auto-optimise-store = true;
-
-  networking.hostName = "leaf-desktop";
-
-  programs.obs-studio = {
-    enable = false;
-    enableVirtualCamera = true;
-    plugins = [];
-  };
 
   services.logmein-hamachi.enable = true;
 
