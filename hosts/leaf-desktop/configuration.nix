@@ -25,7 +25,10 @@
     ../../modules/nixos/client/plymouth.nix
   ];
 
-  # services.desktopManager.gnome.enable = true;
+  programs.virt-manager.enable = true;
+  users.groups.libvirtd.members = ["techleaf"];
+  virtualisation.libvirtd.enable = true;
+  virtualisation.spiceUSBRedirection.enable = true;
 
   graphics = {
     gpuBrand = "amd";
@@ -130,7 +133,7 @@
   users.users.techleaf = {
     isNormalUser = true;
     description = "Techleaf";
-    extraGroups = ["networkmanager" "wheel"];
+    extraGroups = ["networkmanager" "wheel" "libvirtd"];
     openssh.authorizedKeys.keyFiles = [
       "~/.ssh/leaf-desktop.pub"
     ];
