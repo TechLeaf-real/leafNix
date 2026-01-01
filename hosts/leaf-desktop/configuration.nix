@@ -23,12 +23,8 @@
     ../../modules/nixos/client/tailscale.nix
     ../../modules/nixos/client/sudo-rs.nix
     ../../modules/nixos/client/plymouth.nix
+    ../../modules/nixos/misc/virtualisation.nix
   ];
-
-  programs.virt-manager.enable = true;
-  users.groups.libvirtd.members = ["techleaf"];
-  virtualisation.libvirtd.enable = true;
-  virtualisation.spiceUSBRedirection.enable = true;
 
   graphics = {
     gpuBrand = "amd";
@@ -133,7 +129,7 @@
   users.users.techleaf = {
     isNormalUser = true;
     description = "Techleaf";
-    extraGroups = ["networkmanager" "wheel" "libvirtd"];
+    extraGroups = ["networkmanager" "wheel"];
     openssh.authorizedKeys.keyFiles = [
       "~/.ssh/leaf-desktop.pub"
     ];
