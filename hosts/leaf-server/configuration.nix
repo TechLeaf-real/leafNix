@@ -9,26 +9,18 @@
     (modulesPath + "/profiles/qemu-guest.nix")
     ./disk-config.nix
     ./hardware-configuration.nix
-    # ../../modules/nixos/server/gitea.nix
-    # ../../modules/nixos/server/caddy.nix
-    # ../../modules/nixos/server/httpd.nix
-    # ../../modules/nixos/server/cloudflared.nix
-    # ../../modules/nixos/server/traefik.nix
-    # ../../modules/nixos/server/copyparty.nix
-    # ../../modules/nixos/server/memos.nix
-    # ../../modules/nixos/server/home-assistant.nix
-    # ../../modules/nixos/server/nextcloud.nix
-    ../../modules/nixos/misc/network.nix
-    ../../modules/nixos/client/fish.nix
-    ../../modules/nixos/server/samba.nix
-    ../../modules/nixos/server/syncthing.nix
-    ../../modules/nixos/server/media.nix
-    ../../modules/nixos/server/immich.nix
-    ../../modules/nixos/server/nginx.nix
-    ../../modules/nixos/server/ddclient.nix
-    ../../modules/nixos/server/vaultwarden.nix
-    # ../../modules/nixos/server/dicecloud.nix
+    ../../modules/nixos
   ];
+
+  network.enable = true;
+  fish.enable = true;
+  samba.enable = true;
+  syncthing-server.enable = true;
+  media.enable = true;
+  immich.enable = true;
+  nginx.enable = true;
+  ddclient.enable = true;
+  vaultwarden.enable = true;
 
   network.hostname = "leaf-server";
   networking.hostId = "737572d5";

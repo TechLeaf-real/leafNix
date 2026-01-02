@@ -1,5 +1,0 @@
-{...}: {
-  services.syncthing = {
-    openDefaultPorts = true;
-  };
-}

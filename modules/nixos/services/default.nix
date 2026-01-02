@@ -1,0 +1,26 @@
+{
+  imports = [
+    ./ai.nix
+    ./audio.nix
+    ./caddy.nix
+    ./cloudflared.nix
+    ./ddclient.nix
+    ./gitea.nix
+    ./grub.nix
+    ./home-assistant.nix
+    ./immich.nix
+    ./memos.nix
+    ./minecraft-server.nix
+    ./network.nix
+    ./nextcloud.nix
+    ./nginx.nix
+    ./plymouth.nix
+    ./samba.nix
+    ./stylix.nix
+    ./syncthing-client.nix
+    ./syncthing-server.nix
+    ./tailscale.nix
+    ./vaultwarden.nix
+    ./virtualisation.nix
+  ];
+}

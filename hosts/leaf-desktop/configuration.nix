@@ -8,25 +8,24 @@
     ./hardware-configuration.nix
     ./system-packages.nix
     inputs.home-manager.nixosModules.default
-    ../../modules/nixos/client/hyprland.nix
-    ../../modules/nixos/client/syncthing.nix
-    ../../modules/nixos/client/gaming.nix
-    ../../modules/nixos/client/vr.nix
-    ../../modules/nixos/client/audio.nix
-    ../../modules/nixos/client/graphics.nix
-    ../../modules/nixos/client/fish.nix
-    ../../modules/nixos/client/stylix.nix
-    ../../modules/nixos/client/kernel.nix
-    ../../modules/nixos/client/grub.nix
-    ../../modules/nixos/client/vscodium.nix
-    ../../modules/nixos/misc/network.nix
-    ../../modules/nixos/client/tailscale.nix
-    ../../modules/nixos/client/sudo-rs.nix
-    ../../modules/nixos/client/plymouth.nix
-    ../../modules/nixos/misc/virtualisation.nix
+    ../../modules/nixos
   ];
 
   vscodium.enable = true;
+  hyprland.enable = true;
+  syncthing-client.enable = true;
+  gaming.enable = true;
+  vr.enable = true;
+  audio.enable = true;
+  graphics.enable = true;
+  fish.enable = true;
+  stylix-config.enable = true;
+  kernel.enable = true;
+  grub.enable = true;
+  network.enable = true;
+  tailscale.enable = true;
+  plymouth.enable = true;
+  virtualisation.enable = true;
 
   graphics = {
     gpuBrand = "amd";

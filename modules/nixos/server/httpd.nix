@@ -1,6 +1,0 @@
-{...}: {
-  services.httpd = {
-    virtualHosts = {
-    };
-  };
-}
