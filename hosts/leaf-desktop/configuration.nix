@@ -26,6 +26,8 @@
     ../../modules/nixos/misc/virtualisation.nix
   ];
 
+  vscodium.enable = true;
+
   graphics = {
     gpuBrand = "amd";
     enableOffload = false;
