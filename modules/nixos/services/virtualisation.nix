@@ -3,11 +3,11 @@
   lib,
   ...
 }: let
-  cfg = config.virtualisation;
+  cfg = config.virtualisation-config;
 in {
   options = {
-    virtualisation = {
-      enable = lib.mkEnableOption "virtualisation";
+    virtualisation-config = {
+      enable = lib.mkEnableOption "virtualisation-config";
     };
   };
 

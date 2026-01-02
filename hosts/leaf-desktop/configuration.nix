@@ -25,7 +25,7 @@
   network.enable = true;
   tailscale.enable = true;
   plymouth.enable = true;
-  virtualisation.enable = true;
+  virtualisation-config.enable = true;
 
   graphics = {
     gpuBrand = "amd";
