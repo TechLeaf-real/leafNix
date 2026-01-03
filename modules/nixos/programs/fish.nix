@@ -46,6 +46,7 @@ in {
     programs.starship = {
       enable = true;
       presets = ["catppuccin-powerline"];
+      transientPrompt.enable = true;
     };
 
     programs.bash.interactiveShellInit = ''
