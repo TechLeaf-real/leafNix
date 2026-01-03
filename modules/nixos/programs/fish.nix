@@ -43,15 +43,6 @@ in {
 
     security.sudo-rs.enable = true;
 
-    programs.starship = {
-      enable = true;
-      presets = ["catppuccin-powerline"];
-      transientPrompt = {
-        enable = true;
-        left = "starship module character";
-      };
-    };
-
     programs.bash.interactiveShellInit = ''
       if [[ $(${pkgs.procps}/bin/ps --no-header --pid=$PPID --format=comm) != "fish" && -z ''${BASH_EXECUTION_STRING} ]]
       then
