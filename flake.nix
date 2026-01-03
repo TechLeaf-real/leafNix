@@ -132,6 +132,7 @@
           };
         };
         modules = [
+          inputs.stylix.nixosModules.stylix
           ./hosts/leaf-server/configuration.nix
           disko.nixosModules.disko
           declarative-jellyfin.nixosModules.default
