@@ -16,7 +16,7 @@
   fish.enable = true;
   samba.enable = true;
   syncthing-server.enable = true;
-  media.enable = true;
+  media-server.enable = true;
   immich.enable = true;
   nginx.enable = true;
   ddclient.enable = true;
