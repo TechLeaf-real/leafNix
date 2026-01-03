@@ -44,6 +44,7 @@ in {
     security.sudo-rs.enable = true;
 
     programs.starship = {
+      enable = true;
       presets = ["catppuccin-powerline"];
     };
 
