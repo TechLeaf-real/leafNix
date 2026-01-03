@@ -25,13 +25,6 @@
         grep = "rg";
         find = "fd";
       };
-
-      plugins = [
-        {
-          name = "tide";
-          src = pkgs.fishPlugins.tide;
-        }
-      ];
     };
 
     programs.zoxide = {
