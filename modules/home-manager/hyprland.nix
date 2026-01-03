@@ -122,13 +122,12 @@ in {
 
     services.hyprpaper = {
       enable = true;
+      package = pkgs.hyprpaper;
       settings = {
         ipc = "on";
         splash = false;
         splash_offset = 2.0;
-
         preload = ["~/Pictures/Wallpapers/catppuccin-wallpapers-main/os/nix-black-4k.png"];
-
         wallpaper = [
           ", ~/Pictures/Wallpapers/catppuccin-wallpapers-main/os/nix-black-4k.png"
         ];
