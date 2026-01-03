@@ -40,14 +40,15 @@ in {
         mindustry
         osu-lazer-bin
         satisfactorymodmanager
-        sgdboop
         poptracker
         archipelago
         mcpelauncher-ui-qt
         heroic
         owmods-gui
+        # parsec
       ])
       ++ (with pkgs-stable; [
+        sgdboop
         gale
         modrinth-app
         libvdpau-va-gl

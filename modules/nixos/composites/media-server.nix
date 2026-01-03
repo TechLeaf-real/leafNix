@@ -1,4 +1,5 @@
 {
+  inputs,
   lib,
   config,
   pkgs-stable,
@@ -84,6 +85,95 @@ in {
     #       enabled = true;
     #       contentType = "music";
     #       pathInfos = ["/pool/dataset/media/music" "/pool/dataset/media/newMusic" "/pool/dataset/media/rippedMusic"];
+    #     };
+    #   };
+    # };
+
+    # services.jellarr = {
+    #   enable = true;
+    #   user = "jellyfin";
+    #   group = "media";
+    #   config = {
+    #     base_url = "http://localhost:8096";
+    #     system = {
+    #       pluginRepositories = [{
+    #         name = "Jellyfin Official";
+    #         url = "https://repo.jellyfin.org/files/plugin/manifest.json";
+    #         enabled = true;
+    #       }
+    #       {
+    #         name = "Intro Skipper";
+    #         url = "https://intro-skipper.org/manifest.json";
+    #         enabled = true;
+    #       }
+    #       {
+    #         name = "Jellyfin MusicTags Plugin";
+    #         url = "https://raw.githubusercontent.com/jyourstone/jellyfin-plugin-manifest/master/manifest.json";
+    #         enabled = true;
+    #       }];
+    #     };
+    #     encoding = {
+    #       enableHardwareEncoding = true;
+    #       hardwareAccelerationType = "vaapi";
+    #       hardwareDecodingCodecs = [
+    #         "h264"
+    #         "hevc"
+    #         "mpeg2video"
+    #         "vc1"
+    #         "vp9"
+    #         "av1"
+    #       ];
+    #       enableDecodingColorDepth10Hevc = true;
+    #       enableDecodingColorDepth10HevcRext = true;
+    #       enableDecodingColorDepth12HevcRext = true;
+    #       enableDecodingColorDepth10Vp9 = true;
+    #       allowHevcEncoding = false;
+    #       allowAv1Encoding = false;
+    #     };
+    #     library = {
+    #       virtualFolders = [{
+    #         name = "Movies";
+    #         collectionType = "movies";
+    #         libraryOptions = {
+    #           pathInfos.path = ["/pool/dataset/media/movies"];
+    #         };
+    #       }{
+    #         name = "Shows";
+    #         collectionType = "tvshows";
+    #         libraryOptions = {
+    #           pathInfos.path = ["/pool/dataset/media/shows"];
+    #         };
+    #       }{
+    #         name = "Music";
+    #         collectionType = "music";
+    #         libraryOptions = {
+    #           pathInfos = ["/pool/dataset/media/music" "/pool/dataset/media/newMusic" "/pool/dataset/media/rippedMusic"];
+    #         };
+    #       }];
+    #     };
+    #     branding = {
+    #       splashscreenEnabled = false;
+    #       customCss = ''
+    #         /*Hide the "Trailers" tab in Movies*/
+    #         .mainDrawer:has(.navMenuOption-selected[href^="#/movies.html"]) + .skinHeader .emby-tab-button[data-index="2"] {
+    #         display: none !important;
+    #         }
+    #       ''
+    #     };
+    #     users = [{
+    #       name = "techleaf";
+    #       passwordFile = /pool/dataset/jellyfin-pass;
+    #       policy = {
+    #         isAdministrator = true;
+    #       };
+    #     }];
+    #     startup = {
+    #       completeStartupWizard = true;
+    #     };
+
+    #     bootstrap = {
+    #       enable = true;
+    #       apiKeyFile = /pool/dataset/jellfin-key;
     #     };
     #   };
     # };

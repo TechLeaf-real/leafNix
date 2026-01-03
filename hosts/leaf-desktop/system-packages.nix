@@ -49,7 +49,7 @@
       default
     ])
     ++ (with inputs.jerry.packages.${pkgs.stdenv.hostPlatform.system}; [
-      default
+      # default
     ]);
 
   fonts.packages = with pkgs; [
