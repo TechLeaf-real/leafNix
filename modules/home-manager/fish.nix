@@ -25,6 +25,13 @@
         grep = "rg";
         find = "fd";
       };
+
+      plugins = [
+        {
+          name = "tide";
+          src = pkgs.fishPlugins.tide;
+        }
+      ];
     };
 
     programs.zoxide = {
@@ -52,17 +59,17 @@
       };
     };
 
-    programs.starship = {
-      enable = true;
-      enableFishIntegration = true;
-      settings = {
-        custom.mommy = {
-          command = "${pkgs.mommy}/bin/mommy -1 -s $status";
-          when = "true";
-        };
-        right_format = "$custom";
-      };
-    };
+    # programs.starship = {
+    #   enable = true;
+    #   enableFishIntegration = true;
+    #   settings = {
+    #     custom.mommy = {
+    #       command = "${pkgs.mommy}/bin/mommy -1 -s $status";
+    #       when = "true";
+    #     };
+    #     right_format = "$custom";
+    #   };
+    # };
 
     home.file.".config/mommy/config.sh".text = ''
       MOMMY_SWEETIE="girl"
