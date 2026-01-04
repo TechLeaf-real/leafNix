@@ -122,7 +122,6 @@ in {
 
     services.hyprpaper = {
       enable = true;
-      package = pkgs.hyprpaper;
       settings = {
         ipc = "on";
         splash = false;

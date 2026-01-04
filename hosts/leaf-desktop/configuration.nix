@@ -41,6 +41,8 @@
     };
   };
 
+  hardware.xpadneo.enable = true;
+
   programs.ssh.startAgent = true;
   programs.thunderbird.enable = true;
   services.hardware.openrgb.enable = true;
