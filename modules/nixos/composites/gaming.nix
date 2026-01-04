@@ -46,6 +46,7 @@ in {
         heroic
         owmods-gui
         # parsec
+        gamescope
       ])
       ++ (with pkgs-stable; [
         sgdboop
