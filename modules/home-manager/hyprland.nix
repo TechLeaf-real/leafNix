@@ -157,14 +157,14 @@ in {
           "kdeconnectd"
         ];
 
-        windowrule = [
-          "tile, class:Aseprite"
-          "noborder, class:homesprite"
-          "noblur, class:homesprite"
-          "norounding, class:homesprite"
-          "noshadow, class:homesprite"
-          "tile, class:Godot"
-        ];
+        # windowrule = [
+        #   "tile, class:Aseprite"
+        #   "noborder, class:homesprite"
+        #   "noblur, class:homesprite"
+        #   "norounding, class:homesprite"
+        #   "noshadow, class:homesprite"
+        #   "tile, class:Godot"
+        # ];
 
         plugin = {
           dynamic-cursors = {
