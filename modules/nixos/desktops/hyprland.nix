@@ -10,6 +10,14 @@ in {
   options = {
     hyprland = {
       enable = lib.mkEnableOption "hyprland";
+      displayManager = {
+        enable = lib.mkOption {
+          default = true;
+          example = false;
+          description = "Whether to enable the display manager";
+          type = lib.types.bool;
+        };
+      };
     };
   };
 
@@ -27,7 +35,7 @@ in {
       package = pkgs-stable.clipcat;
     };
 
-    services.greetd = {
+    services.greetd = lib.mkIf cfg.displayManager.enable {
       enable = true;
       settings = {
         default_session = {
