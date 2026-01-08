@@ -26,12 +26,12 @@
   plymouth.enable = true;
   virtualisation-config.enable = true;
   steamos = {
-    enable = true;
+    enable = false;
     autoBoot = true;
   };
   hyprland = {
     enable = true;
-    displayManager.enable = false;
+    displayManager.enable = true;
   };
 
   graphics = {
