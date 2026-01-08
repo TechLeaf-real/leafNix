@@ -14,7 +14,6 @@
       ghex
       blockbench
       legcord
-      # blender-hip
       pkgsRocm.blender
       parabolic
       javaPackages.compiler.temurin-bin.jdk-25
