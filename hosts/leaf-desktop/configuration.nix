@@ -26,6 +26,7 @@
   tailscale.enable = true;
   plymouth.enable = true;
   virtualisation-config.enable = true;
+  steamos.enable = true;
 
   graphics = {
     gpuBrand = "amd";
