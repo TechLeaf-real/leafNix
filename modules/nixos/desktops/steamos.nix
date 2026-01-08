@@ -20,6 +20,9 @@ in {
         autoStart = cfg.autoBoot;
         user = "techleaf";
       };
+      steamos = {
+        useSteamOSConfig = false;
+      };
     };
   };
 }
