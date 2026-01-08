@@ -25,13 +25,8 @@
   tailscale.enable = true;
   plymouth.enable = true;
   virtualisation-config.enable = true;
-  steamos = {
-    enable = false;
-    autoBoot = true;
-  };
   hyprland = {
     enable = true;
-    displayManager.enable = true;
   };
 
   graphics = {
