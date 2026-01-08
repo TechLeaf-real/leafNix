@@ -12,7 +12,6 @@
   ];
 
   vscodium.enable = true;
-  hyprland.enable = true;
   syncthing-client.enable = true;
   gaming.enable = true;
   vr.enable = true;
@@ -26,7 +25,14 @@
   tailscale.enable = true;
   plymouth.enable = true;
   virtualisation-config.enable = true;
-  steamos.enable = true;
+  steamos = {
+    enable = true;
+    autoBoot = true;
+  };
+  hyprland = {
+    enable = true;
+    displayManager.enable = false;
+  };
 
   graphics = {
     gpuBrand = "amd";

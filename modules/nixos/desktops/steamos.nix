@@ -16,8 +16,9 @@ in {
     jovian = {
       steam = {
         enable = true;
-        desktopSession = "hyprland";
+        desktopSession = "hyprland-uwsm";
         autoStart = cfg.autoBoot;
+        user = "techleaf";
       };
     };
   };
