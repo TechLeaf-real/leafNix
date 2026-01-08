@@ -115,6 +115,7 @@
         modules = [
           ./hosts/leaf-desktop/configuration.nix
           inputs.nur.modules.nixos.default
+          inputs.jovian.nixosModules.default
           inputs.stylix.nixosModules.stylix
           home-manager.nixosModules.home-manager
           nixpkgs-xr.nixosModules.nixpkgs-xr
