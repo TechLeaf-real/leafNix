@@ -23,6 +23,9 @@ in {
       steamos = {
         useSteamOSConfig = false;
       };
+      hardware = {
+        has.amd.gpu = true;
+      };
     };
   };
 }
