@@ -32,6 +32,8 @@ in {
       openFirewall = true;
     };
 
+    networking.firewall.allowedTCPPorts = [36743];
+
     environment.systemPackages =
       (with pkgs; [
         moonlight
