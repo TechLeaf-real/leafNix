@@ -47,6 +47,7 @@ in {
         owmods-gui
         # parsec
         gamescope
+        forge-mtg
       ])
       ++ (with pkgs-stable; [
         sgdboop
