@@ -16,8 +16,7 @@ in {
   config = lib.mkIf cfg.enable {
     environment.systemPackages =
       (with pkgs; [
-        wlx-overlay-s
-        wayvr-dashboard
+        wayvr
         android-tools
         eepyxr
         # stardust-xr-server
