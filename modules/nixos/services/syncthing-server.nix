@@ -41,7 +41,7 @@ in {
           # };
           "Emulation" = {
             path = "/pool/dataset/LeafBox/Emulation";
-            devices = ["leaf-desktop"];
+            devices = ["leaf-desktop" "leaf-pixel"];
             id = "aqxvs-teezq";
           };
           "ssh" = {
