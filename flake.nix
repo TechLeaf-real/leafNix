@@ -138,6 +138,7 @@
           };
         };
         modules = [
+          inputs.jovian.nixosModules.default
           inputs.stylix.nixosModules.stylix
           ./hosts/leaf-server/configuration.nix
           disko.nixosModules.disko
