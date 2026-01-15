@@ -12,6 +12,10 @@
     ../../modules/nixos
   ];
 
+  disabledModules = [
+    ../../modules/nixos/desktops/default.nix
+  ];
+
   network.enable = true;
   fish.enable = true;
   samba.enable = true;
