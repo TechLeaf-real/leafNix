@@ -25,7 +25,6 @@ in {
   config = lib.mkIf cfg.enable {
     hardware.graphics = {
       enable = true;
-      # enable32Bit = true;
       package = pkgs-stable.mesa;
       extraPackages = with pkgs-stable; [
         libva
@@ -41,14 +40,13 @@ in {
       // lib.mkIf (cfg.gpuBrand == "amd") ["amdgpu"];
     hardware.nvidia.modesetting.enable = true;
 
-    hardware.nvidia.prime = {
+    hardware.nvidia.prime = lib.mkIf (cfg.gpuBrand == "nvidia") {
       offload = {
         enable = true;
         enableOffloadCmd = true;
       };
 
       intelBusId = "PCI:0:2:0";
-      # amdgpuBusId = "";
       nvidiaBusId = "PCI:1:0:0";
     };
   };
