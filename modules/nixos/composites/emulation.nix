@@ -17,15 +17,17 @@ in {
     environment.systemPackages =
       (with pkgs; [
         ryubing
-        # emulationstation-de
-        # nur.repos.aprilthepink.suyu-mainline
         dolphin-emu
         xemu
         retroarch-full
       ])
-      ++ (with pkgs-stable; [
-        rpcs3
-        cemu
-      ]);
+      ++ (with pkgs-stable;
+        [
+          rpcs3
+          cemu
+        ]
+        ++ (with nur.repos; [
+          aprilthepink.suyu-mainline
+        ]));
   };
 }
