@@ -21,11 +21,11 @@ in {
         dolphin-emu
         xemu
         retroarch-full
-      ])
-      ++ (with pkgs-stable; [
         rpcs3
         cemu
       ])
+      ++ (with pkgs-stable; [
+        ])
       ++ (with inputs.nur.repos; [
         aprilthepink.suyu-mainline
       ]);
