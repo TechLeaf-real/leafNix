@@ -53,6 +53,7 @@
   services.gvfs.enable = true;
   hardware.bluetooth.enable = true;
   programs.firefox.enable = true;
+  emulation.enable = true;
 
   networking.firewall.allowedTCPPorts = [25565 24454];
 

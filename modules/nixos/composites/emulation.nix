@@ -3,7 +3,6 @@
   pkgs-stable,
   lib,
   config,
-  inputs,
   ...
 }: let
   cfg = config.emulation;
@@ -25,9 +24,6 @@ in {
         cemu
       ])
       ++ (with pkgs-stable; [
-        ])
-      ++ (with inputs.nur.repos; [
-        aprilthepink.suyu-mainline
-      ]);
+        ]);
   };
 }
