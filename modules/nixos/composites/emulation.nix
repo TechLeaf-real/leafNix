@@ -3,6 +3,7 @@
   pkgs-stable,
   lib,
   config,
+  inputs,
   ...
 }: let
   cfg = config.emulation;
@@ -21,13 +22,12 @@ in {
         xemu
         retroarch-full
       ])
-      ++ (with pkgs-stable;
-        [
-          rpcs3
-          cemu
-        ]
-        ++ (with nur.repos; [
-          aprilthepink.suyu-mainline
-        ]));
+      ++ (with pkgs-stable; [
+        rpcs3
+        cemu
+      ])
+      ++ (with inputs.nur.repos; [
+        aprilthepink.suyu-mainline
+      ]);
   };
 }
