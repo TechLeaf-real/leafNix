@@ -1,7 +1,7 @@
 {
   lib,
   config,
-  pkgs-stable,
+  pkgs,
   ...
 }: let
   cfg = config.graphics;
@@ -25,8 +25,8 @@ in {
   config = lib.mkIf cfg.enable {
     hardware.graphics = {
       enable = true;
-      package = pkgs-stable.mesa;
-      extraPackages = with pkgs-stable; [
+      package = pkgs.mesa;
+      extraPackages = with pkgs; [
         libva
         libvdpau-va-gl
         vulkan-loader
