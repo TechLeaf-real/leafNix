@@ -29,15 +29,15 @@ in {
 
     services.sunshine = {
       enable = true;
-      # autoStart = true;
+      autoStart = true;
       openFirewall = true;
-      # settings = {
-      #   sunshine_name = "Leaf Desktop";
-      #   upnp = "enabled";
-      #   wan_encryption_mode = 2;
-      #   encoder = "amdvce";
-      #   amd_quality = "speed";
-      # };
+      settings = {
+        sunshine_name = "Leaf Desktop";
+        upnp = "enabled";
+        wan_encryption_mode = 2;
+        encoder = "amdvce";
+        amd_quality = "speed";
+      };
     };
 
     networking.firewall.allowedTCPPorts = [36743];
