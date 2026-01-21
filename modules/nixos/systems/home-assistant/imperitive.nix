@@ -41,13 +41,13 @@ in {
       firewall.allowedTCPPorts = [8123];
       bridges.br0.interfaces = lib.mkIf cfg.imperitive.vm ["esp4s0"];
       interfaces.br0 = lib.mkIf cfg.imperitive.vm {
-        useDHCP = false;
-        ipv4.addresses = [
-          {
-            "address" = "192.168.1.240";
-            "prefixLength" = 24;
-          }
-        ];
+        useDHCP = true;
+        # ipv4.addresses = [
+        #   {
+        #     "address" = "192.168.1.240";
+        #     "prefixLength" = 24;
+        #   }
+        # ];
       };
     };
     services.home-assistant = lib.mkIf cfg.imperitive.nix {
