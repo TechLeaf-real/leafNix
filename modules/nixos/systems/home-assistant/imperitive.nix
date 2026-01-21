@@ -28,6 +28,29 @@ in {
       qemuOvmf = true;
     };
 
+    environment.systemPackages = with pkgs;
+      lib.mkIf cfg.imperitive.vm [
+        virt-manager
+        usbutils
+      ];
+
+    users.users.root = lib.mkIf cfg.imperitive.vm {
+      extraGroups = ["libvirtd"];
+    };
+
+    networking = {
+      firewall.allowedTCPPorts = [8123];
+      bridges.br0.interfaces = lib.mkIf cfg.imperitive.vm ["esp4s0"];
+      interfaces.br0 = lib.mkIf cfg.imperitive.vm {
+        useDHCP = false;
+        ipv4.addresses = [
+          {
+            "address" = "192.168.1.240";
+            "prefixLength" = 24;
+          }
+        ];
+      };
+    };
     services.home-assistant = lib.mkIf cfg.imperitive.nix {
       enable = true;
       package = pkgs.home-assistant.override {
@@ -45,7 +68,5 @@ in {
       lovelaceConfig = null;
       configDir = "/etc/home-assistant";
     };
-
-    networking.firewall.allowedTCPPorts = [8123];
   };
 }
