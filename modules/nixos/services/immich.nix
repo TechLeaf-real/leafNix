@@ -18,6 +18,7 @@ in {
       openFirewall = true;
       environment = {IMMICH_LOG_LEVEL = "verbose";};
       machine-learning.enable = false;
+      accelerationDevices = null;
     };
   };
 }
