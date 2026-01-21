@@ -8,17 +8,21 @@
 in {
   imports = [
     ./postgres.nix
+    ./imperitive.nix
   ];
 
   options = {
     home-assistant = {
       enable = lib.mkEnableOption "home-assistant";
-      imperitive = lib.mkEnableOption "imperitive home-assistant";
+      imperitive = {
+        enable = lib.mkEnableOption "imperitive home-assistant";
+        oci = lib.mkEnableOption "oci container home-assistant";
+      };
     };
   };
 
   config = lib.mkIf cfg.enable {
-    services.home-assistant = lib.mkIf (cfg.imperitive == false) {
+    services.home-assistant = lib.mkIf (cfg.imperitive.enable == false) {
       enable = true;
       package = pkgs.home-assistant.override {
         extraPackages = python3Packages:
