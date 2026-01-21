@@ -13,11 +13,12 @@ in {
   options = {
     home-assistant = {
       enable = lib.mkEnableOption "home-assistant";
+      imperitive = lib.mkEnableOption "imperitive home-assistant";
     };
   };
 
   config = lib.mkIf cfg.enable {
-    services.home-assistant = {
+    services.home-assistant = lib.mkIf (cfg.imperitive == false) {
       enable = true;
       package = pkgs.home-assistant.override {
         extraPackages = python3Packages:
