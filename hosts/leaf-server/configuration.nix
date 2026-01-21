@@ -22,7 +22,7 @@
   ddclient.enable = true;
   vaultwarden.enable = true;
   home-assistant = {
-    enable = true;
+    enable = false;
     imperitive.enable = true;
     imperitive.vm = true;
   };
