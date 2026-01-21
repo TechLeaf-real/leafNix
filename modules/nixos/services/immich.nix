@@ -16,7 +16,7 @@ in {
     services.immich = {
       enable = true;
       # package = pkgs-stable.immich;
-      # mediaLocation = "/pool/dataset/immich";
+      mediaLocation = "/pool/dataset/immich";
       openFirewall = true;
       environment = {IMMICH_LOG_LEVEL = "verbose";};
       machine-learning.enable = false;
