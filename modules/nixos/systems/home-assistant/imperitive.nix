@@ -25,7 +25,6 @@ in {
 
     virtualisation.libvirtd = lib.mkIf cfg.imperitive.vm {
       enable = true;
-      qemuOvmf = true;
     };
 
     environment.systemPackages = with pkgs;
