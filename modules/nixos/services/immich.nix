@@ -15,10 +15,13 @@ in {
     services.immich = {
       enable = true;
       mediaLocation = "/pool/dataset/immich";
-      openFirewall = true;
+      # openFirewall = true;
       environment = {IMMICH_LOG_LEVEL = "verbose";};
       machine-learning.enable = false;
       accelerationDevices = null;
+      port = 3001;
     };
+
+    networking.firewall.allowedTCPPorts = [3001];
   };
 }
