@@ -21,6 +21,11 @@
   nginx.enable = true;
   ddclient.enable = true;
   vaultwarden.enable = true;
+  home-assistant = {
+    enable = true;
+    imperitive.enable = true;
+    imperitive.oci = true;
+  };
 
   network.hostname = "leaf-server";
   networking.hostId = "737572d5";
