@@ -21,7 +21,7 @@
   nginx.enable = true;
   ddclient.enable = true;
   vaultwarden.enable = true;
-  pihole.enable = true;
+  pihole.enable = false;
 
   network.hostname = "leaf-server";
   networking.hostId = "737572d5";

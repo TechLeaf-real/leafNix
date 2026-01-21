@@ -12,10 +12,7 @@ in {
   };
 
   config = lib.mkIf cfg.enable {
-    services.pihole-ftl = {
-      enable = true;
-      openFirewallWebserver = true;
-      openFirewallDNS = true;
+    services = {
     };
   };
 }
