@@ -1,6 +1,7 @@
 {
   lib,
   config,
+  pkgs,
   ...
 }: let
   cfg = config.home-assistant;
@@ -20,6 +21,29 @@ in {
           # "--device=/dev/ttyACM0:/dev/ttyACM0"
         ];
       };
+    };
+
+    virtualisation.libvirtd = lib.mkIf cfg.imperitive.vm {
+      enable = true;
+      qemuOvmf = true;
+    };
+
+    services.home-assistant = lib.mkIf cfg.imperitive.nix {
+      enable = true;
+      package = pkgs.home-assistant.override {
+        extraPackages = python3Packages:
+          with python3Packages; [
+            psycopg2
+          ];
+        extraComponents = [
+          "default_config"
+          "esphome"
+          "met"
+        ];
+      };
+      config = null;
+      lovelaceConfig = null;
+      configDir = "/etc/home-assistant";
     };
 
     networking.firewall.allowedTCPPorts = [8123];

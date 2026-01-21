@@ -24,7 +24,7 @@
   home-assistant = {
     enable = true;
     imperitive.enable = true;
-    imperitive.oci = true;
+    imperitive.nix = true;
   };
 
   network.hostname = "leaf-server";

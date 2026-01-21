@@ -17,6 +17,8 @@ in {
       imperitive = {
         enable = lib.mkEnableOption "imperitive home-assistant";
         oci = lib.mkEnableOption "oci container home-assistant";
+        vm = lib.mkEnableOption "vm container home-assistant";
+        nix = lib.mkEnableOption "nix container home-assistant";
       };
     };
   };
