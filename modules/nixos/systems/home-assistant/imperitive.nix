@@ -10,6 +10,9 @@ in {
       backend = "podman";
       containers.homeassistant = {
         volumes = ["home-assistant:/config"];
+        ports = [
+          "127.0.0.1:8123:8123"
+        ];
         environment.TZ = "Europe/London";
         # Note: The image will not be updated on rebuilds, unless the version label changes
         image = "ghcr.io/home-assistant/home-assistant:stable";
