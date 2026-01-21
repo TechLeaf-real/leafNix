@@ -7,7 +7,6 @@
     ./ddclient.nix
     ./gitea.nix
     ./grub.nix
-    ./home-assistant.nix
     ./immich.nix
     ./memos.nix
     ./minecraft-server.nix
