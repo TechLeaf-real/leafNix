@@ -17,7 +17,6 @@ in {
       enable = true;
       # package = pkgs-stable.immich;
       mediaLocation = "/pool/dataset/immich";
-      host = "photo.techleaf.dev";
       openFirewall = true;
       environment = {IMMICH_LOG_LEVEL = "verbose";};
       machine-learning.enable = false;
