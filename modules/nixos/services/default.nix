@@ -22,5 +22,6 @@
     ./tailscale.nix
     ./vaultwarden.nix
     ./virtualisation.nix
+    ./pihole.nix
   ];
 }
