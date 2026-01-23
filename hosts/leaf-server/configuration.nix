@@ -26,6 +26,7 @@
     imperitive.enable = true;
     imperitive.vm = true;
   };
+  pufferpanel.enable = true;
 
   network.hostname = "leaf-server";
   networking.hostId = "737572d5";

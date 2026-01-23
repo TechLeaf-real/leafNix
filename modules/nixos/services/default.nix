@@ -22,5 +22,6 @@
     ./vaultwarden.nix
     ./virtualisation.nix
     ./pihole.nix
+    ./pufferpanel.nix
   ];
 }
