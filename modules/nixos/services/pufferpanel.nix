@@ -21,5 +21,7 @@ in {
         targetPkgs = pkgs': with pkgs'; [icu openssl zlib];
       };
     };
+
+    networking.firewall.allowedTCPPorts = [8080];
   };
 }
