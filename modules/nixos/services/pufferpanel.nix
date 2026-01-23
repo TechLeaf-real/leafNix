@@ -21,7 +21,8 @@ in {
         targetPkgs = pkgs': with pkgs'; [icu openssl zlib];
       };
       environment = {
-        PUFFER_PANEL_REGISTRATIONENABLED = "true";
+        PUFFER_PANEL_REGISTRATIONENABLED = "false";
+        PUFFER_PANEL_SETTINGS_COMPANYNAME = "LeafNet";
       };
     };
 
