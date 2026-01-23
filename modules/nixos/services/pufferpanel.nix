@@ -20,6 +20,9 @@ in {
         runScript = lib.getExe pkgs.pufferpanel;
         targetPkgs = pkgs': with pkgs'; [icu openssl zlib];
       };
+      environment = {
+        PUFFER_PANEL_REGISTRATIONENABLED = "true";
+      };
     };
 
     networking.firewall.allowedTCPPorts = [8080];
