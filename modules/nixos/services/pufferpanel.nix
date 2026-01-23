@@ -11,8 +11,8 @@ in {
       enable = lib.mkEnableOption "pufferpanel";
     };
   };
-  config = {
-    services.pufferpanel = lib.mkIf cfg.enable {
+  config = lib.mkIf cfg.enable {
+    services.pufferpanel = {
       enable = true;
       extraPackages = with pkgs; [bash curl gawk gnutar gzip];
       package = pkgs.buildFHSEnv {
