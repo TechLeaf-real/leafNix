@@ -14,7 +14,7 @@ in {
   config = lib.mkIf cfg.enable {
     services.pufferpanel = {
       enable = true;
-      extraPackages = with pkgs; [bash curl gawk gnutar gzip];
+      extraPackages = with pkgs; [bash curl gawk gnutar gzip docker];
       package = pkgs.buildFHSEnv {
         name = "pufferpanel-fhs";
         runScript = lib.getExe pkgs.pufferpanel;
