@@ -27,12 +27,7 @@ in {
     };
 
     environment.systemPackages = with pkgs; [
-      buildFHSEnv
-      {
-        name = "pufferpanel-fhs";
-        runScript = lib.getExe pkgs.pufferpanel;
-        targetPkgs = pkgs': with pkgs'; [icu openssl zlib];
-      }
+      pufferpanel
     ];
 
     networking.firewall.allowedTCPPorts = [8080];
