@@ -9,14 +9,11 @@ in {
     syncthing = {
       blender = lib.mkEnableOption "blender";
       code = lib.mkEnableOption "code";
-      # dcim = lib.mkEnableOption "dcim";
       emulation = lib.mkEnableOption "emulation";
       ssh = lib.mkEnableOption "ssh";
       obsidian = lib.mkEnableOption "obsidian";
-      # pictures = lib.mkEnableOption "pictures";
       roms = lib.mkEnableOption "roms";
       soundboard = lib.mkEnableOption "soundboard";
-      # videos = lib.mkEnableOption "videos";
     };
   };
 
