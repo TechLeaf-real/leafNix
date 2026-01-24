@@ -19,7 +19,6 @@ in {
       overrideDevices = true;
       overrideFolders = true;
       openDefaultPorts = true;
-      user = "techleaf";
       guiAddress = "0.0.0.0:8384";
       settings = {
         devices = {
