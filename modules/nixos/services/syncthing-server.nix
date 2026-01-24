@@ -17,7 +17,6 @@ in {
     services.syncthing = {
       enable = true;
       overrideDevices = true;
-      user = "root";
       group = "users";
       overrideFolders = true;
       openDefaultPorts = true;
