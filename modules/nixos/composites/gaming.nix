@@ -58,6 +58,7 @@ in {
         # parsec
         gamescope
         forge-mtg
+        lovely-injector
       ])
       ++ (with pkgs-stable; [
         sgdboop
