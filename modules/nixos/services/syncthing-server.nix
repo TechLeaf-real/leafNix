@@ -31,31 +31,37 @@ in {
           "Blender" = {
             path = "/pool/dataset/LeafBox/Blender";
             devices = ["leaf-desktop"];
+            ignorePerms = false;
             id = "lg5rx-zx62v";
           };
           "Code" = {
             path = "/pool/dataset/LeafBox/Code";
             devices = ["leaf-desktop"];
+            ignorePerms = false;
             id = "wjun3-prxf2";
           };
           "Emulation" = {
             path = "/pool/dataset/LeafBox/Emulation";
             devices = ["leaf-desktop" "leaf-pixel" "leaf-deck"];
+            ignorePerms = false;
             id = "aqxvs-teezq";
           };
           "ssh" = {
             path = "/pool/dataset/LeafBox/ssh";
             devices = ["leaf-desktop"];
+            ignorePerms = false;
             id = "ssh";
           };
           "Obsidian" = {
             path = "/pool/dataset/LeafBox/Obsidian";
             devices = ["leaf-desktop" "leaf-pixel"];
+            ignorePerms = false;
             id = "vsujy-eplhq";
           };
           "Soundboard" = {
             path = "/pool/dataset/LeafBox/Soundboard";
             devices = ["leaf-desktop"];
+            ignorePerms = false;
             id = "hqy5y-ahisy";
           };
         };
