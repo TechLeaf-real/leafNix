@@ -12,6 +12,8 @@ in {
   };
 
   config = lib.mkIf cfg.enable {
+    networking.firewall.allowedTCPPorts = [8384];
+
     services.syncthing = {
       enable = true;
       overrideDevices = true;
