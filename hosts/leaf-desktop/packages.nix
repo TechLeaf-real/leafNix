@@ -13,7 +13,7 @@
       antimatter-dimensions
       ghex
       blockbench
-      equibop
+      legcord
       pkgsRocm.blender
       parabolic
       javaPackages.compiler.temurin-bin.jdk-25
