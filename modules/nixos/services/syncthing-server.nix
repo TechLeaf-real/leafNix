@@ -17,6 +17,7 @@ in {
     services.syncthing = {
       enable = true;
       overrideDevices = true;
+      group = "users";
       overrideFolders = true;
       openDefaultPorts = true;
       guiAddress = "0.0.0.0:8384";
