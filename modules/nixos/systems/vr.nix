@@ -18,7 +18,7 @@ in {
       (with pkgs; [
         wayvr
         android-tools
-        eepyxr
+        # eepyxr
         # stardust-xr-server
         # stardust-xr-gravity
         # stardust-xr-flatland

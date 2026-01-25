@@ -7,7 +7,7 @@
     (with pkgs; [
       obsidian
       haguichi
-      kdePackages.kdenlive
+      # kdePackages.kdenlive
       delfin
       xclicker
       antimatter-dimensions
