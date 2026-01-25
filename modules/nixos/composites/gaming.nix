@@ -55,7 +55,7 @@ in {
         mcpelauncher-ui-qt
         heroic
         owmods-gui
-        # parsec
+        parsec-bin
         gamescope
         forge-mtg
         lovely-injector
