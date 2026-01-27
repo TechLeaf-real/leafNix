@@ -7,10 +7,10 @@
     ];
 
     installRemoteServer = true;
-    mutableUserDebug = false;
-    mutableUserKeymaps = false;
-    mutableUserSettings = false;
-    mutableUserTasks = false;
+    # mutableUserDebug = false;
+    # mutableUserKeymaps = false;
+    # mutableUserSettings = false;
+    # mutableUserTasks = false;
     extensions = [
       "nix"
       "catppuccin-blur-plus"
