@@ -7,6 +7,7 @@
     (with pkgs; [
       obsidian
       haguichi
+      zed-editor
       # kdePackages.kdenlive
       delfin
       xclicker
@@ -14,7 +15,6 @@
       ghex
       blockbench
       legcord
-      discover-overlay
       pkgsRocm.blender
       parabolic
       javaPackages.compiler.temurin-bin.jdk-25
