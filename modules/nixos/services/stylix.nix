@@ -41,7 +41,12 @@ in {
     };
 
     home-manager.sharedModules = lib.singleton {
-      stylix = {};
+      stylix = {
+        targets = {
+          bat.enable = false;
+          zed.enable = false;
+        };
+      };
     };
   };
 }
