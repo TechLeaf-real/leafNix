@@ -19,9 +19,9 @@
       "catppuccin-icons"
     ];
 
-    userDebug = [];
-    userKeymaps = [];
-    userTasks = [];
+    # userDebug = [];
+    # userKeymaps = [];
+    # userTasks = [];
     # userSettings = [
     #   {
     #     use_smartcase_search = true;
