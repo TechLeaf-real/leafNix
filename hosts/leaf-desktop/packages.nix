@@ -7,7 +7,6 @@
     (with pkgs; [
       obsidian
       haguichi
-      zed-editor
       # kdePackages.kdenlive
       delfin
       xclicker

@@ -11,6 +11,7 @@
     ../../modules/home-manager/git.nix
     ../../modules/home-manager/gaming.nix
     ../../modules/home-manager/direnv.nix
+    ../../modules/home-manager/zed-editor.nix
   ];
 
   home.username = "techleaf";
