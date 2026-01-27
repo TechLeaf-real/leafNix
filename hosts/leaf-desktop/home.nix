@@ -19,7 +19,7 @@
   syncthing = {
     blender = true;
     code = true;
-    ssh = true;
+    ssh = false;
     obsidian = true;
     soundboard = true;
     emulation = true;

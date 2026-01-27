@@ -45,7 +45,6 @@
 
   hardware.xpadneo.enable = true;
 
-  programs.ssh.startAgent = true;
   programs.thunderbird.enable = true;
   services.hardware.openrgb.enable = true;
   services.udisks2.enable = true;
@@ -94,6 +93,11 @@
   };
 
   nix.settings.auto-optimise-store = true;
+
+  programs.ssh = {
+    startAgent = true;
+    enableAskPassword = true;
+  };
 
   services.logmein-hamachi.enable = true;
 
