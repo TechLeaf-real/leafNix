@@ -39,5 +39,9 @@ in {
         };
       };
     };
+
+    home-manager.sharedModules = lib.singleton {
+      stylix = {};
+    };
   };
 }

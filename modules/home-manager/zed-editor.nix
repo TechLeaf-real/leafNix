@@ -21,6 +21,7 @@
 
     userDebug = [];
     userKeymaps = [];
+    # userSettings = [];
     userTasks = [];
   };
 }
