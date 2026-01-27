@@ -1,6 +1,7 @@
-{...}: {
+{pkgs, ...}: {
   programs.zed-editor = {
     enable = true;
+    extraPackages = [pkgs.nil];
     installRemoteServer = true;
     mutableUserDebug = false;
     mutableUserKeymaps = false;
