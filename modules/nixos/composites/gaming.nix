@@ -60,11 +60,11 @@ in {
         forge-mtg
         lovely-injector
         faugus-launcher
+        modrinth-app
+        gale
       ])
       ++ (with pkgs-stable; [
         sgdboop
-        gale
-        modrinth-app
         libvdpau-va-gl
         edmarketconnector
       ]);
