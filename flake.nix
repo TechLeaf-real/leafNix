@@ -141,6 +141,7 @@
           inputs.jovian.nixosModules.default
           inputs.stylix.nixosModules.stylix
           ./hosts/leaf-server/configuration.nix
+          home-manager.nixosModules.home-manager
           disko.nixosModules.disko
           declarative-jellyfin.nixosModules.default
           inputs.jellarr.nixosModules.default
