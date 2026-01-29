@@ -22,7 +22,7 @@
   kernel.enable = true;
   grub.enable = true;
   network.enable = true;
-  tailscale.enable = true;
+  # tailscale.enable = true;
   plymouth.enable = true;
   virtualisation-config.enable = true;
   hyprland = {
