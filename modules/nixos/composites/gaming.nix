@@ -59,6 +59,7 @@ in {
         gamescope
         forge-mtg
         lovely-injector
+        faugus-launcher
       ])
       ++ (with pkgs-stable; [
         sgdboop
