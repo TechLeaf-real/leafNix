@@ -20,7 +20,7 @@
   fish.enable = true;
   stylix-config.enable = true;
   kernel.enable = true;
-  grub.enable = false;
+  grub.enable = true;
   network.enable = true;
   tailscale.enable = true;
   plymouth.enable = true;
