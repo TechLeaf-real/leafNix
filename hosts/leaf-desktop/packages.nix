@@ -18,6 +18,7 @@
       parabolic
       javaPackages.compiler.temurin-bin.jdk-25
       warp
+      nix-ld
     ])
     ++ (with pkgs-stable; [
       aseprite
