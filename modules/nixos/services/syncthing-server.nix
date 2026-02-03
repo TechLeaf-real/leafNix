@@ -42,7 +42,7 @@ in {
           };
           "Emulation" = {
             path = "/pool/dataset/LeafBox/Emulation";
-            devices = ["leaf-desktop" "leaf-pixel" "leaf-deck"];
+            devices = ["leaf-desktop" "leaf-deck"];
             ignorePerms = false;
             id = "aqxvs-teezq";
           };
