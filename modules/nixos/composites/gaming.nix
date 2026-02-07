@@ -59,7 +59,6 @@ in {
         gamescope
         forge-mtg
         lovely-injector
-        faugus-launcher
         modrinth-app
         gale
       ])
