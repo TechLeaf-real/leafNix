@@ -14,6 +14,7 @@
       ghex
       blockbench
       legcord
+      discord
       pkgsRocm.blender
       parabolic
       javaPackages.compiler.temurin-bin.jdk-25
