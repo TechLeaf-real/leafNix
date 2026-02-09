@@ -25,6 +25,7 @@ in {
         devices = {
           leaf-desktop.id = "CPCL5BF-PM44KRA-B5RFMMS-TFA3L33-MOF4VFL-2KRLHY5-LTOTZCO-Q7MCEAM";
           leaf-pixel.id = "DKY2QW5-FGVVFWS-TC54UB7-JK6ODAR-WSYDVAP-U2HH4V5-KLEELOB-RGN67AM";
+          leaf-old-pixel.id = "D5JF573-RRQPQHM-73A6SNY-PO3XM52-ZWN7PHD-GXQR55B-FIE4DG7-YUGYRQE";
           leaf-deck.id = "TJ2YN3F-OPDQFC2-ICGLDBK-2DKAYGG-3SS2QLB-ZOZZFPM-2ODSWKM-BG7MKAF";
         };
         folders = {
@@ -42,7 +43,7 @@ in {
           };
           "Emulation" = {
             path = "/pool/dataset/LeafBox/Emulation";
-            devices = ["leaf-desktop" "leaf-deck"];
+            devices = ["leaf-desktop" "leaf-deck" "leaf-old-pixel"];
             ignorePerms = false;
             id = "aqxvs-teezq";
           };
