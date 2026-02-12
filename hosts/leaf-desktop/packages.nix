@@ -20,8 +20,6 @@
       javaPackages.compiler.temurin-bin.jdk-25
       warp
       nix-ld
-      olympus
-      grayjay
     ])
     ++ (with pkgs-stable; [
       aseprite

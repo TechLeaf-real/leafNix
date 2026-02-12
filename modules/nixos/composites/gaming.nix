@@ -60,6 +60,7 @@ in {
         forge-mtg
         lovely-injector
         modrinth-app
+        olympus
         gale
       ])
       ++ (with pkgs-stable; [
