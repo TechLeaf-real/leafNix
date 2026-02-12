@@ -21,6 +21,7 @@
       warp
       nix-ld
       olympus
+      grayjay
     ])
     ++ (with pkgs-stable; [
       aseprite
