@@ -4,6 +4,7 @@
     extraPackages = with pkgs; [
       nil
       nixd
+      rust-analyzer
     ];
 
     installRemoteServer = true;
