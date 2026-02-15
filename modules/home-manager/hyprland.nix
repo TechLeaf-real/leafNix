@@ -155,6 +155,7 @@ in {
           "pypr"
           "swayosd-server"
           "kdeconnectd"
+          "fcitx5"
         ];
 
         # windowrule = [
