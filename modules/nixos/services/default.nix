@@ -23,5 +23,6 @@
     ./virtualisation.nix
     ./pihole.nix
     ./pufferpanel.nix
+    ./fcitx5.nix
   ];
 }

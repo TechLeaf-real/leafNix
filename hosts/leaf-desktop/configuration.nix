@@ -26,6 +26,7 @@
   plymouth.enable = true;
   virtualisation-config.enable = true;
   hyprland.enable = true;
+  fcitx5.enable = true;
 
   graphics = {
     gpuBrand = "amd";
