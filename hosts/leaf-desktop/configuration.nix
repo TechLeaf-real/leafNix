@@ -53,7 +53,7 @@
   programs.firefox.enable = true;
   emulation.enable = true;
 
-  networking.firewall.allowedTCPPorts = [25565 24454];
+  networking.firewall.allowedTCPPorts = [25565 24454 3000];
 
   programs.nix-ld = {
     enable = true;
