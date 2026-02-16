@@ -20,6 +20,7 @@
       javaPackages.compiler.temurin-bin.jdk-25
       warp
       nix-ld
+      qpwgraph
     ])
     ++ (with pkgs-stable; [
       aseprite
